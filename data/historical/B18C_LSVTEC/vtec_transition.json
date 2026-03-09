@@ -1,0 +1,65 @@
+{
+    "description": "VTEC transition parameters for B18C LS VTEC builds",
+    "ls_vtec_na_93oct": {
+        "vtec_engagement_rpm": 5800,
+        "vtec_disengage_rpm": 5400,
+        "hysteresis_rpm": 400,
+        "notes": "LS bottom end (B18B) with B16A VTEC head. Non-VTEC cam profile optimized for low-end torque, VTEC cam for top-end power.",
+        "ve_discontinuity": {
+            "description": "VE table jumps at VTEC crossover due to cam profile change. Must be smoothed.",
+            "pre_vtec_ve_pct": [
+                78,
+                80,
+                82,
+                83,
+                84,
+                84
+            ],
+            "post_vtec_ve_pct": [
+                82,
+                86,
+                89,
+                91,
+                93,
+                94
+            ],
+            "rpm_bins": [
+                5000,
+                5500,
+                6000,
+                6500,
+                7000,
+                7500
+            ],
+            "blend_strategy": "Linear interpolation over 200 RPM window centered on engagement point"
+        },
+        "fuel_correction": {
+            "description": "Fuel enrichment during VTEC transition to prevent lean spike",
+            "transient_enrichment_pct": 3.0,
+            "enrichment_duration_ms": 150,
+            "notes": "Apply 3% fuel adder for 150ms during VTEC solenoid activation to compensate for sudden airflow increase"
+        },
+        "ignition_correction": {
+            "description": "Ignition retard during transition to prevent knock from sudden VE change",
+            "transient_retard_deg": 2.0,
+            "retard_duration_ms": 200,
+            "notes": "Pull 2 degrees during transition, taper back over 200ms"
+        }
+    },
+    "ls_vtec_turbo_93oct": {
+        "vtec_engagement_rpm": 5200,
+        "vtec_disengage_rpm": 4800,
+        "hysteresis_rpm": 400,
+        "notes": "Under boost, engage VTEC earlier to maximize cam efficiency. Higher VE jump requires more aggressive fuel correction.",
+        "fuel_correction": {
+            "transient_enrichment_pct": 5.0,
+            "enrichment_duration_ms": 200,
+            "notes": "Turbo builds need more transient fuel at VTEC crossover due to higher airflow delta"
+        },
+        "ignition_correction": {
+            "transient_retard_deg": 3.0,
+            "retard_duration_ms": 250,
+            "notes": "More aggressive retard under boost during VTEC switch"
+        }
+    }
+}

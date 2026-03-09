@@ -1,0 +1,3 @@
+nextRelease=
+platform=uaefi
+release=master

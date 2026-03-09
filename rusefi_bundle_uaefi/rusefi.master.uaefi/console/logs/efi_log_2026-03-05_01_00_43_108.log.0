@@ -1,0 +1,171 @@
+I 260305 010043.112 [main] Launcher - rusEFI UI console 20260214
+I 260305 010043.121 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260305 010043.121 [main] Launcher - 
+
+
+I 260305 010043.139 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 010043.171 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 010043.171 [main] UiHelper - OS name: Windows 11
+I 260305 010043.172 [main] UiHelper - OS version: 10.0
+I 260305 010043.300 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 010043.301 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 010043.316 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM5
+I 260305 010043.380 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 010043.530 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 010043.530 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 010043.533 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 010043.534 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 010043.538 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 010043.538 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010043.538 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 010043.539 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 010043.540 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 010043.561 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 010043.578 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 010043.579 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 010043.579 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 010043.579 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 010043.582 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 010043.583 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010043.583 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010043.628 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 010043.628 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010043.628 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 010043.632 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 010043.634 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 010043.634 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 010043.634 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 010043.634 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 010043.634 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 010043.649 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 010043.650 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 010043.650 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 010043.652 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010043.652 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010043.655 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 010043.656 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 010043.657 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 010043.661 [SerialPortScanner inspectPort COM5] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 010043.661 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010043.662 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 010043.733 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 010043.733 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 010043.736 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 010043.736 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 010043.736 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 010043.741 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 010043.742 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 010043.753 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 010043.753 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+W 260305 010043.758 [ecuDef primer1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 010043.785 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 010043.792 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 010043.932 [SerialPortScanner inspectPort COM5] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260305 010043.932 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010043.940 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010043.940 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 010043.940 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 010043.945 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 010043.945 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 010043.946 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 010043.948 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 010043.948 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 010043.948 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 010043.948 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 010043.948 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010043.954 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260305 010043.954 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260305 010048.658 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 010048.658 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 010048.658 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 010048.660 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010048.661 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 010048.661 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010048.661 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 010048.663 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260305 010048.668 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010048.668 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+E 260305 010048.668 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Unknown Source)
+I 260305 010048.672 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010048.673 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010048.897 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010049.108 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 211ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010049.325 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 217ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010049.630 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010049.630 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 010049.859 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010050.069 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 210ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010050.288 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 219ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010050.602 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010050.602 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 010050.822 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010051.045 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010051.265 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010051.577 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010051.577 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 010051.577 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 010051.578 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010051.836 [SerialPortScanner inspectPort COM5] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260305 010051.836 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 010051.844 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 010051.844 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 010051.844 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 010051.844 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 010051.844 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010053.264 [AWT-EventQueue-0] ProgramSelector - ProgramSelector Auto DFU Update COM5 (Unknown)
+I 260305 010053.269 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 010053.270 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 010053.270 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 010053.297 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 010053.300 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 010053.300 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 010053.311 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 010053.312 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 010053.312 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Suspending port scanning...
+I 260305 010053.971 [ECU Communication Executor1] IncomingDataBuffer - [hello] header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260305 010053.971 [ECU Communication Executor1] BinaryProtocol - No signature returned by serial=COM5
+I 260305 010056.591 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 010056.591 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 010056.592 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 010056.592 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010056.593 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010056.600 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010056.600 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 010056.600 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 7ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010056.831 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010057.055 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010057.362 [AWT-EventQueue-0] StatusWindow - Port scanning is suspended in 4062ms.
+I 260305 010057.372 [mx-1] BinaryProtocolExecutor - readAndBackupCurrentCalibrations: Executing DoubleCallbacks{one=com.rusefi.ui.widgets.StatusPanel[,0,0,400x400,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=], two=DUMMY}
+I 260305 010057.375 [mx-1] BinaryProtocolExecutor - COM5: Available right away? [rusEFI uaEFI]; true
+I 260305 010057.375 [mx-1] BinaryProtocolExecutor - Giving it 300ms just in case...
+I 260305 010057.686 [mx-1] LinkManager - LinkManager: Starting COM5
+I 260305 010057.686 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Connecting to port `COM5`...
+I 260305 010057.686 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 010057.686 [mx-1] StreamConnector - StreamConnector: connecting
+I 260305 010057.686 [mx-1] StreamConnector - scheduleOpening
+I 260305 010057.687 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 010057.687 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 010057.687 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010101.854 [ECU Communication Executor1] IncomingDataBuffer - [hello] header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260305 010101.855 [ECU Communication Executor1] BinaryProtocol - No signature returned by serial=COM5
+I 260305 010107.703 [ECU Communication Executor1] IncomingDataBuffer - [hello] header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260305 010107.703 [ECU Communication Executor1] BinaryProtocol - No signature returned by serial=COM5
+E 260305 010107.704 [ECU Communication Executor1] ExitUtil - TERMINATING: CONNECTION FAILED, did you specify the right port name? No signature returned by serial=COM5
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.io.LinkManager$3.onConnectionFailed(LinkManager.java:85)
+	at com.rusefi.io.serial.PortHolder.connectAndReadConfiguration(PortHolder.java:60)
+	at com.rusefi.io.serial.StreamConnector.lambda$connectAndReadConfiguration$0(StreamConnector.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)

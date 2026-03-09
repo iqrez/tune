@@ -1,0 +1,187 @@
+I 260305 000200.281 [main] Launcher - rusEFI UI console 20260214
+I 260305 000200.290 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260305 000200.290 [main] Launcher - 
+
+
+I 260305 000200.308 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 000200.343 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 000200.344 [main] UiHelper - OS name: Windows 11
+I 260305 000200.344 [main] UiHelper - OS version: 10.0
+I 260305 000200.478 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 000200.479 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 000200.561 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 000200.715 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 000200.716 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 000200.719 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 000200.719 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260305 000200.723 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 000200.723 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 000200.724 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 000200.725 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 000200.727 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 000200.750 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 000200.767 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 000200.768 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 000200.768 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 000200.768 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 000200.772 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 000200.772 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 000200.772 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 000200.824 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 000200.826 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 000200.826 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 000200.826 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 000200.826 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 000200.826 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 000200.826 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 000200.826 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 000200.826 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 000200.842 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 000200.842 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 000200.842 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 000200.849 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 000200.852 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000200.853 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000200.854 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 000200.861 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 000200.933 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 000200.933 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 000200.934 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 000200.935 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 000200.935 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 000200.939 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 000200.939 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 000200.952 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 000200.953 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+W 260305 000200.960 [ecuDef primer1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 000200.995 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 000201.004 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 000201.172 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000201.173 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000201.426 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000201.670 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000201.919 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000202.223 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000202.224 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000202.473 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000202.713 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000202.952 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000203.258 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000203.259 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000203.521 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 262ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000203.756 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000203.991 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000204.299 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000204.299 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000204.552 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000204.788 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000204.913 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 000204.914 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 000204.914 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 000204.945 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 000204.947 [class com.rusefi.maintenance.DriverInstall$1 thread] DriverInstall - IsWindows=true
+I 260305 000204.958 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 000204.959 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 000204.963 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 000204.963 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 000204.964 [AWT-EventQueue-0] StatusWindow - Executing command=../drivers\silent_st_drivers2.exe -y
+I 260305 000204.977 [AWT-EventQueue-0] StatusWindow - 
+I 260305 000204.977 [AWT-EventQueue-0] StatusWindow - 7-Zip SFX 19.00 (x86) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+I 260305 000204.980 [AWT-EventQueue-0] StatusWindow - 
+I 260305 000204.980 [AWT-EventQueue-0] StatusWindow - Extracting archive: D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260305 000204.982 [AWT-EventQueue-0] StatusWindow - --
+I 260305 000204.982 [AWT-EventQueue-0] StatusWindow - Path = D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260305 000204.983 [AWT-EventQueue-0] StatusWindow - Type = 7z
+I 260305 000204.983 [AWT-EventQueue-0] StatusWindow - 
+I 260305 000205.033 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000205.169 [AWT-EventQueue-0] StatusWindow -   0%
+I 260305 000205.170 [AWT-EventQueue-0] StatusWindow -     
+I 260305 000205.174 [AWT-EventQueue-0] StatusWindow - 100% 109
+I 260305 000205.175 [AWT-EventQueue-0] StatusWindow -         
+I 260305 000205.176 [AWT-EventQueue-0] StatusWindow - Everything is Ok
+I 260305 000205.179 [AWT-EventQueue-0] StatusWindow - Executing command=cmd /c start silent_install_windows8.bat
+I 260305 000205.337 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000205.338 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000205.598 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 260ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000205.838 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000206.071 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000206.388 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000206.389 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000206.643 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 254ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000206.874 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000207.112 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000207.426 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000207.427 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000207.684 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 257ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000207.919 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000208.153 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000208.462 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000208.463 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000208.712 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000208.947 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000209.180 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000209.482 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000209.483 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000209.745 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 262ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000209.987 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000210.223 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000210.536 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000210.536 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000210.785 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000211.022 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000211.243 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-EventQueue-0,6,main]
+I 260305 000211.243 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[DestroyJavaVM,5,main]
+I 260305 000211.243 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[JustOneInstance,6,main]
+I 260305 000211.243 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-Shutdown,5,system]
+I 260305 000211.253 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000211.254 [AWT-EventQueue-0] FrameHelper - [javax.swing.JFrame[frame0,716,377,487x326,invalid,layout=java.awt.BorderLayout,title=rusefi console 20260214 uaefi.master,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,471x317,layout=com.formdev.flatlaf.ui.FlatRootPaneUI$FlatRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame1,752,320,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=Windows rusEFI ST Drivers,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]
+I 260305 000211.555 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000211.555 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000211.811 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 256ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000212.039 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000212.273 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000212.575 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000212.576 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000212.816 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000213.046 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000213.277 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000213.591 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000213.591 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000213.837 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000214.076 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000214.306 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000214.610 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000214.610 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000214.860 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000215.088 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000215.318 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000215.628 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000215.629 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000215.882 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000216.110 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000216.337 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000216.644 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000216.645 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000216.898 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000217.128 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000217.362 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000217.678 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000217.679 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000217.926 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000218.153 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000218.383 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000218.697 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000218.697 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000218.939 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000219.166 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000219.397 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000219.700 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000219.700 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 000219.947 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000220.188 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000220.429 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000220.737 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 000220.738 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 000220.992 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 254ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000221.227 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 000221.458 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)

@@ -1,0 +1,190 @@
+ChibiOS/RT simulator (Win32)
+Shell service started on SD1, SD2
+  - Listening for connections on SD1
+  - Listening for connections on SD2
+Running rusEFI simulator version: [20260220]Running rusEFI simulator version:
+20260220
+[0us]efiPrintfInternal:msg`*** rusEFI LLC (c) 2012-2026. All rights reserved.`
+[0us]efiPrintfInternal:msg`*** rusEFI v20260220@4211171972 now=0`
+[0us]efiPrintfInternal:msg`*** Chibios Kernel:       7.0.5`
+[0us]efiPrintfInternal:msg`*** Compiled:     Feb 20 2026 - 01:24:03`
+[0us]efiPrintfInternal:msg`*** COMPILER=13-win32`
+[0us]efiPrintfInternal:msg`custom board hello from simulator`
+[0us]efiPrintfInternal:msg`hellenBoardId=0`
+[0us]efiPrintfInternal:msg`CH_CFG_ST_FREQUENCY=100000`
+[0us]efiPrintfInternal:msg`ENABLE_PERF_TRACE=0`
+[0us]efiPrintfInternal:msg`PORT_IDLE_THREAD_STACK_SIZE=256`
+[0us]efiPrintfInternal:msg`CH_DBG_ENABLE_ASSERTS=1`
+[0us]efiPrintfInternal:msg`CH_DBG_SYSTEM_STATE_CHECK=0`
+[0us]efiPrintfInternal:msg`CH_DBG_ENABLE_STACK_CHECK=0`
+[5000us]efiPrintfInternal:msg`Storage INT_FLASH registered`
+[CannedTunes]: 105 
+[CannedTunes]: testing engineConfig: 0 
+[CannedTunes]: testing engineConfig: 1 
+[CannedTunes]: testing engineConfig: 2 
+[CannedTunes]: testing engineConfig: 3 
+[CannedTunes]: testing engineConfig: 4 
+[CannedTunes]: testing engineConfig: 5 
+[CannedTunes]: testing engineConfig: 6 
+[CannedTunes]: testing engineConfig: 7 
+[CannedTunes]: testing engineConfig: 8 
+[CannedTunes]: testing engineConfig: 9 
+[CannedTunes]: testing engineConfig: 10 
+[CannedTunes]: testing engineConfig: 11 
+[CannedTunes]: testing engineConfig: 12 
+[CannedTunes]: testing engineConfig: 13 
+[CannedTunes]: testing engineConfig: 14 
+[CannedTunes]: testing engineConfig: 15 
+[CannedTunes]: testing engineConfig: 16 
+[CannedTunes]: testing engineConfig: 17 
+[CannedTunes]: testing engineConfig: 18 
+[CannedTunes]: testing engineConfig: 19 
+[CannedTunes]: testing engineConfig: 20 
+[CannedTunes]: testing engineConfig: 21 
+[CannedTunes]: testing engineConfig: 22 
+[CannedTunes]: testing engineConfig: 23 
+[CannedTunes]: testing engineConfig: 24 
+[CannedTunes]: testing engineConfig: 25 
+[CannedTunes]: testing engineConfig: 26 
+[CannedTunes]: testing engineConfig: 27 
+[CannedTunes]: testing engineConfig: 28 
+[CannedTunes]: testing engineConfig: 29 
+[CannedTunes]: testing engineConfig: 30 
+[CannedTunes]: testing engineConfig: 31 
+[CannedTunes]: testing engineConfig: 32 
+[CannedTunes]: testing engineConfig: 33 
+[CannedTunes]: testing engineConfig: 34 
+[CannedTunes]: testing engineConfig: 35 
+[CannedTunes]: testing engineConfig: 36 
+[CannedTunes]: testing engineConfig: 37 
+[CannedTunes]: testing engineConfig: 38 
+[CannedTunes]: testing engineConfig: 39 
+[CannedTunes]: testing engineConfig: 40 
+[CannedTunes]: testing engineConfig: 41 
+[CannedTunes]: testing engineConfig: 42 
+[CannedTunes]: testing engineConfig: 43 
+[CannedTunes]: testing engineConfig: 44 
+[CannedTunes]: testing engineConfig: 45 
+[CannedTunes]: testing engineConfig: 46 
+[CannedTunes]: testing engineConfig: 47 
+[CannedTunes]: testing engineConfig: 48 
+[CannedTunes]: testing engineConfig: 49 
+[CannedTunes]: testing engineConfig: 50 
+[CannedTunes]: testing engineConfig: 51 
+[CannedTunes]: testing engineConfig: 52 
+[CannedTunes]: testing engineConfig: 53 
+[CannedTunes]: testing engineConfig: 54 
+[CannedTunes]: testing engineConfig: 55 
+[CannedTunes]: testing engineConfig: 56 
+[CannedTunes]: testing engineConfig: 57 
+[CannedTunes]: testing engineConfig: 58 
+[CannedTunes]: testing engineConfig: 59 
+[CannedTunes]: testing engineConfig: 60 
+[CannedTunes]: testing engineConfig: 61 
+[CannedTunes]: testing engineConfig: 62 
+[CannedTunes]: testing engineConfig: 63 
+[CannedTunes]: testing engineConfig: 64 
+[CannedTunes]: testing engineConfig: 65 
+[CannedTunes]: testing engineConfig: 66 
+[CannedTunes]: testing engineConfig: 67 
+[CannedTunes]: testing engineConfig: 68 
+[CannedTunes]: testing engineConfig: 69 
+[CannedTunes]: testing engineConfig: 70 
+[CannedTunes]: testing engineConfig: 71 
+[CannedTunes]: testing engineConfig: 72 
+[CannedTunes]: testing engineConfig: 73 
+[CannedTunes]: testing engineConfig: 74 
+[CannedTunes]: testing engineConfig: 75 
+[CannedTunes]: testing engineConfig: 76 
+[CannedTunes]: testing engineConfig: 77 
+[CannedTunes]: testing engineConfig: 78 
+[CannedTunes]: testing engineConfig: 79 
+[CannedTunes]: testing engineConfig: 80 
+[CannedTunes]: testing engineConfig: 81 
+[CannedTunes]: testing engineConfig: 82 
+[CannedTunes]: testing engineConfig: 83 
+[CannedTunes]: testing engineConfig: 84 
+[CannedTunes]: testing engineConfig: 85 
+[CannedTunes]: testing engineConfig: 86 
+[CannedTunes]: testing engineConfig: 87 
+[CannedTunes]: testing engineConfig: 88 
+[CannedTunes]: testing engineConfig: 89 
+[CannedTunes]: testing engineConfig: 90 
+[CannedTunes]: testing engineConfig: 91 
+[CannedTunes]: testing engineConfig: 92 
+[CannedTunes]: testing engineConfig: 93 
+[CannedTunes]: testing engineConfig: 94 
+[CannedTunes]: testing engineConfig: 95 
+[CannedTunes]: testing engineConfig: 96 
+[CannedTunes]: testing engineConfig: 97 
+[CannedTunes]: testing engineConfig: 98 
+[CannedTunes]: testing engineConfig: 99 
+[CannedTunes]: testing engineConfig: 100 
+[CannedTunes]: testing engineConfig: 101 
+[CannedTunes]: testing engineConfig: 102 
+[CannedTunes]: testing engineConfig: 103 
+[CannedTunes]: testing engineConfig: 104 
+[5000us]efiPrintfInternal:msg`Flash: Reading storage ID 1 @0x1 ... 23948 bytes`
+Simulator: reading config from flash1.bin
+[5000us]efiPrintfInternal:msg`Flash: Reading done`
+[5000us]efiPrintfInternal:msg`Read valid configuration from flash!`
+commonInitEngineController
+initSettings
+[5000us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[5000us]efiPrintfInternal:msg`initMapAveraging...`
+[5000us]efiPrintfInternal:msg`initHardware() OK!`
+[5000us]efiPrintfInternal:msg`Emulating position sensor(s). RPM=1200`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch0: 106/0 5`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch1: 106/0 5`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch2: 7/0 5`
+[5000us]efiPrintfInternal:msg`Emulating position sensor(s). RPM=1200`
+Full Duplex Channel SD1 listening on port 29001
+Full Duplex Channel SD2 listening on port 29002
+[5000us]efiPrintfInternal:msg`LUA loading script length: 614...`
+[5000us]efiPrintfInternal:msg`LUA script loaded successfully!`
+[605000us]efiPrintfInternal:msg`Skipped zero-duration priming pulse.`
+[13154330us]efiPrintfInternal:msg`TunerStudio size=884 / total=28 / errors=0 / H=0 / O=0 / P=0 / B=0 / 9=0`
+[13154330us]efiPrintfInternal:msg`TunerStudio C=0`
+[13154330us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[14874560us]efiPrintfInternal:msg`Got naked Query command`
+[16605980us]efiPrintfInternal:msg`TunerStudio size=884 / total=35 / errors=1 / H=1 / O=0 / P=0 / B=0 / 9=0`
+[16605980us]efiPrintfInternal:msg`TunerStudio C=0`
+[16605980us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[97255590us]efiPrintfInternal:msg`TunerStudio size=884 / total=197 / errors=2 / H=1 / O=0 / P=0 / B=0 / 9=0`
+[97255590us]efiPrintfInternal:msg`TunerStudio C=0`
+[97255590us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[99068710us]efiPrintfInternal:msg`Got naked Query command`
+[100912000us]efiPrintfInternal:msg`TunerStudio size=884 / total=204 / errors=3 / H=2 / O=0 / P=0 / B=0 / 9=0`
+[100912000us]efiPrintfInternal:msg`TunerStudio C=0`
+[100912000us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[102439910us]efiPrintfInternal:msg`TunerStudio size=884 / total=208 / errors=4 / H=2 / O=0 / P=0 / B=0 / 9=0`
+[102439910us]efiPrintfInternal:msg`TunerStudio C=0`
+[102439910us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[158521190us]efiPrintfInternal:msg`Got naked Query command`
+[160370460us]efiPrintfInternal:msg`TunerStudio size=884 / total=325 / errors=5 / H=3 / O=0 / P=0 / B=0 / 9=0`
+[160370460us]efiPrintfInternal:msg`TunerStudio C=0`
+[160370460us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[190139600us]efiPrintfInternal:msg`Got naked Query command`
+[190650140us]efiPrintfInternal:msg`TunerStudio size=884 / total=386 / errors=6 / H=4 / O=0 / P=0 / B=0 / 9=0`
+[190650140us]efiPrintfInternal:msg`TunerStudio C=0`
+[190650140us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[193659880us]efiPrintfInternal:msg`TunerStudio size=884 / total=392 / errors=7 / H=4 / O=0 / P=0 / B=0 / 9=0`
+[193659880us]efiPrintfInternal:msg`TunerStudio C=0`
+[193659880us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[285960490us]efiPrintfInternal:msg`Got naked Query command`
+[376165830us]efiPrintfInternal:msg`Got naked Query command`
+[376376470us]efiPrintfInternal:msg`TunerStudio size=884 / total=763 / errors=8 / H=6 / O=0 / P=0 / B=0 / 9=0`
+[376376470us]efiPrintfInternal:msg`TunerStudio C=0`
+[376376470us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[383942190us]efiPrintfInternal:msg`TunerStudio size=884 / total=782 / errors=9 / H=6 / O=0 / P=0 / B=0 / 9=0`
+[383942190us]efiPrintfInternal:msg`TunerStudio C=0`
+[383942190us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[386955580us]efiPrintfInternal:msg`TunerStudio size=884 / total=791 / errors=10 / H=6 / O=0 / P=0 / B=0 / 9=0`
+[386955580us]efiPrintfInternal:msg`TunerStudio C=0`
+[386955580us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[433905940us]efiPrintfInternal:msg`Got naked Query command`
+[438414680us]efiPrintfInternal:msg`TS: Version Mismatch? Too much outputs requested offset=0 + count=29699/total=2080`
+[478344150us]efiPrintfInternal:msg`Got naked Query command`
+[555880790us]efiPrintfInternal:msg`Got naked Query command`
+[560280870us]efiPrintfInternal:msg`Got naked Query command`
+[564676010us]efiPrintfInternal:msg`Got naked Query command`

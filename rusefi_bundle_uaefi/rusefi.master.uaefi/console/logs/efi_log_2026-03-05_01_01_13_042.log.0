@@ -1,0 +1,230 @@
+I 260305 010113.046 [main] Launcher - rusEFI UI console 20260214
+I 260305 010113.054 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260305 010113.054 [main] Launcher - 
+
+
+I 260305 010113.073 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 010113.105 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 010113.106 [main] UiHelper - OS name: Windows 11
+I 260305 010113.106 [main] UiHelper - OS version: 10.0
+I 260305 010113.233 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 010113.233 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 010113.247 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM5
+I 260305 010113.313 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 010113.459 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 010113.460 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 010113.463 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 010113.463 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 010113.467 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 010113.468 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010113.468 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 010113.468 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 010113.470 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 010113.490 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 010113.507 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 010113.507 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 010113.507 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 010113.507 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 010113.511 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 010113.511 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010113.511 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010113.553 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 010113.553 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010113.554 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 010113.556 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 010113.557 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 010113.557 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 010113.558 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 010113.558 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 010113.558 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 010113.584 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 010113.585 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 010113.585 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 010113.586 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010113.587 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010113.591 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 010113.592 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 010113.594 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 010113.597 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 010113.598 [SerialPortScanner inspectPort COM5] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 010113.598 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010113.620 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010113.628 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010113.629 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 010113.629 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 010113.660 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 010113.660 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 010113.663 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 010113.670 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 010113.670 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 010113.673 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 010113.673 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 010113.673 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010113.674 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 010113.674 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 010113.675 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 010113.675 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 010113.675 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 010113.679 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 010113.679 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 010113.680 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260305 010113.681 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260305 010113.691 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 010113.691 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+W 260305 010113.696 [ecuDef primer1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 010113.723 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 010113.730 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 010118.608 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 010118.608 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 010118.609 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 010118.611 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 010118.611 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010118.611 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 010118.611 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 010118.614 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260305 010118.620 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 010118.620 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+E 260305 010118.620 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Unknown Source)
+I 260305 010118.623 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010118.624 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010118.855 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010119.082 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010119.301 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 219ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010119.615 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010119.615 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 010119.848 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010120.062 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 214ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010120.279 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 217ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010120.588 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 010120.590 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 010120.807 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 217ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010121.044 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010121.268 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 010121.494 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 010121.495 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 010121.495 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 010121.495 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 010121.495 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 010121.496 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 010121.496 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 010121.506 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260305 010121.506 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260305 010121.506 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260305 010121.506 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260305 010121.506 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 010121.507 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010121.507 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 010121.522 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260305 010121.523 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260305 010121.523 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260305 010121.523 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260305 010121.523 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260305 010121.523 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260305 010121.524 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260305 010121.525 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260305 010121.525 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260305 010121.526 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260305 010121.527 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260305 010121.546 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260305 010121.547 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260305 010121.547 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260305 010121.547 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260305 010121.547 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260305 010121.548 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260305 010121.548 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260305 010121.551 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260305 010121.551 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260305 010121.580 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 010121.580 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 010121.581 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 010121.581 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260305 010121.583 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260305 010121.583 [AWT-EventQueue-0] LinkManager - LinkManager: Starting COM5
+I 260305 010121.661 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260305 010121.664 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260305 010121.667 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260305 010121.668 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260305 010121.668 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260305 010121.669 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260305 010121.925 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260305 010121.927 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260305 010121.928 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260305 010121.929 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260305 010121.931 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260305 010121.938 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260305 010121.939 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260305 010121.946 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260305 010121.946 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 010121.946 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 010121.946 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260305 010122.254 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.260 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.264 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.267 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.269 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.273 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.278 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.282 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.284 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.288 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.290 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.293 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.294 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.298 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.301 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.302 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.304 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.305 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.307 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.308 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.310 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.311 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.312 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.314 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 010122.327 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260305 010122.327 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260305 010122.327 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260305 010122.327 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 010122.328 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 010122.328 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 010123.696 [ECU Communication Executor1] IncomingDataBuffer - BufferedSerialIoStream[hello] body: timeout 10000ms. Got only 1 byte(s) while expecting 770
+I 260305 010123.696 [ECU Communication Executor1] BinaryProtocol - No signature returned by serial=COM5
+I 260305 010123.955 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 010123.955 [AWT-EventQueue-0] SerialIoStream - COM5: Closing port...
+I 260305 010123.963 [AWT-EventQueue-0] SerialIoStream - COM5: Closed port.
+E 260305 010123.963 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.Window.processWindowEvent(Unknown Source)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(Unknown Source)
+	at java.desktop/java.awt.Window.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+I 260305 010123.964 [Thread-0] PersistentConfiguration - Shutdown hook...

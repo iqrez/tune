@@ -1,0 +1,118 @@
+﻿import logging
+import re
+import socket
+import time
+from typing import Dict, List, Optional, Any
+
+import serial
+from serial.tools.list_ports import comports
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("RusefiConnector")
+
+def find_free_port(start_port: int = 8000, max_tries: int = 10) -> int:
+    for port in range(start_port, start_port + max_tries):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind(("0.0.0.0", port))
+                return port
+            except OSError:
+                continue
+    return start_port
+
+class RusefiTunerClient:
+    def __init__(self):
+        self.ser = None
+        self.connected = False
+        self.console_mode = False
+        self.port_name = None
+        self.last_detection = []
+        self.last_detect_warning = ""
+        self.last_detected_binary = None
+        self.last_detected_console = None
+
+    def parse_console_text(self, raw: bytes) -> Dict[str, float]:
+        text = raw.decode("ascii", errors="ignore").strip()
+        parsed = {}
+        up = re.search(r"uptime\s*=\s*(\d+)s", text, re.IGNORECASE)
+        if up:
+            parsed["Uptime_s"] = float(up.group(1))
+        rpm = re.search(r"rpm\s*[:=]\s*(\d+)", text, re.IGNORECASE)
+        if rpm:
+            parsed["RPM"] = float(rpm.group(1))
+        return parsed
+
+    def get_live_data_console(self) -> Dict[str, float]:
+        try:
+            if not self.ser:
+                return {"RPM": 0, "Uptime_s": 0}
+            self.ser.reset_input_buffer()
+            self.ser.write(b"t\r\n")
+            raw = self.ser.read(256)
+            parsed = self.parse_console_text(raw)
+            parsed.setdefault("RPM", 0)
+            parsed.setdefault("Uptime_s", 0)
+            return parsed
+        except Exception as e:
+            logger.error(f"Console fallback failed: {e}")
+            return {"RPM": 0, "Uptime_s": 0}
+
+    def connect(self, serial_port: Optional[str] = None, tcp_host: str = "127.0.0.1", tcp_port: int = 29002) -> bool:
+        if serial_port:
+            try:
+                self.ser = serial.Serial(serial_port, 115200, timeout=2)
+                self.connected = True
+                self.console_mode = True
+                self.port_name = serial_port
+                logger.info(f"Connected in console mode on {serial_port}")
+                return True
+            except Exception as e:
+                logger.error(e)
+                return False
+        return False
+
+    def is_connected(self) -> bool:
+        return self.connected
+
+    def get_live_data(self) -> Dict[str, float]:
+        if self.console_mode:
+            return self.get_live_data_console()
+        return {"RPM": 0, "Uptime_s": 0}
+
+    def list_all_ports_with_test(self) -> List[Dict]:
+        if self.port_name:
+            return [{
+                "port": self.port_name,
+                "baud": 115200,
+                "port_role": "console",
+                "is_rusefi": True,
+                "error": None
+            }]
+        return []
+
+    def get_last_detection(self) -> Dict[str, Any]:
+        return {
+            "results": self.last_detection,
+            "warning": self.last_detect_warning,
+            "binary_port": self.last_detected_binary,
+            "console_port": self.last_detected_console,
+        }
+
+    def auto_detect_serial_port(self) -> Optional[str]:
+        return self.port_name
+
+    def force_ecu_wakeup(self, port: str) -> bool:
+        return True
+
+    def try_wake_binary(self) -> bool:
+        return False
+
+    def wake_binary_port(self, console_port: str) -> Optional[str]:
+        return None
+
+    def disconnect(self):
+        if self.ser:
+            self.ser.close()
+        self.connected = False
+
+

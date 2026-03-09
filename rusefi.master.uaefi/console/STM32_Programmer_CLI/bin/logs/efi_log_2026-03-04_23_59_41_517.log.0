@@ -1,0 +1,7 @@
+I 260304 235941.521 [main] Launcher - rusEFI UI console 20260214
+I 260304 235941.529 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260304 235941.529 [main] Launcher - 
+
+
+E 260304 235941.554 [main] PortDetector - No serial ports detected
+I 260304 235941.555 [Thread-0] PersistentConfiguration - Shutdown hook...

@@ -1,0 +1,23 @@
+{
+  "description": "Documented failure modes for guardrail training",
+  "cases": [
+    {
+      "type": "lean_detonation",
+      "conditions": "WOT, 7000 RPM, AFR > 13.5, boost 10 psi",
+      "result": "Piston ring land failure",
+      "lesson": "Never allow AFR > 12.5 at WOT under boost on 93 octane"
+    },
+    {
+      "type": "overadvanced_ignition",
+      "conditions": "WOT, 6500 RPM, 34 deg advance, boost 8 psi",
+      "result": "Severe knock, rod bearing damage",
+      "lesson": "Max 22 deg advance under boost on 93 octane"
+    },
+    {
+      "type": "injector_duty_exceeded",
+      "conditions": "WOT, 8000 RPM, 440cc injectors, turbo 12 psi",
+      "result": "Lean condition, 100% duty cycle",
+      "lesson": "440cc injectors max safe power ~250whp. Upgrade injectors for higher boost"
+    }
+  ]
+}

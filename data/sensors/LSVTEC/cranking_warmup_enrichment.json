@@ -1,0 +1,119 @@
+{
+    "description": "Cranking and warmup enrichment curves for B-series engines",
+    "cranking_enrichment": {
+        "description": "Fuel multiplier applied during cranking (starter engaged) based on coolant temperature",
+        "coolant_temp_celsius": [
+            -20,
+            -10,
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90
+        ],
+        "fuel_multiplier": [
+            4.5,
+            3.8,
+            3.2,
+            2.6,
+            2.1,
+            1.8,
+            1.5,
+            1.3,
+            1.15,
+            1.05,
+            1.0,
+            1.0
+        ],
+        "cranking_rpm_threshold": 400,
+        "prime_pulse_ms": {
+            "description": "Initial injector prime pulse before cranking begins",
+            "cold_neg10c_ms": 15.0,
+            "cold_0c_ms": 10.0,
+            "warm_20c_ms": 5.0,
+            "hot_80c_ms": 2.0
+        },
+        "notes": "Large injectors (1000cc+) need shorter prime pulses. Scale by (stock_cc / actual_cc) ratio."
+    },
+    "afterstart_enrichment": {
+        "description": "Post-start fuel decay enrichment. Tapers down after engine catches.",
+        "initial_enrichment_pct": 25.0,
+        "decay_time_seconds": 8.0,
+        "decay_curve": "exponential",
+        "coolant_temp_scaling": {
+            "cold_neg10c_multiplier": 2.0,
+            "cold_0c_multiplier": 1.6,
+            "warm_20c_multiplier": 1.0,
+            "hot_80c_multiplier": 0.5
+        }
+    },
+    "warmup_enrichment": {
+        "description": "Continuous enrichment based on coolant temp until engine reaches operating temperature",
+        "coolant_temp_celsius": [
+            -20,
+            -10,
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90
+        ],
+        "enrichment_pct": [
+            40.0,
+            32.0,
+            25.0,
+            18.0,
+            12.0,
+            8.0,
+            5.0,
+            3.0,
+            1.5,
+            0.5,
+            0.0,
+            0.0
+        ],
+        "notes": "Applied on top of base VE table. Allows richer mixture during warmup for stable idle and catalyst heating."
+    },
+    "idle_speed_targets": {
+        "description": "Target idle RPM by coolant temperature for idle air control",
+        "coolant_temp_celsius": [
+            -20,
+            -10,
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90
+        ],
+        "target_rpm": [
+            1800,
+            1650,
+            1500,
+            1400,
+            1300,
+            1200,
+            1100,
+            1000,
+            900,
+            850,
+            800,
+            800
+        ],
+        "notes": "Higher idle when cold to prevent stalling and speed catalyst lightoff"
+    }
+}

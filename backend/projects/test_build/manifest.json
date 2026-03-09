@@ -1,0 +1,22 @@
+{
+  "name": "test_build",
+  "display_name": "Test Build",
+  "created_at": 1772746026.633992,
+  "updated_at": 1772746026.633992,
+  "versions": [],
+  "archived_versions": [],
+  "profile_json": {
+    "vehicle_id": "B18C_Turbo",
+    "make": "Honda",
+    "model": "Integra",
+    "engine_family": "B18C",
+    "displacement_l": 1.8,
+    "cylinders": 4,
+    "aspiration": "turbo",
+    "compression_ratio": 9.0,
+    "fuel_type": "gas93",
+    "injector_cc_min": 1000,
+    "fuel_pressure_psi": 43.5,
+    "max_safe_rpm": 8200
+  }
+}

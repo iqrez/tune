@@ -1,0 +1,43 @@
+I 260305 001836.500 [main] Launcher - rusEFI UI console 20260214
+I 260305 001836.509 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260305 001836.510 [main] Launcher - 
+
+
+I 260305 001836.519 [main] UiHelper - OS name: Windows 11
+I 260305 001836.519 [main] UiHelper - OS version: 10.0
+I 260305 001836.808 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 001836.808 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 001836.849 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 001836.853 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 001836.858 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 001836.858 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 001836.859 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 001836.865 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 001836.872 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260305 001836.873 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260305 001836.874 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for download48.jpg
+I 260305 001837.137 [AWT-EventQueue-0] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 001837.193 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 001837.199 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 001837.199 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 001837.199 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 001837.216 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 001837.242 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 001837.243 [AWT-EventQueue-0] BasicLogoHelper - genericIcon jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png
+I 260305 001837.310 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 001837.312 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 001837.318 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 001837.318 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 001837.547 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 001837.558 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 11ms
+I 260305 001837.810 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001838.050 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001838.282 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001838.598 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 001838.598 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 001838.849 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 251ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001839.092 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001839.334 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 001839.637 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 001839.637 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 001839.875 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)

@@ -1,0 +1,824 @@
+I 260304 234919.003 [main] Launcher - rusEFI UI console 20260214
+I 260304 234919.012 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260304 234919.012 [main] Launcher - 
+
+
+I 260304 234919.033 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260304 234919.069 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260304 234919.070 [main] UiHelper - OS name: Windows 11
+I 260304 234919.070 [main] UiHelper - OS version: 10.0
+I 260304 234919.366 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260304 234919.367 [JustOneInstance] JustOneInstance - server socket 29213
+I 260304 234919.383 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM3
+I 260304 234919.456 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260304 234919.891 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 234919.892 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 234919.896 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260304 234919.896 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260304 234919.900 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260304 234919.900 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 234919.901 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260304 234919.902 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260304 234919.903 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260304 234919.923 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260304 234919.940 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260304 234919.941 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260304 234919.941 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260304 234919.941 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260304 234919.944 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234919.944 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234919.944 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234919.985 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 234919.985 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 234919.986 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 234919.989 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260304 234919.991 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260304 234919.991 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260304 234919.992 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260304 234919.992 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260304 234919.992 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260304 234920.007 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260304 234920.007 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234920.007 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260304 234920.008 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234920.009 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234920.014 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260304 234920.014 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 234920.015 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234920.020 [SerialPortScanner inspectPort COM3] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260304 234920.020 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234920.020 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234920.020 [SerialPortScanner inspectPort COM3] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234920.021 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234920.021 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234920.052 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234920.053 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234920.054 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234920.061 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234920.062 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234920.064 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234920.064 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234920.064 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234920.064 [ECU Communication Executor1] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234920.094 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260304 234920.095 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260304 234920.097 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260304 234920.097 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260304 234920.098 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260304 234920.102 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260304 234920.102 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260304 234920.112 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260304 234920.112 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+W 260304 234920.119 [ecuDef primer1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234920.139 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 234920.145 [AWT-EventQueue-0] Launcher - setVisible
+I 260304 234925.019 [Ports Scanner] SerialPortScanner - Port COM3 timed out, adding as Unknown.
+I 260304 234925.019 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - Connection to port COM3 was interrupted
+I 260304 234925.020 [Ports Scanner] SerialPortScanner - Port COM3 detected as: Unknown
+I 260304 234925.022 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 234925.023 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an ECU
+I 260304 234925.023 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+E 260304 234925.023 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Unknown Source)
+I 260304 234925.023 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 234925.025 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM3 (Unknown)]
+I 260304 234925.026 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234925.026 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234925.328 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 301ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234925.571 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234925.808 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234926.118 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234926.118 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234926.368 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234926.594 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234926.820 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234927.126 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234927.126 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 234927.126 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234927.126 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234927.126 [SerialPortScanner inspectPort COM3] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234927.126 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234927.126 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234927.127 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234927.127 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234927.127 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234927.127 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234927.127 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234927.127 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234927.127 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234927.127 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234927.127 [ECU Communication Executor1] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234932.139 [Ports Scanner] SerialPortScanner - Port COM3 timed out, adding as Unknown.
+I 260304 234932.139 [Ports Scanner] SerialPortScanner - Port COM3 detected as: Unknown
+I 260304 234932.139 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - Connection to port COM3 was interrupted
+I 260304 234932.139 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an ECU
+I 260304 234932.140 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234932.142 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 2ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234932.392 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234932.634 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234932.945 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234932.946 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234933.186 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234933.433 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234933.665 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234933.987 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234933.988 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234934.213 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 225ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234934.446 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234934.675 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234934.992 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234934.993 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 234934.993 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234934.993 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234934.993 [SerialPortScanner inspectPort COM3] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234934.994 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234934.994 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234934.995 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234934.995 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234934.995 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234934.995 [ECU Communication Executor1] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234940.002 [Ports Scanner] SerialPortScanner - Port COM3 timed out, adding as Unknown.
+I 260304 234940.002 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - Connection to port COM3 was interrupted
+I 260304 234940.002 [Ports Scanner] SerialPortScanner - Port COM3 detected as: Unknown
+I 260304 234940.002 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an ECU
+I 260304 234940.002 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234940.005 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 2ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234940.244 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234940.468 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234940.779 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234940.779 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234941.012 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234941.250 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234941.480 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234941.788 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234941.788 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234942.017 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234942.244 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234942.469 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 225ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234942.777 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234942.777 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 234942.777 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234942.777 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234943.038 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 234943.038 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234943.042 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234943.042 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234943.043 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234943.043 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234943.043 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234943.046 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260304 234943.046 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260304 234943.049 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260304 234943.050 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234943.050 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234943.063 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234943.063 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234943.063 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234943.064 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234943.064 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234943.064 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234943.064 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234943.080 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234943.081 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234943.081 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234943.081 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234943.081 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234943.081 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234943.083 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234943.084 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234943.084 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234943.084 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234943.085 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234943.096 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234943.097 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234943.097 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234943.097 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234943.097 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234943.097 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234943.098 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234943.099 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234943.099 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234943.101 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234943.101 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260304 234943.140 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 36a337af
+
+I 260304 234943.145 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x36a337af 916666287
+
+I 260304 234943.145 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x37af 14255
+
+I 260304 234943.145 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23936 byte(s)
+I 260304 234943.145 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 234943.147 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.02.20.uaefi.4211171972 
+I 260304 234943.147 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234943.147 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234943.158 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234943.178 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234943.178 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234943.178 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234943.178 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234943.179 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234943.179 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234943.181 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234943.182 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234943.182 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234943.182 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234943.183 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234943.197 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234943.197 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234943.197 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234943.197 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234943.198 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234943.198 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234943.198 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234943.200 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234943.200 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234943.201 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234943.201 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23936
+I 260304 234943.201 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 234943.201 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972
+I 260304 234943.249 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234943.250 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 234943.253 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234943.253 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 234943.253 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234943.255 [ECU text pull1] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 234943.258 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234943.261 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234943.261 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 234943.262 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 234943.263 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234943.507 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234943.740 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234943.973 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234943.974 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 234943.974 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 234943.974 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 234943.975 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM3 (ECU w/ BL)]
+I 260304 234944.281 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234944.282 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234944.527 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234944.761 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234944.997 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234945.301 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234945.301 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 234945.301 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234945.302 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234945.560 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 234945.560 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234945.563 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234945.563 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234945.563 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234945.564 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234945.564 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234945.564 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234945.564 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234945.564 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234945.564 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234945.564 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234945.564 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234945.568 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260304 234945.568 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234945.569 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234945.580 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234945.580 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234945.580 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234945.580 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234945.581 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234945.581 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234945.581 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234945.595 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234945.596 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234945.596 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234945.596 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234945.596 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234945.596 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234945.598 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234945.598 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234945.598 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234945.598 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234945.598 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234945.606 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234945.608 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234945.609 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234945.609 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234945.610 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260304 234945.611 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 36a337af
+
+I 260304 234945.616 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x36a337af 916666287
+
+I 260304 234945.616 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x37af 14255
+
+I 260304 234945.617 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23936 byte(s)
+I 260304 234945.617 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 234945.618 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.02.20.uaefi.4211171972 
+I 260304 234945.618 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234945.618 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234945.631 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234945.647 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234945.647 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234945.647 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234945.647 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234945.647 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234945.648 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234945.649 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234945.649 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234945.649 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234945.650 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234945.651 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234945.658 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234945.658 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234945.658 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234945.658 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234945.658 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234945.659 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234945.659 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234945.661 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234945.661 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234945.662 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234945.662 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23936
+I 260304 234945.662 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 234945.662 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972
+I 260304 234945.709 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234945.713 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234945.713 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 234945.713 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234945.716 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 234945.719 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 234945.720 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 234945.720 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 234945.721 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234945.732 [ECU text pull2] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 234945.967 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234946.205 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234946.437 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234946.754 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234946.755 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234947.001 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234947.156 [AWT-EventQueue-0] ProgramSelector - ProgramSelector Auto DFU Update COM3 (ECU w/ BL)
+I 260304 234947.163 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 234947.164 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 234947.164 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 234947.204 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 234947.206 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 234947.207 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 234947.222 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 234947.223 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 234947.223 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Suspending port scanning...
+I 260304 234947.252 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 251ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234947.488 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234947.791 [AWT-EventQueue-0] StatusWindow - Port scanning is suspended in 584ms.
+I 260304 234947.800 [mx-1] BinaryProtocolExecutor - readAndBackupCurrentCalibrations: Executing DoubleCallbacks{one=com.rusefi.ui.widgets.StatusPanel[,0,0,400x400,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=], two=DUMMY}
+I 260304 234947.803 [mx-1] BinaryProtocolExecutor - COM3: Available right away? [rusEFI uaEFI]; true
+I 260304 234947.803 [mx-1] BinaryProtocolExecutor - Giving it 300ms just in case...
+I 260304 234948.114 [mx-1] LinkManager - LinkManager: Starting COM3
+I 260304 234948.114 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Connecting to port `COM3`...
+I 260304 234948.114 [mx-1] StreamConnector - StreamConnector: connecting
+I 260304 234948.114 [mx-1] StreamConnector - scheduleOpening
+I 260304 234948.114 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234948.115 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234948.115 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234948.115 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234948.119 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260304 234948.119 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234948.119 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234948.130 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234948.171 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234948.171 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234948.171 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234948.171 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234948.171 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234948.172 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234948.173 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234948.173 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234948.173 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234948.174 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234948.175 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234948.181 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234948.181 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234948.181 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234948.181 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234948.182 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234948.182 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234948.182 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234948.184 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234948.184 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234948.184 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234948.185 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260304 234948.185 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 36a337af
+
+I 260304 234948.189 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x36a337af 916666287
+
+I 260304 234948.190 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x37af 14255
+
+I 260304 234948.190 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23936 byte(s)
+I 260304 234948.191 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Performing action on port COM3...
+I 260304 234948.192 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 234948.192 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260304 234948.193 [AWT-EventQueue-0] StatusWindow - Received a signature rusEFI master.2026.02.20.uaefi.4211171972 
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234948.200 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 234948.222 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 234948.223 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 234948.223 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 234948.224 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 234948.224 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 234948.224 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 234948.228 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 234948.230 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 234948.230 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 234948.230 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 234948.230 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972
+I 260304 234948.230 [AWT-EventQueue-0] StatusWindow - Page size is 23936
+I 260304 234948.232 [AWT-EventQueue-0] StatusWindow - Reading current calibrations...
+I 260304 234948.278 [AWT-EventQueue-0] StatusWindow - Backing up current ini-file `C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini`...
+I 260304 234948.280 [ECU Communication Executor1] ConfigurationImageFile - Saving 23936 bytes of configuration into state/2026-03-04-23.49.47_backup_from_ecu.zip
+I 260304 234948.281 [AWT-EventQueue-0] StatusWindow - `4211171972.ini` ini-file is backed up as `state/2026-03-04-23.49.47_backup_from_ecu.ini`
+I 260304 234948.281 [AWT-EventQueue-0] StatusWindow - Backing up calibrations to files `state/2026-03-04-23.49.47_backup_from_ecu.zip` and `state/2026-03-04-23.49.47_backup_from_ecu.msq`...
+I 260304 234948.289 [ECU Communication Executor1] Msq - java=17.0.11
+I 260304 234948.377 [ECU Communication Executor1] XmlUtil - Writing state/2026-03-04-23.49.47_backup_from_ecu.msq
+I 260304 234948.383 [ECU Communication Executor1] XmlUtil - Marshalling finished state/2026-03-04-23.49.47_backup_from_ecu.msq
+I 260304 234948.383 [AWT-EventQueue-0] StatusWindow - Calibrations are backed up to files `state/2026-03-04-23.49.47_backup_from_ecu.zip` and `state/2026-03-04-23.49.47_backup_from_ecu.msq`
+I 260304 234948.384 [mx-1] SerialIoStream - COM3: Closing port...
+I 260304 234948.388 [mx-1] SerialIoStream - COM3: Closed port.
+I 260304 234948.388 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Resuming port scanning...
+I 260304 234948.388 [AWT-EventQueue-0] StatusWindow - Port scanning is resumed.
+I 260304 234948.389 [mx-1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 234948.389 [AWT-EventQueue-0] StatusWindow - Using selected COM3
+
+I 260304 234948.397 [mx-1] SerialAutoChecker - Got signature=rusEFI master.2026.02.20.uaefi.4211171972  from serial=COM3
+I 260304 234948.399 [mx-1] SerialIoStream - COM3: Closing port...
+I 260304 234948.400 [AWT-EventQueue-0] StatusWindow - Reboot command [reboot_dfu] sent into serial=COM3!
+
+I 260304 234948.408 [ECU text pull3] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 234948.412 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 234948.412 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234948.413 [SerialPortScanner inspectPort COM3] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 234948.413 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 234948.413 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 234948.414 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 234948.414 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 234948.414 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+E 260304 234948.414 [ECU Communication Executor1] SerialIoStream - Error opening COM3 maybe no permissions?
+I 260304 234948.414 [mx-1] SerialIoStream - COM3: Closed port.
+I 260304 234948.414 [AWT-EventQueue-0] StatusWindow - Giving time for USB enumeration...
+I 260304 234951.415 [AWT-EventQueue-0] StatusWindow - Executing command=wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list
+I 260304 234951.651 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADER
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - ConfigManagerErrorCode=0
+I 260304 234951.652 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.653 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.653 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.653 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.654 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.654 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.654 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.655 [mx-1] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234951.660 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234951.660 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.660 [AWT-EventQueue-0] StatusWindow - Executing command=.\STM32_Programmer_CLI/bin/STM32_Programmer_CLI.exe -c port=usb1 -w "D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..\rusefi.bin" 0x08000000 -v -s
+I 260304 234951.820 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 234951.821 [AWT-EventQueue-0] StatusWindow -                        STM32CubeProgrammer v2.18.0                  
+I 260304 234951.821 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 234951.821 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.825 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234951.826 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234952.356 [AWT-EventQueue-0] StatusWindow - USB speed   : Full Speed (12MBit/s)
+I 260304 234952.356 [AWT-EventQueue-0] StatusWindow - Manuf. ID   : STMicroelectronics
+I 260304 234952.357 [AWT-EventQueue-0] StatusWindow - Product ID  : STM32  BOOTLOADER
+I 260304 234952.357 [AWT-EventQueue-0] StatusWindow - SN          : 316B338F3333
+I 260304 234952.357 [AWT-EventQueue-0] StatusWindow - DFU protocol: 1.1
+I 260304 234952.357 [AWT-EventQueue-0] StatusWindow - Board       : --
+I 260304 234952.357 [AWT-EventQueue-0] StatusWindow - Device ID   : unknown
+I 260304 234952.873 [AWT-EventQueue-0] StatusWindow - Warning: Device is under Read Out Protection or Target is held under reset
+I 260304 234953.419 [Ports Scanner] SerialPortScanner - Port COM3 timed out, adding as Unknown.
+I 260304 234953.419 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - Connection to port COM3 was interrupted
+I 260304 234953.419 [Ports Scanner] SerialPortScanner - Port COM3 detected as: Unknown
+I 260304 234953.419 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an ECU
+I 260304 234953.420 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 234953.423 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 3ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234953.656 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234953.880 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234953.880 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 234953.880 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 234953.881 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 234953.881 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM3 (Unknown)]
+I 260304 234953.911 [AWT-EventQueue-0] StatusWindow - Error: a read Operation failed, please check if any memory protection mechanism is active.
+I 260304 234953.912 [AWT-EventQueue-0] StatusWindow - 
+I 260304 234954.043 [AWT-EventQueue-0] StatusWindow - ERROR: does not look like DFU has worked!
+I 260304 234954.193 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234954.193 [Ports Scanner] SerialPortCache - 1 disappeared ports are removed
+I 260304 234954.193 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234954.413 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234954.642 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234954.866 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234954.866 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 234954.866 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 234954.866 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 234954.867 [AWT-EventQueue-0] Launcher - Rendering available ports: []
+I 260304 234955.051 [AWT-EventQueue-0] StatusWindow - Devices: OK         USBDevice       STM32  BOOTLOADER                                                                USB\VID_...
+I 260304 234955.052 [AWT-EventQueue-0] StatusWindow - 556 / 0
+I 260304 234955.063 [AWT-EventQueue-0] StatusWindow - hint: error state is already in your clipboard, please use PASTE or Ctrl-V while reporting issues
+I 260304 234955.183 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234955.183 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234955.399 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 216ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234955.625 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234955.722 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 234955.722 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 234955.843 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 218ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234956.159 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234956.159 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234956.380 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 221ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234956.601 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 221ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234956.828 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234957.132 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234957.133 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234957.357 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234957.579 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 222ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234957.812 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234958.123 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234958.123 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234958.343 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234958.386 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 234958.386 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 234958.562 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 219ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234958.775 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 213ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234959.086 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 234959.086 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 234959.316 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 234959.531 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 215ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 234959.755 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235000.064 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235000.064 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235000.298 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235000.522 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235000.744 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 222ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235001.057 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235001.057 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235001.284 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235001.513 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235001.731 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 218ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235002.047 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235002.048 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235002.268 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235002.506 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235002.731 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 225ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235003.041 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235003.042 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235003.264 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 222ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235003.482 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 217ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235003.706 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235004.014 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235004.015 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235004.244 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235004.464 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235004.707 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235005.019 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235005.020 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235005.253 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235005.481 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235005.712 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235006.027 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235006.028 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235006.263 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235006.493 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235006.734 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235007.047 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235007.048 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235007.294 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235007.542 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235007.800 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 256ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235008.115 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235008.115 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235008.358 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235008.597 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235008.850 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235009.166 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235009.167 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235009.408 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235009.648 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235009.874 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235010.189 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235010.190 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235010.430 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235010.650 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 220ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235010.917 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 267ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235011.225 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235011.226 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235011.453 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235011.679 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235011.919 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235012.230 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235012.230 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235012.465 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235012.690 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 225ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235012.918 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235013.222 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235013.222 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235013.457 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235013.695 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235013.947 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235014.258 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235014.258 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235014.489 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235014.728 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235014.985 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 257ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235015.293 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235015.294 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235015.528 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235015.771 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235016.017 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235016.330 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235016.330 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235016.578 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235016.815 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235017.073 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 257ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235017.380 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235017.381 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235017.621 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235017.856 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235018.102 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235018.416 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235018.417 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235018.659 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235018.900 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235019.145 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235019.449 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235019.450 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235019.680 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235019.916 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235020.167 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235020.485 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235020.486 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235020.723 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235020.963 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235021.200 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235021.507 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235021.508 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235021.735 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235021.970 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235022.232 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 262ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235022.544 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235022.545 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235022.778 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235023.011 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235023.251 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235023.563 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235023.564 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235023.802 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235024.050 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235024.297 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235024.617 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235024.617 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235024.853 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235025.096 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235025.330 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235025.636 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235025.637 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235025.874 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235026.127 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235026.363 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235026.673 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235026.674 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235026.909 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235027.137 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235027.371 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235027.680 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235027.681 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235027.904 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235028.132 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235028.360 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235028.671 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235028.672 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235028.903 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235029.130 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235029.354 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235029.664 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235029.665 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235029.895 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235030.119 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235030.342 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235030.651 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235030.652 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235030.883 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235031.113 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235031.336 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235031.639 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235031.640 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235031.870 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235032.101 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235032.324 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235032.630 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235032.630 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235032.856 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235033.080 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235033.311 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235033.620 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235033.622 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235033.850 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235034.074 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235034.305 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235034.612 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235034.613 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235034.846 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235035.085 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235035.329 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235035.637 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235035.637 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235035.874 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235036.098 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235036.333 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235036.646 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235036.647 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235036.883 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235037.112 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235037.355 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235037.669 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235037.671 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235037.904 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235038.128 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235038.363 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235038.675 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235038.676 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235038.906 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235039.133 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235039.375 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235039.686 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235039.686 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235039.918 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235040.141 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 222ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235040.373 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235040.677 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235040.678 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235040.914 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235041.149 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235041.396 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235041.714 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235041.715 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235041.950 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235042.177 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235042.408 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)

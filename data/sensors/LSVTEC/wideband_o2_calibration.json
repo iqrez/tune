@@ -1,0 +1,109 @@
+{
+    "description": "Wideband O2 sensor calibration and stoichiometric ratios by fuel type",
+    "stoichiometric_ratios": {
+        "gasoline_pump": {
+            "stoich_afr": 14.7,
+            "lambda_1": 14.7,
+            "notes": "Standard pump gasoline (87-93 octane)"
+        },
+        "e85": {
+            "stoich_afr": 9.76,
+            "lambda_1": 9.76,
+            "notes": "85% ethanol / 15% gasoline blend. Requires ~30% more fuel volume."
+        },
+        "e50": {
+            "stoich_afr": 11.76,
+            "lambda_1": 11.76,
+            "notes": "50% ethanol blend, common flex-fuel midpoint"
+        },
+        "methanol": {
+            "stoich_afr": 6.45,
+            "lambda_1": 6.45,
+            "notes": "Pure methanol. Rarely used in street tunes."
+        }
+    },
+    "flex_fuel_blending": {
+        "description": "AFR target correction based on ethanol content percentage",
+        "ethanol_content_pct": [
+            0,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            85,
+            100
+        ],
+        "stoich_afr": [
+            14.70,
+            14.10,
+            13.50,
+            12.90,
+            12.35,
+            11.76,
+            11.20,
+            10.60,
+            10.05,
+            9.76,
+            6.45
+        ],
+        "wot_target_afr": [
+            12.50,
+            12.00,
+            11.50,
+            11.10,
+            10.70,
+            10.30,
+            9.90,
+            9.50,
+            9.20,
+            9.00,
+            5.50
+        ],
+        "ignition_advance_bonus_deg": [
+            0,
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.5,
+            4.5,
+            5.5,
+            6.0,
+            8.0
+        ],
+        "notes": "Higher ethanol = lower stoich AFR, richer WOT targets, and more ignition advance allowed due to higher octane and cooling"
+    },
+    "wideband_sensor_specs": {
+        "bosch_lsu_4_9": {
+            "range_afr_gas": [
+                7.35,
+                36.75
+            ],
+            "range_lambda": [
+                0.5,
+                2.5
+            ],
+            "response_time_ms": 100,
+            "heater_warmup_seconds": 15,
+            "notes": "Most common wideband used in aftermarket ECUs including rusEFI"
+        },
+        "aem_x_series": {
+            "range_afr_gas": [
+                8.5,
+                18.0
+            ],
+            "range_lambda": [
+                0.58,
+                1.22
+            ],
+            "response_time_ms": 80,
+            "heater_warmup_seconds": 10,
+            "notes": "Fast response, good for closed-loop fueling"
+        }
+    }
+}

@@ -1,0 +1,728 @@
+I 260305 144119.209 [main] Launcher - rusEFI UI console 20260214
+I 260305 144119.218 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260305 144119.219 [main] Launcher - 
+
+
+I 260305 144119.239 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 144119.275 [main] PersistentConfiguration - Console configuration from C:\Users\Rezi\.rusEFI\console_properties.xml
+I 260305 144119.275 [main] UiHelper - OS name: Windows 11
+I 260305 144119.275 [main] UiHelper - OS version: 10.0
+I 260305 144119.495 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 144119.496 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 144119.511 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM5
+I 260305 144119.573 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 144119.891 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 144119.891 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 144119.893 [ecuDef primer1] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 144119.893 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 144119.896 [ecuDef primer1] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 144119.896 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144119.896 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 144119.897 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 144119.902 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 144119.930 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 144119.951 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 144119.951 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 144119.951 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 144119.951 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 144119.956 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144119.956 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144119.956 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144120.009 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 144120.010 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 144120.010 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 144120.010 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 144120.010 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 144120.010 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 144120.014 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 144120.014 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144120.014 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 144120.023 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 144120.023 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144120.023 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 144120.031 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 144120.034 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144120.038 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144120.039 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 144120.045 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 144120.045 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 144120.051 [SerialPortScanner inspectPort COM5] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 144120.051 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144120.124 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 144120.124 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 144120.126 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 144120.126 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 144120.126 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 144120.131 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 144120.131 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 144120.145 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 144120.145 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+I 260305 144120.154 [ecuDef primer1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144120.155 [ecuDef primer1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144120.193 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 144120.199 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 144120.324 [SerialPortScanner inspectPort COM5] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260305 144120.324 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144120.327 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144120.328 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 144120.328 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 144120.331 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 144120.331 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 144120.332 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 144120.332 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 144120.332 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 144120.334 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 144120.334 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 144120.334 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144120.337 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260305 144120.337 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260305 144120.340 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260305 144120.341 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\Rezi\.rusEFI\ini_database
+I 260305 144120.341 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\Rezi\.rusEFI\ini_database\4211171972.ini
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144120.359 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144120.377 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 144120.377 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 144120.377 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 144120.377 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 144120.377 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 144120.378 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 144120.378 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 144120.379 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144120.379 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 144120.379 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 144120.380 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 144120.392 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 144120.394 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 144120.394 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 144120.396 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144120.396 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144120.396 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260305 144120.459 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC b1eb5468
+
+I 260305 144120.464 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0xb1eb5468 -1309977496
+
+I 260305 144120.464 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x5468 21608
+
+I 260305 144120.464 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got configuration from controller 23936 byte(s)
+I 260305 144120.465 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM5...
+I 260305 144120.466 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.02.20.uaefi.4211171972 
+I 260305 144120.467 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\Rezi\.rusEFI\ini_database
+I 260305 144120.467 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\Rezi\.rusEFI\ini_database\4211171972.ini
+I 260305 144120.476 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 144120.476 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 144120.476 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 144120.476 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 144120.476 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144120.477 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144120.477 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144120.491 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 144120.491 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 144120.492 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 144120.492 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 144120.492 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 144120.492 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 144120.495 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 144120.495 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144120.495 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 144120.496 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 144120.496 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144120.505 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 144120.505 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 144120.505 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 144120.505 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 144120.506 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 144120.506 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 144120.506 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 144120.507 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 144120.507 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 144120.509 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144120.509 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144120.509 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23936
+I 260305 144120.509 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260305 144120.510 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972
+I 260305 144120.559 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144120.563 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got livedata
+I 260305 144120.563 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144120.563 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an ECU
+I 260305 144120.563 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144120.567 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144120.571 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144120.571 [SerialPortScanner inspectPort COM5] SerialPortScanner - ECU at COM5 has an OpenBLT bootloader
+I 260305 144120.572 [Ports Scanner] SerialPortScanner - Port COM5 detected as: ECU w/ BL
+I 260305 144120.575 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 144120.576 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144120.576 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 144120.578 [ECU text pull1] BinaryProtocol - Port shutdown: Stopping text pull
+I 260305 144120.579 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (ECU w/ BL)]
+I 260305 144120.879 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144120.879 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 144120.901 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144120.901 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144120.917 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144120.917 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144120.932 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144120.932 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144120.933 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 144120.933 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144120.933 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 144120.934 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (ECU w/ BL)]
+I 260305 144121.239 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144121.240 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 144121.261 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.261 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.276 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.276 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.289 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.289 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.512 [AWT-EventQueue-0] SimulatorHelper - Executing simulator rusefi_simulator.exe
+I 260305 144121.513 [SimulatorHelper2] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 144121.517 [SimulatorHelper1] SimulatorHelper - Executing simulator rusefi_simulator.exe=Process[pid=25288, exitValue="not exited"]
+I 260305 144121.599 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144121.621 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.621 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.636 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.636 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.651 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.651 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144121.651 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 144121.651 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144121.651 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 144121.652 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (ECU w/ BL), 29001 (ECU)]
+I 260305 144121.969 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144121.989 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144121.989 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.004 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144122.004 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.018 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144122.018 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.327 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144122.349 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144122.349 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.364 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144122.364 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.377 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144122.378 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144122.524 [SimulatorHelper2] SimulatorHelper - Process Process[pid=25288, exitValue="not exited"]
+I 260305 144122.684 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144122.684 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 144122.684 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 144122.685 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144122.948 [SerialPortScanner inspectPort COM5] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260305 144122.948 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144122.950 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 144122.951 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 144122.951 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 144122.951 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 144122.951 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 144122.951 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144122.956 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260305 144122.957 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\Rezi\.rusEFI\ini_database
+I 260305 144122.957 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\Rezi\.rusEFI\ini_database\4211171972.ini
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144122.967 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144122.980 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 144122.980 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 144122.981 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 144122.981 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 144122.981 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 144122.981 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 144122.982 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 144122.983 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144122.983 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 144122.983 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 144122.983 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 144122.990 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 144122.993 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 144122.993 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 144122.994 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144122.994 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144122.994 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260305 144122.995 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC b1eb5468
+
+I 260305 144122.999 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0xb1eb5468 -1309977496
+
+I 260305 144123.000 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x5468 21608
+
+I 260305 144123.000 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got configuration from controller 23936 byte(s)
+I 260305 144123.000 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM5...
+I 260305 144123.000 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.02.20.uaefi.4211171972 
+I 260305 144123.001 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\Rezi\.rusEFI\ini_database
+I 260305 144123.001 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\Rezi\.rusEFI\ini_database\4211171972.ini
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144123.011 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 144123.024 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 144123.026 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 144123.027 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144123.027 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 144123.027 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 144123.028 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 144123.035 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 144123.037 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 144123.037 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 144123.038 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144123.038 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144123.038 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23936
+I 260305 144123.039 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260305 144123.039 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972
+I 260305 144123.086 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144123.090 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144123.090 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an ECU
+I 260305 144123.090 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 144123.093 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 144123.095 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 144123.097 [SerialPortScanner inspectPort COM5] SerialPortScanner - ECU at COM5 has an OpenBLT bootloader
+I 260305 144123.097 [Ports Scanner] SerialPortScanner - Port COM5 detected as: ECU w/ BL
+I 260305 144123.105 [ECU text pull2] BinaryProtocol - Port shutdown: Stopping text pull
+I 260305 144123.120 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.120 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.135 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.135 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.150 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.150 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.456 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 144123.477 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.477 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.492 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.492 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.505 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260305 144123.505 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260305 144123.532 [SimulatorHelper2] SimulatorHelper - Process Process[pid=25288, exitValue="not exited"]
+I 260305 144123.532 [SimulatorHelper2] SimulatorHelper - Port 29001 is alive
+I 260305 144123.544 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 144123.547 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 144123.547 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 144123.547 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 144123.547 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 144123.547 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 144123.547 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144123.555 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260305 144123.568 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260305 144123.569 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260305 144123.570 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260305 144123.570 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260305 144123.570 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260305 144123.570 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260305 144123.575 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260305 144123.576 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260305 144123.579 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260305 144123.579 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260305 144123.597 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 144123.597 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 144123.598 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 144123.598 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260305 144123.599 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260305 144123.599 [AWT-EventQueue-0] LinkManager - LinkManager: Starting 29001
+I 260305 144123.687 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260305 144123.690 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260305 144123.692 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260305 144123.692 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260305 144123.693 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260305 144123.693 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260305 144123.883 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260305 144123.885 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260305 144123.886 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260305 144123.887 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260305 144123.888 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260305 144123.890 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260305 144123.892 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260305 144123.896 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260305 144123.896 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 144123.896 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 144123.896 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260305 144124.222 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.231 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.237 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.244 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.250 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.257 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.264 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.267 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.271 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.276 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.279 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.285 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.291 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.293 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.296 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.298 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.300 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.301 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.302 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.304 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.306 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.307 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.308 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.311 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.312 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.313 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.315 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.318 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.320 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 144124.336 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260305 144124.338 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260305 144124.338 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260305 144124.338 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 144124.338 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$5: Opening TCP port: 29001
+I 260305 144124.347 [[start] 29001 TCP reader1] ByteReader - [start] 29001 Running TCP connection loop
+I 260305 144124.347 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260305 144124.347 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\Rezi\.rusEFI\ini_database
+I 260305 144124.347 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\Rezi\.rusEFI\ini_database\4211171972.ini
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144124.355 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 144124.370 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 144124.372 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 144124.380 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 144124.380 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 144124.381 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 144124.381 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 144124.381 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+I 260305 144124.382 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC b1eb5468
+
+I 260305 144124.382 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0xa7cdc4df -1479686945
+
+I 260305 144124.382 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0xc4df -15137
+
+I 260305 144124.382 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972 
+I 260305 144124.952 [ECU Communication Executor1] ConfigurationImageFile - Saving 23936 bytes of configuration into state/current_configuration.zip
+I 260305 144124.961 [ECU Communication Executor1] Msq - java=21.0.9
+I 260305 144125.061 [ECU Communication Executor1] XmlUtil - Writing state/current_configuration.msq
+I 260305 144125.069 [ECU Communication Executor1] XmlUtil - Marshalling finished state/current_configuration.msq
+I 260305 144125.069 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got configuration from controller 23936 byte(s)
+I 260305 144125.169 [AWT-EventQueue-0] BinaryProtocolServer - BinaryProtocolServer on 2390
+I 260305 144125.171 [AWT-EventQueue-0] StatusConsumer - ServerSocket 2390 created. Feel free to point TS at IP Address 'localhost' port 2390
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI LLC (c) 2012-2026. All rights reserved.
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI v20260220@4211171972 now=0
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Chibios Kernel:       7.0.5
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Compiled:     Feb 20 2026 - 01:24:03
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** COMPILER=13-win32
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: custom board hello from simulator
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: hellenBoardId=0
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_CFG_ST_FREQUENCY=100000
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ENABLE_PERF_TRACE=0
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: PORT_IDLE_THREAD_STACK_SIZE=256
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_ASSERTS=1
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_SYSTEM_STATE_CHECK=0
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_STACK_CHECK=0
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Storage INT_FLASH registered
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading storage ID 1 @0x1 ... 23948 bytes
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading done
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading storage ID 2 @0x2 ... 23948 bytes
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading done
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: setTpsAccelLen: Length should be positive [0]
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initMapAveraging...
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initHardware() OK!
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Emulating position sensor(s). RPM=1200
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Stimulator: updating trigger shape for ch0: 106/0 5
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Stimulator: updating trigger shape for ch1: 106/0 5
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Stimulator: updating trigger shape for ch2: 7/0 5
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Emulating position sensor(s). RPM=1200
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA loading script length: 614...
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA script loaded successfully!
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel hpfp at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel VVT1 at idx 0
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel VVT3 at idx 1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel i1 at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel i2 at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel i3 at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel i4 at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel map at idx -1
+I 260305 144125.237 [ECU Communication Executor1] EngineSnifferPanel - Engine sniffer register channel c1 at idx 3
+I 260305 144125.237 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Skipped zero-duration priming pulse.
+I 260305 144125.237 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.243 [ECU Commands Queue] BinaryProtocol - Sending [set date 2026-03-05T14:41:25.1541656]
+I 260305 144125.316 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Cannot set time: RTC not supported
+I 260305 144125.316 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: confirmation_set date 2026-03-05T14:41:25.1541656:36
+I 260305 144125.316 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.473 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.640 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.743 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.886 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144125.986 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144126.107 [AWT-EventQueue-0] LinkManager - disconnect
+E 260305 144126.129 [[start] 29001 TCP reader1] ByteReader - TcpIoStream: End of connection java.net.SocketException: Socket closed
+I 260305 144126.131 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144126.131 [ECU Communication Executor1] BinaryProtocol - TcpIoStream{[start] 29001 }: Got livedata
+I 260305 144126.207 [ECU text pull3] BinaryProtocol - Port shutdown: Stopping text pull
+I 260305 144133.090 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260305 144133.090 [ECU Communication Executor1] BinaryProtocol - serial=COM5: Got livedata
+I 260305 144134.464 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\Rezi\.rusEFI\console_properties.xml
+E 260305 144134.465 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2088)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:2044)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)

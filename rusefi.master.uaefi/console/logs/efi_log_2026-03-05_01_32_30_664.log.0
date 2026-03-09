@@ -1,0 +1,20 @@
+I 260305 013230.669 [main] Autoupdate - Version 20260101
+I 260305 013230.673 [main] Autoupdate - Compiled Wed Mar 04 22:47:08 EST 2026
+I 260305 013230.674 [main] Autoupdate - Current folder D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console
+I 260305 013230.675 [main] Autoupdate - Source D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\rusefi_autoupdate.jar
+I 260305 013230.677 [main] PropertiesHolder - auto_update_root_url=https://rusefi.com/build_server
+I 260305 013230.677 [main] PropertiesHolder - auto_update_root_url getProperty=https://rusefi.com/build_server
+I 260305 013230.679 [main] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013230.679 [main] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013230.681 [main] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013230.955 [main] Autoupdate - Local file C:\Users\IQRez\.rusEFI\updates\uaefi_master\rusefi_bundle_uaefi_autoupdate.zip
+I 260305 013230.956 [main] Autoupdate - Remote file rusefi_bundle_uaefi_autoupdate.zip
+I 260305 013230.956 [main] Autoupdate - Server has 18726969 from Thu Feb 19 20:25:47 EST 2026
+I 260305 013230.959 [main] Autoupdate - We already have latest update Thu Feb 19 20:25:47 EST 2026
+I 260305 013230.961 [main] ConsoleExeFileLocator - NoSuchFile installation.properties
+I 260305 013230.961 [main] ConsoleExeFileLocator - It looks like `installation.properties` file is missed
+I 260305 013230.961 [main] JarFileUtil - jarFilePrefix = rusefi
+I 260305 013230.961 [main] ConsoleExeFileLocator - We are using default console exe file name: `rusefi_console.exe`
+I 260305 013230.962 [main] Autoupdate - File `rusefi_console.exe` to launch is found
+I 260305 013230.962 [main] Autoupdate - We're starting `rusefi_console.exe` process
+I 260305 013230.971 [main] Autoupdate - Process `rusefi_console.exe` is started

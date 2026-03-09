@@ -1,0 +1,54 @@
+I 260304 224705.745 [main] Autoupdate - Version 20260101
+I 260304 224705.749 [main] Autoupdate - Compiled Fri Feb 20 01:24:18 EST 2026
+I 260304 224705.749 [main] Autoupdate - Current folder D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console
+I 260304 224705.750 [main] Autoupdate - Source D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\rusefi_autoupdate.jar
+I 260304 224705.752 [main] PropertiesHolder - auto_update_root_url=https://rusefi.com/build_server
+I 260304 224705.752 [main] PropertiesHolder - auto_update_root_url getProperty=https://rusefi.com/build_server
+I 260304 224705.753 [main] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 224705.753 [main] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224705.755 [main] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 224706.640 [main] Autoupdate - Local file C:\Users\IQRez\.rusEFI\updates\uaefi_master\rusefi_bundle_uaefi_autoupdate.zip
+I 260304 224706.640 [main] Autoupdate - Remote file rusefi_bundle_uaefi_autoupdate.zip
+I 260304 224706.641 [main] Autoupdate - Server has 18726969 from Thu Feb 19 20:25:47 EST 2026
+I 260304 224706.644 [main] Autoupdate - BundleInfo{branchName='master', target='uaefi'} 18726969 bytes, last modified Thu Feb 19 20:25:47 EST 2026
+I 260304 224706.851 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224706.851 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224706.851 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224706.851 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224707.317 [main] Autoupdate - Downloaded 18726969 bytes, lastModified=1771550747000
+I 260304 224707.320 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[main,5,main]
+I 260304 224707.320 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-EventQueue-0,6,main]
+I 260304 224707.321 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-Shutdown,5,system]
+I 260304 224707.325 [main] ConsoleExeFileLocator - NoSuchFile installation.properties
+I 260304 224707.325 [main] ConsoleExeFileLocator - It looks like `installation.properties` file is missed
+I 260304 224707.325 [main] JarFileUtil - jarFilePrefix = rusefi
+I 260304 224707.325 [main] ConsoleExeFileLocator - We are using default console exe file name: `rusefi_console.exe`
+I 260304 224707.325 [main] Autoupdate - unzipFreshConsole C:\Users\IQRez\.rusEFI\updates\uaefi_master\rusefi_bundle_uaefi_autoupdate.zip only console/rusefi_console.jar
+I 260304 224707.340 [AWT-EventQueue-0] FrameHelper - [javax.swing.JFrame[frame0,720,316,480x400,invalid,hidden,layout=java.awt.BorderLayout,title=rusefi Bundle Updater 20260101,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,464x361,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]
+I 260304 224707.355 [main] FileUtil - Unzipping ..\console\rusefi_console.jar
+I 260304 224707.723 [main] FileUtil - Unzip C:\Users\IQRez\.rusEFI\updates\uaefi_master\rusefi_bundle_uaefi_autoupdate.zip to .. worked!
+I 260304 224707.724 [main] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 224707.724 [main] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224707.737 [main] FindFileHelper - C:\Users\IQRez\.rusEFI\older-fw\: created: true
+I 260304 224707.751 [main] FindFileHelper - Moved ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec to C:\Users\IQRez\.rusEFI\older-fw\
+I 260304 224707.751 [main] FindFileHelper - Second choice: current folder
+I 260304 224707.752 [main] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for /srec
+I 260304 224707.752 [main] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260304 224707.752 [main] Autoupdate - unzipping everything else into ..
+I 260304 224707.755 [main] FileUtil - Unzipping ..\openblt.bin
+I 260304 224707.758 [main] FileUtil - Unzipping ..\rusefi.bin
+I 260304 224707.775 [main] FileUtil - Unzipping ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 224707.810 [main] FileUtil - Unzipping ..\rusefi_uaefi.ini
+I 260304 224707.819 [main] FileUtil - Unzipping ..\readme.html
+I 260304 224707.821 [main] FileUtil - Unzipping ..\rusefi_updater.exe
+I 260304 224707.995 [main] FileUtil - Unzipping ..\console\release.txt
+I 260304 224707.997 [main] FileUtil - Unzipping ..\console\rusefi_ts_plugin_launcher.jar
+I 260304 224708.042 [main] FileUtil - Unzipping ..\console\rusefi_autoupdate.jar
+I 260304 224708.068 [main] FileUtil - Unzip C:\Users\IQRez\.rusEFI\updates\uaefi_master\rusefi_bundle_uaefi_autoupdate.zip to .. worked!
+I 260304 224708.068 [main] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 224708.069 [main] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224708.069 [main] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 224708.089 [main] TsPluginInstaller - Just installed fresh rusefi_ts_plugin_launcher.jar into C:\Users\IQRez\.efiAnalytics\TunerStudio\plugins\
+I 260304 224708.090 [main] Autoupdate - File `rusefi_console.exe` to launch is found
+I 260304 224708.090 [main] Autoupdate - We're starting `rusefi_console.exe` process
+I 260304 224708.104 [main] Autoupdate - Process `rusefi_console.exe` is started

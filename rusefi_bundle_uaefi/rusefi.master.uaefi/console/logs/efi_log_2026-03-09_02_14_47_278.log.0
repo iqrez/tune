@@ -1,0 +1,350 @@
+I 260309 021447.283 [main] Launcher - rusEFI UI console 20260214
+I 260309 021447.291 [main] Launcher - Compiled Mon Mar 09 02:14:46 EDT 2026
+I 260309 021447.291 [main] Launcher - 
+
+
+I 260309 021447.301 [main] UiHelper - OS name: Windows 11
+I 260309 021447.301 [main] UiHelper - OS version: 10.0
+I 260309 021447.573 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260309 021447.574 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260309 021447.611 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260309 021447.615 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260309 021447.619 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260309 021447.619 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 021447.620 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260309 021447.625 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260309 021447.632 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260309 021447.633 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260309 021447.633 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for download48.jpg
+I 260309 021447.915 [AWT-EventQueue-0] PersistentConfiguration - Console configuration from C:\Users\Rezi\.rusEFI\console_properties.xml
+I 260309 021447.981 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260309 021447.982 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260309 021447.983 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 021447.983 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260309 021448.005 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260309 021448.029 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021448.032 [AWT-EventQueue-0] BasicLogoHelper - genericIcon jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png
+I 260309 021448.097 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260309 021448.098 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260309 021448.102 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260309 021448.102 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260309 021448.334 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021448.343 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 9ms
+I 260309 021448.363 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.363 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021448.376 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.376 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021448.390 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.390 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021448.706 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021448.706 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021448.724 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.724 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021448.736 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.737 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021448.750 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021448.750 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.064 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021449.064 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021449.088 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.088 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.099 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.099 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.112 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.112 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.427 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021449.428 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260309 021449.447 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.447 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.460 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.460 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.474 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.474 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.782 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021449.783 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021449.801 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.802 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.814 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.814 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021449.826 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021449.826 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.143 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021450.143 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021450.161 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.162 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.174 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.174 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.185 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.185 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.500 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021450.501 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021450.519 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.519 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.532 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.532 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.544 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.544 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.862 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021450.863 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260309 021450.883 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.883 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.896 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.896 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021450.909 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021450.909 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.215 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021451.216 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021451.235 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.235 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.246 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.247 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.259 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.259 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.576 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260309 021451.576 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 021451.594 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.595 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.609 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.609 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 021451.622 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 021451.622 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

@@ -1,0 +1,59 @@
+{
+  "description": "Known safe tuning parameter ranges for B18C LS VTEC",
+  "na_93oct": {
+    "max_ignition_wot_deg": 32,
+    "min_afr_wot": 12.5,
+    "max_afr_wot": 13.2,
+    "max_duty_cycle_pct": 80,
+    "idle_afr_range": [
+      13.5,
+      14.5
+    ],
+    "cruise_afr_range": [
+      14.2,
+      15.0
+    ],
+    "vtec_engagement_rpm": [
+      5500,
+      6000
+    ]
+  },
+  "turbo_93oct": {
+    "max_ignition_wot_deg": 22,
+    "min_afr_wot": 11.0,
+    "max_afr_wot": 11.8,
+    "max_boost_psi": 12,
+    "max_duty_cycle_pct": 85,
+    "idle_afr_range": [
+      13.5,
+      14.5
+    ],
+    "cruise_afr_range": [
+      14.2,
+      14.8
+    ],
+    "vtec_engagement_rpm": [
+      4500,
+      5500
+    ]
+  },
+  "turbo_e85": {
+    "max_ignition_wot_deg": 28,
+    "min_afr_wot": 9.5,
+    "max_afr_wot": 10.5,
+    "max_boost_psi": 18,
+    "max_duty_cycle_pct": 85,
+    "idle_afr_range": [
+      13.8,
+      14.8
+    ],
+    "cruise_afr_range": [
+      14.5,
+      15.2
+    ],
+    "vtec_engagement_rpm": [
+      4500,
+      5500
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+I 260305 143834.649 [main] Launcher - rusEFI UI console 20260214
+I 260305 143834.658 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260305 143834.658 [main] Launcher - 
+
+
+I 260305 143834.678 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 143834.711 [main] PersistentConfiguration - Console configuration from C:\Users\Rezi\.rusEFI\console_properties.xml
+I 260305 143834.712 [main] UiHelper - OS name: Windows 11
+I 260305 143834.712 [main] UiHelper - OS version: 10.0
+I 260305 143834.925 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 143834.926 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 143834.930 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 143834.934 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 143834.934 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260305 143834.937 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 143834.937 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 143834.937 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 143834.938 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 143834.975 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260305 143834.975 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260305 143834.975 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260305 143834.975 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260305 143834.977 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 143834.977 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 143834.977 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 143835.024 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260305 143835.025 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260305 143835.025 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260305 143835.025 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260305 143835.025 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260305 143835.025 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260305 143835.037 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260305 143835.038 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260305 143835.038 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260305 143835.047 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260305 143835.052 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260305 143835.126 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260305 143835.126 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260305 143835.128 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260305 143835.128 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260305 143835.128 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260305 143835.132 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260305 143835.132 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260305 143835.143 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260305 143835.143 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260305 143835.528 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 143835.528 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 143835.538 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 143835.539 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260305 143835.539 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260305 143835.539 [AWT-EventQueue-0] LinkManager - LinkManager: Starting simulator
+I 260305 143835.628 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260305 143835.630 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260305 143835.631 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260305 143835.631 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260305 143835.632 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260305 143835.633 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260305 143835.759 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260305 143835.761 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260305 143835.763 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260305 143835.764 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260305 143835.765 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260305 143835.767 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260305 143835.768 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260305 143835.772 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260305 143835.772 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 143835.773 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 143835.773 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260305 143836.106 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.121 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.127 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.131 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.135 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.141 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.147 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.151 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.154 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.157 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.160 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.164 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.166 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.168 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.169 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.170 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.172 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.173 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.176 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.179 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.180 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.181 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.182 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.183 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.185 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.187 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.189 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.191 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.193 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 143836.243 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260305 143836.244 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260305 143836.244 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260305 143836.245 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 143836.245 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: simulator
+I 260305 143836.256 [ECU Communication Executor1] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 143836.256 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort simulator
+E 260305 143836.260 [ECU Communication Executor1] SerialIoStream - Error opening simulator maybe no permissions?
+I 260305 143947.644 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\Rezi\.rusEFI\console_properties.xml
+E 260305 143947.645 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2088)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:2044)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)

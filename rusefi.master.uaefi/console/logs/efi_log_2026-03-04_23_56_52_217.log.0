@@ -1,0 +1,161 @@
+I 260304 235652.221 [main] Launcher - rusEFI UI console 20260214
+I 260304 235652.230 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260304 235652.230 [main] Launcher - 
+
+
+I 260304 235652.240 [main] UiHelper - OS name: Windows 11
+I 260304 235652.240 [main] UiHelper - OS version: 10.0
+I 260304 235652.540 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 235652.541 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 235652.581 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 235652.585 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 235652.587 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 235652.588 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 235652.590 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 235652.594 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260304 235652.600 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260304 235652.602 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig48.png
+I 260304 235652.602 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for download48.jpg
+I 260304 235652.867 [AWT-EventQueue-0] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260304 235652.922 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260304 235652.923 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 235652.924 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 235652.924 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 235652.945 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 235652.969 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235652.972 [AWT-EventQueue-0] BasicLogoHelper - genericIcon jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png
+I 260304 235653.038 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 235653.040 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 235653.042 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 235653.042 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 235653.276 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235653.288 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 11ms
+I 260304 235653.530 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235653.761 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 230ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235654.000 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235654.000 [AWT-EventQueue-0] BasicUpdaterPanel - updateUpdateFirmwareJob AvailableHardware{ports=[], dfuFound=true, stLinkConnected=false, PCANConnected=false}
+I 260304 235654.002 [AWT-EventQueue-0] BasicUpdaterPanel - No ECU ports to use found
+I 260304 235654.314 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235654.315 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235654.557 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235654.791 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235655.024 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235655.271 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 235655.272 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 235655.276 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 235655.276 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 235655.277 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 235655.277 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 235655.277 [AWT-EventQueue-0] StatusWindow - Executing command=wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list
+I 260304 235655.278 [AWT-EventQueue-0] StatusWindow - Executing command=wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list
+I 260304 235655.335 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235655.336 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235655.515 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.515 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.515 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.516 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.516 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.516 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.517 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.517 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.517 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADER
+I 260304 235655.518 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADER
+I 260304 235655.518 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.519 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.519 [AWT-EventQueue-0] StatusWindow - ConfigManagerErrorCode=0
+I 260304 235655.520 [AWT-EventQueue-0] StatusWindow - ConfigManagerErrorCode=0
+I 260304 235655.520 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.520 [class com.rusefi.maintenance.DfuFlasher thread] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235655.520 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.521 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.522 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.522 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.522 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.523 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.524 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235655.524 [AWT-EventQueue-0] StatusWindow - Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235655.525 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.525 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.525 [AWT-EventQueue-0] StatusWindow - Executing command=.\STM32_Programmer_CLI/bin/STM32_Programmer_CLI.exe -c port=usb1 -w "D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..\rusefi.bin" 0x08000000 -v -s
+I 260304 235655.525 [AWT-EventQueue-0] StatusWindow - Executing command=.\STM32_Programmer_CLI/bin/STM32_Programmer_CLI.exe -c port=usb1 -w "D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..\rusefi.bin" 0x08000000 -v -s
+I 260304 235655.557 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 235655.557 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 235655.558 [AWT-EventQueue-0] StatusWindow -                        STM32CubeProgrammer v2.18.0                  
+I 260304 235655.558 [AWT-EventQueue-0] StatusWindow -                        STM32CubeProgrammer v2.18.0                  
+I 260304 235655.558 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 235655.559 [AWT-EventQueue-0] StatusWindow -       -------------------------------------------------------------------
+I 260304 235655.559 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.559 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.562 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.562 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.563 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.563 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235655.569 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235655.793 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 224ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235656.017 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235656.096 [AWT-EventQueue-0] StatusWindow - USB speed   : Full Speed (12MBit/s)
+I 260304 235656.097 [AWT-EventQueue-0] StatusWindow - USB speed   : Full Speed (12MBit/s)
+I 260304 235656.097 [AWT-EventQueue-0] StatusWindow - Manuf. ID   : STMicroelectronics
+I 260304 235656.097 [AWT-EventQueue-0] StatusWindow - Manuf. ID   : STMicroelectronics
+I 260304 235656.097 [AWT-EventQueue-0] StatusWindow - Product ID  : STM32  BOOTLOADER
+I 260304 235656.098 [AWT-EventQueue-0] StatusWindow - Product ID  : STM32  BOOTLOADER
+I 260304 235656.098 [AWT-EventQueue-0] StatusWindow - SN          : 316B338F3333
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - SN          : 316B338F3333
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - DFU protocol: 1.1
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - DFU protocol: 1.1
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - Board       : --
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - Board       : --
+I 260304 235656.099 [AWT-EventQueue-0] StatusWindow - Device ID   : unknown
+I 260304 235656.100 [AWT-EventQueue-0] StatusWindow - Device ID   : unknown
+I 260304 235656.329 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235656.329 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235656.562 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235656.614 [AWT-EventQueue-0] StatusWindow - Warning: Device is under Read Out Protection or Target is held under reset
+I 260304 235656.614 [AWT-EventQueue-0] StatusWindow - Warning: Device is under Read Out Protection or Target is held under reset
+I 260304 235656.788 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235657.009 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 221ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235657.316 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235657.316 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235657.540 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 223ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235657.652 [AWT-EventQueue-0] StatusWindow - Error: a read Operation failed, please check if any memory protection mechanism is active.
+I 260304 235657.653 [AWT-EventQueue-0] StatusWindow - Error: a read Operation failed, please check if any memory protection mechanism is active.
+I 260304 235657.653 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235657.654 [AWT-EventQueue-0] StatusWindow - 
+I 260304 235657.659 [AWT-EventQueue-0] StatusWindow - ERROR: does not look like DFU has worked!
+I 260304 235657.661 [AWT-EventQueue-0] StatusWindow - ERROR: does not look like DFU has worked!
+I 260304 235657.776 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235658.004 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235658.308 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235658.309 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235658.394 [AWT-EventQueue-0] StatusWindow - Devices: OK         USBDevice       STM32  BOOTLOADER                                                                USB\VID_...
+I 260304 235658.394 [AWT-EventQueue-0] StatusWindow - Devices: OK         USBDevice       STM32  BOOTLOADER                                                                USB\VID_...
+I 260304 235658.394 [AWT-EventQueue-0] StatusWindow - 556 / 0
+I 260304 235658.396 [AWT-EventQueue-0] StatusWindow - 556 / 0
+I 260304 235658.407 [AWT-EventQueue-0] StatusWindow - hint: error state is already in your clipboard, please use PASTE or Ctrl-V while reporting issues
+I 260304 235658.408 [AWT-EventQueue-0] StatusWindow - hint: error state is already in your clipboard, please use PASTE or Ctrl-V while reporting issues
+I 260304 235658.542 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235658.770 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235658.991 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 219ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235659.294 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235659.296 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 235659.529 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235659.761 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235659.992 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235700.298 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235700.299 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235700.537 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235700.773 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235700.991 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 218ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235701.307 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260304 235701.307 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 235701.534 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says Caption=STM32  BOOTLOADERConfigManagerErrorCode=0
+I 260304 235701.753 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 219ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235701.985 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 235702.261 [Thread-0] PersistentConfiguration - Shutdown hook...

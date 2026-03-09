@@ -1,0 +1,811 @@
+I 260305 013005.564 [main] Launcher - rusEFI UI console 20260214
+I 260305 013005.574 [main] Launcher - Compiled Wed Mar 04 22:47:07 EST 2026
+I 260305 013005.574 [main] Launcher - 
+
+
+I 260305 013005.594 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 013005.629 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 013005.630 [main] UiHelper - OS name: Windows 11
+I 260305 013005.630 [main] UiHelper - OS version: 10.0
+I 260305 013005.761 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 013005.762 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 013005.778 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM5
+I 260305 013005.846 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 013005.995 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 013005.995 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 013005.999 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 013005.999 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260305 013006.004 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 013006.004 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013006.004 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 013006.004 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 013006.007 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 013006.027 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 013006.044 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 013006.044 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 013006.044 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 013006.044 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 013006.048 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 013006.048 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 013006.049 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 013006.100 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 013006.102 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 013006.102 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 013006.102 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 013006.102 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 013006.102 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 013006.108 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013006.108 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013006.111 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013006.118 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 013006.118 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 013006.119 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 013006.126 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 013006.131 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 013006.134 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013006.135 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013006.141 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013006.141 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 013006.146 [SerialPortScanner inspectPort COM5] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 013006.146 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013006.171 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013006.179 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013006.179 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013006.182 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013006.215 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 013006.216 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 013006.217 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 013006.217 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 013006.217 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 013006.222 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 013006.223 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 013006.240 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 013006.241 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+I 260305 013006.247 [ecuDef primer1] PrimeTunerStudioCache - Trying to prime C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 013006.247 [ecuDef primer1] PrimeTunerStudioCache - C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 013006.289 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 013006.297 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 013006.358 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013006.358 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013006.358 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013006.364 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (OpenBLT Bootloader)]
+I 260305 013006.502 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013006.502 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013006.805 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 301ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013007.045 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013007.281 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013007.586 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013007.586 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013007.835 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013008.071 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013008.313 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013008.621 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013008.622 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013008.622 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013008.622 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013008.627 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013008.635 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013008.635 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013008.635 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013008.635 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013008.884 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013009.123 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013009.359 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013009.672 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013009.673 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013009.918 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013010.151 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013010.388 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013010.692 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013010.692 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013010.693 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013010.693 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013010.698 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013010.707 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013010.707 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013010.707 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013010.707 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013010.956 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 249ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013011.182 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013011.182 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 013011.182 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 013011.192 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013011.209 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013011.210 [class com.rusefi.maintenance.DriverInstall$1 thread] DriverInstall - IsWindows=true
+I 260305 013011.218 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013011.219 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013011.223 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013011.225 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013011.225 [AWT-EventQueue-0] StatusWindow - Executing command=../drivers\silent_st_drivers2.exe -y
+I 260305 013011.243 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013011.244 [AWT-EventQueue-0] StatusWindow - 7-Zip SFX 19.00 (x86) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+I 260305 013011.245 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013011.246 [AWT-EventQueue-0] StatusWindow - Extracting archive: D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260305 013011.246 [AWT-EventQueue-0] StatusWindow - --
+I 260305 013011.247 [AWT-EventQueue-0] StatusWindow - Path = D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260305 013011.248 [AWT-EventQueue-0] StatusWindow - Type = 7z
+I 260305 013011.248 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013011.430 [AWT-EventQueue-0] StatusWindow -   0%
+I 260305 013011.431 [AWT-EventQueue-0] StatusWindow -     
+I 260305 013011.431 [AWT-EventQueue-0] StatusWindow - Everything is Ok
+I 260305 013011.433 [AWT-EventQueue-0] StatusWindow - Executing command=cmd /c start silent_install_windows8.bat
+I 260305 013011.446 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 254ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013011.762 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013011.762 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013012.017 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 255ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013012.256 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013012.494 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013012.807 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013012.807 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013012.807 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013012.808 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013012.813 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013012.821 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013012.821 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013012.821 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013012.822 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013013.072 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013013.317 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013013.550 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013013.857 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013013.857 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013014.123 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 266ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013014.362 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013014.598 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013014.909 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013014.909 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013014.910 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013014.910 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013014.915 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013014.922 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013014.922 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013014.922 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013014.923 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013015.182 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013015.410 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013015.649 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013015.961 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013015.961 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013016.209 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013016.447 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013016.688 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013016.996 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013016.996 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013016.996 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013016.996 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013017.001 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013017.010 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013017.010 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013017.010 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013017.010 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013017.269 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013017.512 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013017.754 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013018.065 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013018.065 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013018.328 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 262ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013018.565 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013018.801 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013019.112 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013019.112 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013019.112 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013019.112 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013019.117 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013019.125 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013019.125 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013019.125 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013019.125 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013019.384 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013019.623 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013019.860 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013020.109 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[DestroyJavaVM,5,main]
+I 260305 013020.109 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-Shutdown,5,system]
+I 260305 013020.109 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[JustOneInstance,6,main]
+I 260305 013020.109 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-EventQueue-0,6,main]
+I 260305 013020.118 [AWT-EventQueue-0] FrameHelper - [javax.swing.JFrame[frame0,716,377,629x389,invalid,layout=java.awt.BorderLayout,title=rusefi console 20260214 uaefi.master,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,613x380,layout=com.formdev.flatlaf.ui.FlatRootPaneUI$FlatRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame1,752,320,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=Windows rusEFI ST Drivers,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]
+I 260305 013020.179 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013020.180 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013020.432 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013020.672 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013020.916 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013021.228 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013021.228 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013021.228 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013021.228 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013021.232 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013021.239 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013021.240 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013021.240 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013021.240 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013021.490 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013021.722 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013021.954 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013022.263 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013022.264 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013022.514 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013022.751 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013022.979 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013023.284 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013023.284 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013023.284 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013023.284 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013023.288 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013023.296 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013023.296 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013023.297 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013023.297 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013023.549 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013023.793 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013024.025 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013024.334 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013024.335 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013024.580 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013024.604 [AWT-EventQueue-0] ProgramSelector - ProgramSelector Manual OpenBLT Update COM5 (OpenBLT Bootloader)
+I 260305 013024.608 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013024.608 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 013024.608 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 013024.628 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013024.629 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013024.629 [mx-1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013024.630 [mx-1] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013024.630 [mx-1] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013024.630 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013024.631 [mx-1] OpenBltFlasher - makeSerial COM5
+I 260305 013024.632 [mx-1] XcpSerial - XcpSerial.VERBOSE=false
+I 260305 013024.640 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013024.641 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013024.642 [AWT-EventQueue-0] StatusWindow - flashSerial ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013024.648 [AWT-EventQueue-0] StatusWindow - Phase: Load firmware file
+I 260305 013024.666 [AWT-EventQueue-0] StatusWindow - Firmware file parsed:
+I 260305 013024.667 [AWT-EventQueue-0] StatusWindow - 	first address: 0x8008000
+I 260305 013024.667 [AWT-EventQueue-0] StatusWindow - 	total size: 727720
+I 260305 013024.668 [AWT-EventQueue-0] StatusWindow - Phase: Connect to target
+I 260305 013024.673 [AWT-EventQueue-0] StatusWindow - Phase: Erase
+I 260305 013024.824 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013024.878 [AWT-EventQueue-0] StatusWindow - Progress: 0%
+I 260305 013024.883 [AWT-EventQueue-0] StatusWindow - Progress: 1%
+I 260305 013024.891 [AWT-EventQueue-0] StatusWindow - Progress: 2%
+I 260305 013025.059 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013025.085 [AWT-EventQueue-0] StatusWindow - Progress: 3%
+I 260305 013025.093 [AWT-EventQueue-0] StatusWindow - Progress: 4%
+I 260305 013025.365 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013025.365 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013025.365 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013025.365 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013025.365 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013025.365 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 013025.365 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 013025.372 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 013025.372 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013025.372 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 013025.373 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 013025.374 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 013025.374 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013025.374 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013025.374 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013025.374 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013025.603 [AWT-EventQueue-0] StatusWindow - Progress: 5%
+I 260305 013025.611 [AWT-EventQueue-0] StatusWindow - Progress: 6%
+I 260305 013025.620 [AWT-EventQueue-0] StatusWindow - Progress: 7%
+I 260305 013025.629 [AWT-EventQueue-0] StatusWindow - Progress: 8%
+I 260305 013025.632 [AWT-EventQueue-0] StatusWindow - Progress: 9%
+I 260305 013025.642 [AWT-EventQueue-0] StatusWindow - Progress: 10%
+I 260305 013025.652 [AWT-EventQueue-0] StatusWindow - Progress: 11%
+I 260305 013025.660 [AWT-EventQueue-0] StatusWindow - Progress: 12%
+I 260305 013025.671 [AWT-EventQueue-0] StatusWindow - Progress: 13%
+I 260305 013026.603 [AWT-EventQueue-0] StatusWindow - Progress: 14%
+I 260305 013026.612 [AWT-EventQueue-0] StatusWindow - Progress: 15%
+I 260305 013026.622 [AWT-EventQueue-0] StatusWindow - Progress: 16%
+I 260305 013026.633 [AWT-EventQueue-0] StatusWindow - Progress: 17%
+I 260305 013026.637 [AWT-EventQueue-0] StatusWindow - Progress: 18%
+I 260305 013026.647 [AWT-EventQueue-0] StatusWindow - Progress: 19%
+I 260305 013026.656 [AWT-EventQueue-0] StatusWindow - Progress: 20%
+I 260305 013026.665 [AWT-EventQueue-0] StatusWindow - Progress: 21%
+I 260305 013026.675 [AWT-EventQueue-0] StatusWindow - Progress: 22%
+I 260305 013026.679 [AWT-EventQueue-0] StatusWindow - Progress: 23%
+I 260305 013026.688 [AWT-EventQueue-0] StatusWindow - Progress: 24%
+I 260305 013026.697 [AWT-EventQueue-0] StatusWindow - Progress: 25%
+I 260305 013026.706 [AWT-EventQueue-0] StatusWindow - Progress: 26%
+I 260305 013026.711 [AWT-EventQueue-0] StatusWindow - Progress: 27%
+I 260305 013026.720 [AWT-EventQueue-0] StatusWindow - Progress: 28%
+I 260305 013026.729 [AWT-EventQueue-0] StatusWindow - Progress: 29%
+I 260305 013026.739 [AWT-EventQueue-0] StatusWindow - Progress: 30%
+I 260305 013026.748 [AWT-EventQueue-0] StatusWindow - Progress: 31%
+I 260305 013027.678 [AWT-EventQueue-0] StatusWindow - Progress: 32%
+I 260305 013027.687 [AWT-EventQueue-0] StatusWindow - Progress: 33%
+I 260305 013027.696 [AWT-EventQueue-0] StatusWindow - Progress: 34%
+I 260305 013027.704 [AWT-EventQueue-0] StatusWindow - Progress: 35%
+I 260305 013027.709 [AWT-EventQueue-0] StatusWindow - Progress: 36%
+I 260305 013027.718 [AWT-EventQueue-0] StatusWindow - Progress: 37%
+I 260305 013027.728 [AWT-EventQueue-0] StatusWindow - Progress: 38%
+I 260305 013027.737 [AWT-EventQueue-0] StatusWindow - Progress: 39%
+I 260305 013027.747 [AWT-EventQueue-0] StatusWindow - Progress: 40%
+I 260305 013027.751 [AWT-EventQueue-0] StatusWindow - Progress: 41%
+I 260305 013027.762 [AWT-EventQueue-0] StatusWindow - Progress: 42%
+I 260305 013027.771 [AWT-EventQueue-0] StatusWindow - Progress: 43%
+I 260305 013027.780 [AWT-EventQueue-0] StatusWindow - Progress: 44%
+I 260305 013027.787 [AWT-EventQueue-0] StatusWindow - Progress: 45%
+I 260305 013027.797 [AWT-EventQueue-0] StatusWindow - Progress: 46%
+I 260305 013027.803 [AWT-EventQueue-0] StatusWindow - Progress: 47%
+I 260305 013027.813 [AWT-EventQueue-0] StatusWindow - Progress: 48%
+I 260305 013027.822 [AWT-EventQueue-0] StatusWindow - Progress: 49%
+I 260305 013028.744 [AWT-EventQueue-0] StatusWindow - Progress: 50%
+I 260305 013028.754 [AWT-EventQueue-0] StatusWindow - Progress: 51%
+I 260305 013028.762 [AWT-EventQueue-0] StatusWindow - Progress: 52%
+I 260305 013028.772 [AWT-EventQueue-0] StatusWindow - Progress: 53%
+I 260305 013028.776 [AWT-EventQueue-0] StatusWindow - Progress: 54%
+I 260305 013028.784 [AWT-EventQueue-0] StatusWindow - Progress: 55%
+I 260305 013028.794 [AWT-EventQueue-0] StatusWindow - Progress: 56%
+I 260305 013028.802 [AWT-EventQueue-0] StatusWindow - Progress: 57%
+I 260305 013028.810 [AWT-EventQueue-0] StatusWindow - Progress: 58%
+I 260305 013028.815 [AWT-EventQueue-0] StatusWindow - Progress: 59%
+I 260305 013028.822 [AWT-EventQueue-0] StatusWindow - Progress: 60%
+I 260305 013028.830 [AWT-EventQueue-0] StatusWindow - Progress: 61%
+I 260305 013028.839 [AWT-EventQueue-0] StatusWindow - Progress: 62%
+I 260305 013028.843 [AWT-EventQueue-0] StatusWindow - Progress: 63%
+I 260305 013028.851 [AWT-EventQueue-0] StatusWindow - Progress: 64%
+I 260305 013028.859 [AWT-EventQueue-0] StatusWindow - Progress: 65%
+I 260305 013028.868 [AWT-EventQueue-0] StatusWindow - Progress: 66%
+I 260305 013028.876 [AWT-EventQueue-0] StatusWindow - Progress: 67%
+I 260305 013029.715 [AWT-EventQueue-0] StatusWindow - Progress: 68%
+I 260305 013029.724 [AWT-EventQueue-0] StatusWindow - Progress: 69%
+I 260305 013029.732 [AWT-EventQueue-0] StatusWindow - Progress: 70%
+I 260305 013029.740 [AWT-EventQueue-0] StatusWindow - Progress: 71%
+I 260305 013029.745 [AWT-EventQueue-0] StatusWindow - Progress: 72%
+I 260305 013029.753 [AWT-EventQueue-0] StatusWindow - Progress: 73%
+I 260305 013029.761 [AWT-EventQueue-0] StatusWindow - Progress: 74%
+I 260305 013029.769 [AWT-EventQueue-0] StatusWindow - Progress: 75%
+I 260305 013029.777 [AWT-EventQueue-0] StatusWindow - Progress: 76%
+I 260305 013029.783 [AWT-EventQueue-0] StatusWindow - Progress: 77%
+I 260305 013029.792 [AWT-EventQueue-0] StatusWindow - Progress: 78%
+I 260305 013029.800 [AWT-EventQueue-0] StatusWindow - Progress: 79%
+I 260305 013029.808 [AWT-EventQueue-0] StatusWindow - Progress: 80%
+I 260305 013029.812 [AWT-EventQueue-0] StatusWindow - Progress: 81%
+I 260305 013029.820 [AWT-EventQueue-0] StatusWindow - Progress: 82%
+I 260305 013029.828 [AWT-EventQueue-0] StatusWindow - Progress: 83%
+I 260305 013029.836 [AWT-EventQueue-0] StatusWindow - Progress: 84%
+I 260305 013029.845 [AWT-EventQueue-0] StatusWindow - Progress: 85%
+I 260305 013030.377 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 013030.377 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 013030.377 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 013030.378 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013030.379 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 013030.382 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 4ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013030.636 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 254ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013030.730 [AWT-EventQueue-0] StatusWindow - Progress: 86%
+I 260305 013030.739 [AWT-EventQueue-0] StatusWindow - Progress: 87%
+I 260305 013030.747 [AWT-EventQueue-0] StatusWindow - Progress: 88%
+I 260305 013030.756 [AWT-EventQueue-0] StatusWindow - Progress: 89%
+I 260305 013030.760 [AWT-EventQueue-0] StatusWindow - Progress: 90%
+I 260305 013030.768 [AWT-EventQueue-0] StatusWindow - Progress: 91%
+I 260305 013030.776 [AWT-EventQueue-0] StatusWindow - Progress: 92%
+I 260305 013030.785 [AWT-EventQueue-0] StatusWindow - Progress: 93%
+I 260305 013030.793 [AWT-EventQueue-0] StatusWindow - Progress: 94%
+I 260305 013030.798 [AWT-EventQueue-0] StatusWindow - Progress: 95%
+I 260305 013030.806 [AWT-EventQueue-0] StatusWindow - Progress: 96%
+I 260305 013030.814 [AWT-EventQueue-0] StatusWindow - Progress: 97%
+I 260305 013030.822 [AWT-EventQueue-0] StatusWindow - Progress: 98%
+I 260305 013030.827 [AWT-EventQueue-0] StatusWindow - Progress: 99%
+I 260305 013030.835 [AWT-EventQueue-0] StatusWindow - Progress: 100%
+I 260305 013030.836 [AWT-EventQueue-0] StatusWindow - Phase: Program
+I 260305 013030.861 [AWT-EventQueue-0] StatusWindow - Progress: 0%
+I 260305 013030.884 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013030.885 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013030.885 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013030.885 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013030.886 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260305 013031.032 [AWT-EventQueue-0] StatusWindow - Progress: 1%
+I 260305 013031.200 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013031.201 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013031.203 [AWT-EventQueue-0] StatusWindow - Progress: 2%
+I 260305 013031.374 [AWT-EventQueue-0] StatusWindow - Progress: 3%
+I 260305 013031.447 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013031.546 [AWT-EventQueue-0] StatusWindow - Progress: 4%
+I 260305 013031.706 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013031.717 [AWT-EventQueue-0] StatusWindow - Progress: 5%
+I 260305 013031.886 [AWT-EventQueue-0] StatusWindow - Progress: 6%
+I 260305 013031.952 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013032.053 [AWT-EventQueue-0] StatusWindow - Progress: 7%
+I 260305 013032.214 [AWT-EventQueue-0] StatusWindow - Progress: 8%
+I 260305 013032.266 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013032.267 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013032.382 [AWT-EventQueue-0] StatusWindow - Progress: 9%
+I 260305 013032.499 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013032.570 [AWT-EventQueue-0] StatusWindow - Progress: 10%
+I 260305 013032.732 [AWT-EventQueue-0] StatusWindow - Progress: 11%
+I 260305 013032.741 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013032.893 [AWT-EventQueue-0] StatusWindow - Progress: 12%
+I 260305 013032.973 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013033.053 [AWT-EventQueue-0] StatusWindow - Progress: 13%
+I 260305 013033.215 [AWT-EventQueue-0] StatusWindow - Progress: 14%
+I 260305 013033.283 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013033.283 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013033.284 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 013033.284 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 013033.284 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013033.284 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013033.284 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013033.284 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013033.284 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013033.377 [AWT-EventQueue-0] StatusWindow - Progress: 15%
+I 260305 013033.541 [AWT-EventQueue-0] StatusWindow - Progress: 16%
+I 260305 013033.707 [AWT-EventQueue-0] StatusWindow - Progress: 17%
+I 260305 013033.875 [AWT-EventQueue-0] StatusWindow - Progress: 18%
+I 260305 013034.059 [AWT-EventQueue-0] StatusWindow - Progress: 19%
+I 260305 013034.225 [AWT-EventQueue-0] StatusWindow - Progress: 20%
+I 260305 013034.391 [AWT-EventQueue-0] StatusWindow - Progress: 21%
+I 260305 013034.555 [AWT-EventQueue-0] StatusWindow - Progress: 22%
+I 260305 013034.719 [AWT-EventQueue-0] StatusWindow - Progress: 23%
+I 260305 013034.884 [AWT-EventQueue-0] StatusWindow - Progress: 24%
+I 260305 013035.043 [AWT-EventQueue-0] StatusWindow - Progress: 25%
+I 260305 013035.205 [AWT-EventQueue-0] StatusWindow - Progress: 26%
+I 260305 013035.377 [AWT-EventQueue-0] StatusWindow - Progress: 27%
+I 260305 013035.543 [AWT-EventQueue-0] StatusWindow - Progress: 28%
+I 260305 013035.734 [AWT-EventQueue-0] StatusWindow - Progress: 29%
+I 260305 013035.902 [AWT-EventQueue-0] StatusWindow - Progress: 30%
+I 260305 013036.068 [AWT-EventQueue-0] StatusWindow - Progress: 31%
+I 260305 013036.239 [AWT-EventQueue-0] StatusWindow - Progress: 32%
+I 260305 013036.413 [AWT-EventQueue-0] StatusWindow - Progress: 33%
+I 260305 013036.579 [AWT-EventQueue-0] StatusWindow - Progress: 34%
+I 260305 013036.749 [AWT-EventQueue-0] StatusWindow - Progress: 35%
+I 260305 013036.918 [AWT-EventQueue-0] StatusWindow - Progress: 36%
+I 260305 013037.088 [AWT-EventQueue-0] StatusWindow - Progress: 37%
+I 260305 013037.289 [AWT-EventQueue-0] StatusWindow - Progress: 38%
+I 260305 013037.462 [AWT-EventQueue-0] StatusWindow - Progress: 39%
+I 260305 013037.630 [AWT-EventQueue-0] StatusWindow - Progress: 40%
+I 260305 013037.799 [AWT-EventQueue-0] StatusWindow - Progress: 41%
+I 260305 013037.971 [AWT-EventQueue-0] StatusWindow - Progress: 42%
+I 260305 013038.143 [AWT-EventQueue-0] StatusWindow - Progress: 43%
+I 260305 013038.299 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 013038.299 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 013038.299 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 013038.299 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 013038.300 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013038.306 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 6ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013038.313 [AWT-EventQueue-0] StatusWindow - Progress: 44%
+I 260305 013038.489 [AWT-EventQueue-0] StatusWindow - Progress: 45%
+I 260305 013038.570 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 264ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013038.663 [AWT-EventQueue-0] StatusWindow - Progress: 46%
+I 260305 013038.812 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 242ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013038.863 [AWT-EventQueue-0] StatusWindow - Progress: 47%
+I 260305 013039.032 [AWT-EventQueue-0] StatusWindow - Progress: 48%
+I 260305 013039.120 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013039.120 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013039.205 [AWT-EventQueue-0] StatusWindow - Progress: 49%
+I 260305 013039.361 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013039.380 [AWT-EventQueue-0] StatusWindow - Progress: 50%
+I 260305 013039.557 [AWT-EventQueue-0] StatusWindow - Progress: 51%
+I 260305 013039.606 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013039.726 [AWT-EventQueue-0] StatusWindow - Progress: 52%
+I 260305 013039.839 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013039.901 [AWT-EventQueue-0] StatusWindow - Progress: 53%
+I 260305 013040.071 [AWT-EventQueue-0] StatusWindow - Progress: 54%
+I 260305 013040.158 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013040.158 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013040.247 [AWT-EventQueue-0] StatusWindow - Progress: 55%
+I 260305 013040.406 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013040.426 [AWT-EventQueue-0] StatusWindow - Progress: 56%
+I 260305 013040.628 [AWT-EventQueue-0] StatusWindow - Progress: 57%
+I 260305 013040.654 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013040.802 [AWT-EventQueue-0] StatusWindow - Progress: 58%
+I 260305 013040.886 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013040.974 [AWT-EventQueue-0] StatusWindow - Progress: 59%
+I 260305 013041.143 [AWT-EventQueue-0] StatusWindow - Progress: 60%
+I 260305 013041.192 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013041.192 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013041.192 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 013041.192 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 013041.192 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013041.193 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 013041.193 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 013041.193 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013041.193 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013041.193 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013041.194 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013041.312 [AWT-EventQueue-0] StatusWindow - Progress: 61%
+I 260305 013041.478 [AWT-EventQueue-0] StatusWindow - Progress: 62%
+I 260305 013041.638 [AWT-EventQueue-0] StatusWindow - Progress: 63%
+I 260305 013041.801 [AWT-EventQueue-0] StatusWindow - Progress: 64%
+I 260305 013041.966 [AWT-EventQueue-0] StatusWindow - Progress: 65%
+I 260305 013042.150 [AWT-EventQueue-0] StatusWindow - Progress: 66%
+I 260305 013042.316 [AWT-EventQueue-0] StatusWindow - Progress: 67%
+I 260305 013042.478 [AWT-EventQueue-0] StatusWindow - Progress: 68%
+I 260305 013042.642 [AWT-EventQueue-0] StatusWindow - Progress: 69%
+I 260305 013042.798 [AWT-EventQueue-0] StatusWindow - Progress: 70%
+I 260305 013042.960 [AWT-EventQueue-0] StatusWindow - Progress: 71%
+I 260305 013043.118 [AWT-EventQueue-0] StatusWindow - Progress: 72%
+I 260305 013043.272 [AWT-EventQueue-0] StatusWindow - Progress: 73%
+I 260305 013043.436 [AWT-EventQueue-0] StatusWindow - Progress: 74%
+I 260305 013043.604 [AWT-EventQueue-0] StatusWindow - Progress: 75%
+I 260305 013043.792 [AWT-EventQueue-0] StatusWindow - Progress: 76%
+I 260305 013043.954 [AWT-EventQueue-0] StatusWindow - Progress: 77%
+I 260305 013044.113 [AWT-EventQueue-0] StatusWindow - Progress: 78%
+I 260305 013044.279 [AWT-EventQueue-0] StatusWindow - Progress: 79%
+I 260305 013044.443 [AWT-EventQueue-0] StatusWindow - Progress: 80%
+I 260305 013044.607 [AWT-EventQueue-0] StatusWindow - Progress: 81%
+I 260305 013044.772 [AWT-EventQueue-0] StatusWindow - Progress: 82%
+I 260305 013044.934 [AWT-EventQueue-0] StatusWindow - Progress: 83%
+I 260305 013045.093 [AWT-EventQueue-0] StatusWindow - Progress: 84%
+I 260305 013045.282 [AWT-EventQueue-0] StatusWindow - Progress: 85%
+I 260305 013045.448 [AWT-EventQueue-0] StatusWindow - Progress: 86%
+I 260305 013045.605 [AWT-EventQueue-0] StatusWindow - Progress: 87%
+I 260305 013045.767 [AWT-EventQueue-0] StatusWindow - Progress: 88%
+I 260305 013045.926 [AWT-EventQueue-0] StatusWindow - Progress: 89%
+I 260305 013046.086 [AWT-EventQueue-0] StatusWindow - Progress: 90%
+I 260305 013046.208 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 013046.208 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 013046.208 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 013046.208 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 013046.208 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013046.212 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 4ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013046.247 [AWT-EventQueue-0] StatusWindow - Progress: 91%
+I 260305 013046.415 [AWT-EventQueue-0] StatusWindow - Progress: 92%
+I 260305 013046.470 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 258ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013046.579 [AWT-EventQueue-0] StatusWindow - Progress: 93%
+I 260305 013046.709 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013046.757 [AWT-EventQueue-0] StatusWindow - Progress: 94%
+I 260305 013046.920 [AWT-EventQueue-0] StatusWindow - Progress: 95%
+I 260305 013047.014 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013047.015 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013047.084 [AWT-EventQueue-0] StatusWindow - Progress: 96%
+I 260305 013047.250 [AWT-EventQueue-0] StatusWindow - Progress: 97%
+I 260305 013047.258 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013047.415 [AWT-EventQueue-0] StatusWindow - Progress: 98%
+I 260305 013047.501 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013047.579 [AWT-EventQueue-0] StatusWindow - Progress: 99%
+I 260305 013047.734 [AWT-EventQueue-0] StatusWindow - Progress: 100%
+I 260305 013047.735 [AWT-EventQueue-0] StatusWindow - Phase: Cleanup
+I 260305 013047.736 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013047.799 [mx-1] XcpLoader - sendCmdProgramReset not a problem: java.io.IOException: XcpSerial: Cannot read response actual read=0; request length was 1, timeoutMs=50
+I 260305 013047.802 [mx-1] XcpSerial - disconnect COM5
+I 260305 013047.803 [AWT-EventQueue-0] StatusWindow - Update completed successfully!
+I 260305 013048.048 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 013048.048 [Ports Scanner] SerialPortCache - 1 disappeared ports are removed
+I 260305 013048.048 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013048.289 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013048.551 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 262ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013048.790 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013048.791 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013048.791 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013048.791 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013048.791 [AWT-EventQueue-0] Launcher - Rendering available ports: []
+I 260305 013049.097 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 013049.098 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013049.333 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013049.586 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 253ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013049.827 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013050.134 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 013050.135 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013050.393 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 258ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013050.637 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013050.825 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[DestroyJavaVM,5,main]
+I 260305 013050.825 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-Shutdown,5,system]
+I 260305 013050.825 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[JustOneInstance,6,main]
+I 260305 013050.825 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-EventQueue-0,6,main]
+I 260305 013050.825 [AWT-EventQueue-0] FrameHelper - [javax.swing.JFrame[frame0,716,377,487x358,layout=java.awt.BorderLayout,title=rusefi console 20260214 uaefi.master,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,471x349,layout=com.formdev.flatlaf.ui.FlatRootPaneUI$FlatRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame1,752,320,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=Windows rusEFI ST Drivers,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame2,359,168,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=OpenBLT via Serial 20260214 uaefi.master,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]
+I 260305 013050.880 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013051.186 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 013051.186 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013051.437 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013051.684 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013051.920 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013052.236 [Ports Scanner] SerialPortScanner - getCommPorts: []
+I 260305 013052.237 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013052.470 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013052.725 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 255ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013052.966 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013053.272 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013053.273 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013053.273 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013053.278 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013053.287 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013053.287 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013053.287 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013053.287 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013053.530 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013053.777 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 247ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013054.022 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013054.023 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013054.024 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013054.024 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013054.026 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (OpenBLT Bootloader)]
+I 260305 013054.339 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013054.340 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013054.608 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 268ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013054.883 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 274ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013055.151 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 268ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013055.459 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013055.459 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013055.459 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013055.460 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013055.464 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013055.472 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013055.472 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013055.472 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013055.472 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013055.742 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 270ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013056.028 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 286ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013056.307 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 278ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013056.617 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013056.618 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013056.875 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 257ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013057.143 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 268ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013057.402 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013057.712 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013057.712 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013057.712 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013057.712 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013057.716 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013057.723 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013057.724 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013057.724 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013057.725 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013057.976 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 251ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013058.224 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 248ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013058.456 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013058.771 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013058.771 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013059.007 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013059.246 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013059.481 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013059.794 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013059.794 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013059.794 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013059.795 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013059.800 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closing port...
+I 260305 013059.808 [SerialPortScanner inspectPort COM5] SerialIoStream - COM5: Closed port.
+I 260305 013059.808 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 looks like an OpenBLT bootloader
+I 260305 013059.809 [Ports Scanner] SerialPortScanner - Port COM5 detected as: OpenBLT Bootloader
+I 260305 013059.809 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013100.045 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013100.297 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 252ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013100.529 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013100.832 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013100.833 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013101.071 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013101.107 [AWT-EventQueue-0] ProgramSelector - ProgramSelector Switch to DFU Mode COM5 (OpenBLT Bootloader)
+I 260305 013101.109 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013101.109 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 013101.109 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 013101.126 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013101.127 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013101.127 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013101.127 [mx-2] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013101.133 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013101.134 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013101.135 [AWT-EventQueue-0] StatusWindow - Using selected COM5
+
+I 260305 013101.330 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 259ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013101.564 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013101.872 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013101.872 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013101.872 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 013101.872 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 013101.872 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013101.873 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013101.873 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013101.873 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013101.873 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013106.878 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 013106.878 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 013106.878 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 013106.878 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 013106.879 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013106.884 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 5ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013107.127 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013107.364 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013107.364 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260305 013107.365 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260305 013107.365 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 013107.366 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260305 013107.673 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013107.674 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 013107.906 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013108.147 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013108.390 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013108.697 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013108.697 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013108.931 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013109.177 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013109.412 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 235ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013109.722 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013109.722 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013109.722 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260305 013109.722 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260305 013109.722 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013109.722 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013109.722 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013109.722 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260305 013109.722 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260305 013111.137 [mx-2] IncomingDataBuffer - BufferedSerialIoStreamauto detect body: timeout 10000ms. Got only 1 byte(s) while expecting 770
+I 260305 013111.137 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.137 [mx-2] SerialIoStream - COM5: Closing port...
+I 260305 013111.137 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.137 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.137 [AWT-EventQueue-0] StatusWindow - Make sure TUNERSTUDIO IS DISCONNECTED FROM ECU
+I 260305 013111.138 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.138 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.138 [AWT-EventQueue-0] StatusWindow - 
+I 260305 013111.138 [AWT-EventQueue-0] StatusWindow - *** ERROR *** rusEFI has not responded on selected COM5
+Maybe try automatic serial port detection?
+I 260305 013111.145 [mx-2] SerialIoStream - COM5: Closed port.
+I 260305 013111.146 [AWT-EventQueue-0] StatusWindow - hint: error state is already in your clipboard, please use PASTE or Ctrl-V while reporting issues
+I 260305 013114.737 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260305 013114.737 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260305 013114.737 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260305 013114.737 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260305 013114.737 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013114.742 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 5ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013114.993 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 251ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013115.067 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-Shutdown,5,system]
+I 260305 013115.067 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[AWT-EventQueue-0,6,main]
+I 260305 013115.067 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[DestroyJavaVM,5,main]
+I 260305 013115.067 [AWT-EventQueue-0] FrameHelper - Non-daemon thread: Thread[JustOneInstance,6,main]
+I 260305 013115.067 [AWT-EventQueue-0] FrameHelper - [javax.swing.JFrame[frame0,716,377,629x389,invalid,layout=java.awt.BorderLayout,title=rusefi console 20260214 uaefi.master,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,613x380,layout=com.formdev.flatlaf.ui.FlatRootPaneUI$FlatRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame1,752,320,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=Windows rusEFI ST Drivers,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame2,359,168,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=OpenBLT via Serial 20260214 uaefi.master,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true], javax.swing.JFrame[frame3,752,320,416x439,invalid,hidden,layout=java.awt.BorderLayout,title=DFU switch 20260214 uaefi.master,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,1,400x430,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]
+I 260305 013115.235 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013115.547 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260305 013115.547 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 013115.792 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013116.033 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013116.160 [AWT-EventQueue-0] ProgramSelector - ProgramSelector Auto DFU Update COM5 (Unknown)
+I 260305 013116.161 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013116.162 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 013116.162 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 013116.177 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260305 013116.178 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013116.179 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013116.184 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260305 013116.184 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260305 013116.184 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Suspending port scanning...
+I 260305 013116.270 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 013116.583 [mx-3] BinaryProtocolExecutor - readAndBackupCurrentCalibrations: Executing DoubleCallbacks{one=com.rusefi.ui.widgets.StatusPanel[,0,0,400x400,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=], two=DUMMY}
+I 260305 013116.583 [AWT-EventQueue-0] StatusWindow - Port scanning is suspended in 404ms.
+I 260305 013116.586 [mx-3] BinaryProtocolExecutor - COM5: Available right away? [rusEFI uaEFI]; true
+I 260305 013116.586 [mx-3] BinaryProtocolExecutor - Giving it 300ms just in case...
+I 260305 013116.588 [mx-3] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260305 013116.588 [mx-3] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260305 013116.902 [mx-3] LinkManager - LinkManager: Starting COM5
+I 260305 013116.902 [AWT-EventQueue-0] StatusWindow - readAndBackupCurrentCalibrations: Connecting to port `COM5`...
+I 260305 013116.902 [mx-3] StreamConnector - StreamConnector: connecting
+I 260305 013116.902 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 013116.902 [mx-3] StreamConnector - scheduleOpening
+I 260305 013116.902 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 013116.902 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260305 013116.902 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+I 260305 013126.923 [ECU Communication Executor1] IncomingDataBuffer - [hello] header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260305 013126.923 [ECU Communication Executor1] BinaryProtocol - No signature returned by serial=COM5
+E 260305 013126.924 [ECU Communication Executor1] ExitUtil - TERMINATING: CONNECTION FAILED, did you specify the right port name? No signature returned by serial=COM5
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.io.LinkManager$3.onConnectionFailed(LinkManager.java:85)
+	at com.rusefi.io.serial.PortHolder.connectAndReadConfiguration(PortHolder.java:60)
+	at com.rusefi.io.serial.StreamConnector.lambda$connectAndReadConfiguration$0(StreamConnector.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)

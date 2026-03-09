@@ -1,0 +1,467 @@
+I 260309 003833.269 [main] Launcher - rusEFI UI console 20260214
+I 260309 003833.279 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260309 003833.279 [main] Launcher - 
+
+
+I 260309 003833.298 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260309 003833.330 [main] PersistentConfiguration - Console configuration from C:\Users\Rezi\.rusEFI\console_properties.xml
+I 260309 003833.330 [main] UiHelper - OS name: Windows 11
+I 260309 003833.330 [main] UiHelper - OS version: 10.0
+I 260309 003833.450 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260309 003833.450 [JustOneInstance] JustOneInstance - server socket 29213
+I 260309 003833.467 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM5
+I 260309 003833.533 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260309 003833.688 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260309 003833.688 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260309 003833.689 [ecuDef primer1] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260309 003833.689 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260309 003833.693 [ecuDef primer1] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260309 003833.693 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 003833.693 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260309 003833.694 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260309 003833.697 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260309 003833.721 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260309 003833.744 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260309 003833.744 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260309 003833.744 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260309 003833.744 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260309 003833.749 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260309 003833.749 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260309 003833.749 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260309 003833.809 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260309 003833.811 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260309 003833.811 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 003833.811 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260309 003833.821 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260309 003833.821 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260309 003833.821 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260309 003833.830 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260309 003833.834 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260309 003833.836 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003833.842 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260309 003833.844 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260309 003833.847 [SerialPortScanner inspectPort COM5] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260309 003833.847 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260309 003833.850 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260309 003833.850 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260309 003833.850 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260309 003833.909 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260309 003833.909 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260309 003833.917 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260309 003833.924 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260309 003833.924 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260309 003833.925 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260309 003833.925 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260309 003833.925 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260309 003833.925 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260309 003833.925 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260309 003833.925 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260309 003833.928 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260309 003833.928 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260309 003833.930 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260309 003833.934 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260309 003833.934 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260309 003833.948 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260309 003833.948 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+I 260309 003833.955 [ecuDef primer1] PrimeTunerStudioCache - Trying to prime C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260309 003833.955 [ecuDef primer1] PrimeTunerStudioCache - C:\Users\Rezi\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260309 003834.002 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260309 003834.010 [AWT-EventQueue-0] Launcher - setVisible
+I 260309 003838.856 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260309 003838.856 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260309 003838.856 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260309 003838.858 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260309 003838.858 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 003838.858 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+E 260309 003838.858 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003838.858 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260309 003838.860 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260309 003838.860 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003838.860 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003838.882 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003838.882 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003838.895 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003838.895 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003838.906 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003838.906 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003838.906 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260309 003838.906 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 003838.906 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260309 003838.908 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM5 (Unknown)]
+I 260309 003839.210 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003839.210 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003839.228 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.228 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.239 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.239 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.250 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.251 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.552 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003839.552 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003839.572 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.572 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.585 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.585 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.597 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.597 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.901 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003839.901 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003839.919 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.919 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.931 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.931 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003839.943 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003839.943 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.252 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003840.252 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003840.269 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.269 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.281 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.283 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.294 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.294 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.602 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003840.602 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260309 003840.619 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.622 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.635 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.636 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.647 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003840.647 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003840.961 [Ports Scanner] SerialPortScanner - getCommPorts: [COM5]
+I 260309 003840.961 [Ports Scanner] SerialPortCache - Expired port is removed: COM5
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] SerialPortScanner - Determining type of serial port: COM5
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260309 003840.961 [SerialPortScanner inspectPort COM5] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an OpenBLT bootloader
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] SerialPortScanner - getEcuCalibrations COM5
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM5`...
+I 260309 003840.961 [SerialPortScanner inspectPort COM5] LinkManager - LinkManager: Starting COM5
+I 260309 003840.964 [SerialPortScanner inspectPort COM5] StreamConnector - StreamConnector: connecting
+I 260309 003840.964 [SerialPortScanner inspectPort COM5] StreamConnector - scheduleOpening
+I 260309 003840.964 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260309 003840.964 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260309 003840.964 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260309 003840.964 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260309 003840.964 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260309 003841.819 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260309 003841.820 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260309 003841.821 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260309 003841.821 [AWT-EventQueue-0] FindFileHelper - Scanning C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260309 003841.821 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in C:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260309 003841.821 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260309 003841.821 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260309 003841.832 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260309 003841.847 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260309 003841.847 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260309 003841.847 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260309 003841.848 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260309 003841.848 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260309 003841.848 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260309 003841.849 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260309 003841.849 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260309 003841.849 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260309 003841.849 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260309 003841.849 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260309 003841.867 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260309 003841.867 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260309 003841.867 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260309 003841.867 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260309 003841.867 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260309 003841.868 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260309 003841.868 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260309 003841.869 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260309 003841.869 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260309 003841.906 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260309 003841.906 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260309 003841.906 [AWT-EventQueue-0] LogoHelper - jar:file:/C:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260309 003841.907 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260309 003841.908 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260309 003841.908 [AWT-EventQueue-0] LinkManager - LinkManager: Starting COM5
+I 260309 003841.991 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260309 003841.995 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260309 003841.997 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260309 003841.997 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260309 003841.999 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260309 003842.000 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260309 003842.207 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260309 003842.210 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260309 003842.211 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260309 003842.215 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260309 003842.215 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260309 003842.218 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260309 003842.219 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260309 003842.225 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260309 003842.225 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260309 003842.225 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260309 003842.225 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260309 003842.558 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.567 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.574 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.582 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.589 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.597 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.600 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.608 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.608 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.608 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.615 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.617 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.624 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.625 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.628 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.628 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.631 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.632 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.632 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.632 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.636 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.636 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.639 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.642 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.644 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.645 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.647 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.650 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.650 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260309 003842.669 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260309 003842.673 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260309 003842.673 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260309 003842.673 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260309 003842.673 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM5
+I 260309 003842.673 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM5
+E 260309 003842.673 [ECU Communication Executor1] SerialIoStream - Error opening COM5 maybe no permissions?
+I 260309 003845.966 [Ports Scanner] SerialPortScanner - Port COM5 timed out, adding as Unknown.
+I 260309 003845.966 [SerialPortScanner inspectPort COM5] UpdateOperationCallbacks - Connection to port COM5 was interrupted
+I 260309 003845.966 [Ports Scanner] SerialPortScanner - Port COM5 detected as: Unknown
+I 260309 003845.966 [SerialPortScanner inspectPort COM5] SerialPortScanner - Port COM5 does not look like an ECU
+I 260309 003845.967 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260309 003845.983 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003845.983 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.DfuFlasher.detectSTM32BootloaderDriverState(DfuFlasher.java:233)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:201)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003845.995 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003845.995 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.StLinkFlasher.detectStLink(StLinkFlasher.java:77)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:202)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003846.007 [Ports Scanner] ExecHelper - executeCommand java.io.IOException: Cannot run program "wmic": CreateProcess error=2, The system cannot find the file specified
+E 260309 003846.007 [Ports Scanner] MaintenanceUtil - Error: com.rusefi.maintenance.ErrorExecutingCommand
+com.rusefi.maintenance.ErrorExecutingCommand
+	at com.rusefi.maintenance.ExecHelper.executeCommand(ExecHelper.java:101)
+	at com.rusefi.maintenance.MaintenanceUtil.detectDevice(MaintenanceUtil.java:25)
+	at com.rusefi.maintenance.MaintenanceUtil.detectPcan(MaintenanceUtil.java:42)
+	at com.rusefi.SerialPortScanner.findAllAvailablePorts(SerialPortScanner.java:203)
+	at com.rusefi.SerialPortScanner.lambda$new$1(SerialPortScanner.java:43)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+E 260309 003846.007 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+I 260309 003846.238 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\Rezi\.rusEFI\console_properties.xml
+E 260309 003846.238 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2088)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:2044)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+I 260309 003846.239 [Thread-0] PersistentConfiguration - Shutdown hook...

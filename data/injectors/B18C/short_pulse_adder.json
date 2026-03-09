@@ -1,0 +1,118 @@
+{
+    "description": "Injector short-pulse adder and non-linear characterization for large injectors on B-series engines",
+    "short_pulse_behavior": {
+        "description": "Large injectors (550cc+) have poor atomization and non-linear flow at very short pulsewidths typical of idle and light cruise. A short-pulse adder compensates for this.",
+        "notes": "Without short-pulse correction, large injectors cause rough idle, poor fuel economy, and erratic AFR at low loads."
+    },
+    "injectors": {
+        "rc_550cc": {
+            "rated_flow_cc_min": 550,
+            "linear_above_ms": 1.8,
+            "short_pulse_adder_table": {
+                "pulsewidth_ms": [
+                    0.5,
+                    0.8,
+                    1.0,
+                    1.2,
+                    1.4,
+                    1.6,
+                    1.8,
+                    2.0
+                ],
+                "adder_ms": [
+                    0.45,
+                    0.32,
+                    0.22,
+                    0.15,
+                    0.10,
+                    0.05,
+                    0.02,
+                    0.00
+                ],
+                "notes": "Add these values to calculated pulsewidth when below linear threshold"
+            }
+        },
+        "id_1000cc": {
+            "rated_flow_cc_min": 1000,
+            "linear_above_ms": 2.2,
+            "short_pulse_adder_table": {
+                "pulsewidth_ms": [
+                    0.5,
+                    0.8,
+                    1.0,
+                    1.2,
+                    1.5,
+                    1.8,
+                    2.0,
+                    2.2
+                ],
+                "adder_ms": [
+                    0.70,
+                    0.52,
+                    0.40,
+                    0.30,
+                    0.20,
+                    0.12,
+                    0.05,
+                    0.00
+                ],
+                "notes": "1000cc injectors need aggressive short-pulse correction for acceptable idle quality"
+            }
+        },
+        "id_1700cc": {
+            "rated_flow_cc_min": 1700,
+            "linear_above_ms": 2.8,
+            "short_pulse_adder_table": {
+                "pulsewidth_ms": [
+                    0.5,
+                    0.8,
+                    1.0,
+                    1.2,
+                    1.5,
+                    1.8,
+                    2.2,
+                    2.5,
+                    2.8
+                ],
+                "adder_ms": [
+                    1.10,
+                    0.85,
+                    0.68,
+                    0.52,
+                    0.38,
+                    0.25,
+                    0.12,
+                    0.05,
+                    0.00
+                ],
+                "notes": "1700cc injectors are extremely non-linear at idle. Requires careful tuning of short-pulse region."
+            }
+        }
+    },
+    "battery_voltage_compensation": {
+        "description": "Injector opening time varies with battery voltage. Lower voltage = slower solenoid = longer deadtime.",
+        "voltage_v": [
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0
+        ],
+        "deadtime_multiplier": [
+            1.50,
+            1.30,
+            1.15,
+            1.05,
+            1.00,
+            0.95,
+            0.92,
+            0.90,
+            0.88
+        ],
+        "notes": "Multiply base deadtime by this factor. At cranking voltages (8-10V), deadtime increases significantly."
+    }
+}

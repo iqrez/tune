@@ -1,0 +1,1206 @@
+I 260304 224623.279 [main] Launcher - rusEFI UI console 20260214
+I 260304 224623.317 [main] Launcher - Compiled Fri Feb 20 01:24:56 EST 2026
+I 260304 224623.317 [main] Launcher - 
+
+
+I 260304 224623.468 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260304 224623.732 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260304 224623.733 [main] UiHelper - OS name: Windows 11
+I 260304 224623.733 [main] UiHelper - OS version: 10.0
+I 260304 224624.723 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260304 224624.724 [JustOneInstance] JustOneInstance - server socket 29213
+I 260304 224624.803 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM3
+I 260304 224625.153 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260304 224625.709 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224625.709 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224625.721 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260304 224625.722 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260304 224625.725 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260304 224625.725 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224625.725 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260304 224625.726 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260304 224625.754 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260304 224625.782 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260304 224625.789 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260304 224625.789 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260304 224625.789 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260304 224625.789 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260304 224625.802 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224625.802 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224625.802 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224625.843 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260304 224625.845 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260304 224625.845 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260304 224625.845 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260304 224625.845 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260304 224625.845 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260304 224625.859 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260304 224625.859 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224625.859 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260304 224625.866 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260304 224625.879 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224625.936 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260304 224625.936 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260304 224625.938 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260304 224625.938 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260304 224625.938 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260304 224625.940 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260304 224625.940 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260304 224625.950 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260304 224625.950 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+W 260304 224625.956 [ecuDef primer1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224625.970 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 224625.970 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224625.970 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 224625.985 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 224625.987 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224625.989 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 224625.991 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224625.993 [SerialPortScanner inspectPort COM3] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260304 224625.994 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224626.206 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 224626.214 [AWT-EventQueue-0] Launcher - setVisible
+I 260304 224626.270 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224626.270 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224626.273 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224626.273 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224626.274 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224626.285 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224626.285 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224626.286 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224626.286 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224626.287 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224626.287 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224626.287 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224626.287 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224626.292 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260304 224626.292 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260304 224626.297 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224626.300 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224626.300 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224626.328 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224626.328 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224626.328 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224626.329 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224626.329 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224626.329 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224626.329 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224626.349 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224626.350 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224626.350 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224626.350 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224626.350 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224626.350 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224626.352 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224626.353 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224626.353 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224626.354 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224626.354 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224626.374 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224626.374 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224626.374 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224626.374 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224626.376 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224626.376 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224626.376 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224626.381 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224626.382 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224626.384 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224626.384 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+E 260304 224626.394 [ECU Communication Executor1] BinaryProtocol - Error reading state/current_configuration.zip: no worries java.nio.file.NoSuchFileException: state\current_configuration.zip
+I 260304 224626.398 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224626.453 [ECU Communication Executor1] ConfigurationImageFile - Saving 23876 bytes of configuration into state/current_configuration.zip
+I 260304 224626.539 [ECU Communication Executor1] Msq - java=17.0.11
+I 260304 224626.694 [ECU Communication Executor1] XmlUtil - Writing state/current_configuration.msq
+I 260304 224626.704 [ECU Communication Executor1] XmlUtil - Marshalling finished state/current_configuration.msq
+I 260304 224626.704 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224626.706 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224626.708 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224626.708 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224626.708 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224626.726 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224626.752 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224626.753 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224626.753 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224626.754 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224626.754 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224626.754 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224626.758 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224626.758 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224626.758 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224626.759 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224626.759 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224626.775 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224626.775 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224626.775 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224626.776 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224626.776 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224626.776 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224626.776 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224626.780 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224626.780 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224626.781 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224626.781 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224626.781 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224626.781 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224626.830 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224626.832 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224626.833 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224626.833 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224626.833 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224626.838 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224626.841 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224626.841 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224626.842 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224626.844 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for /srec
+I 260304 224626.845 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224626.845 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260304 224626.849 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM3 (ECU w/ BL)]
+I 260304 224626.922 [ECU text pull1] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224627.159 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224627.159 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224627.520 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 360ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224627.758 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 237ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224627.999 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224628.306 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224628.307 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224628.563 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 256ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224628.797 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224629.033 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224629.345 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224629.345 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 224629.345 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224629.345 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224629.606 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224629.606 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224629.610 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224629.610 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224629.610 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224629.610 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224629.610 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224629.615 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224629.615 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224629.615 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224629.626 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224629.626 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224629.627 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224629.627 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224629.627 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224629.627 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224629.627 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224629.641 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224629.644 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224629.644 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224629.644 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224629.645 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224629.645 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224629.652 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224629.652 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224629.653 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224629.653 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224629.653 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224629.653 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224629.654 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224629.657 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224629.657 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224629.658 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224629.658 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224629.696 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224629.700 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224629.700 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224629.700 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224629.700 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224629.700 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224629.701 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224629.701 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224629.719 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224629.736 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224629.736 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224629.737 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224629.737 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224629.737 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224629.737 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224629.740 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224629.742 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224629.742 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224629.743 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224629.744 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224629.756 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224629.756 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224629.756 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224629.757 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224629.757 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224629.758 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224629.758 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224629.762 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224629.762 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224629.763 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224629.764 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224629.764 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224629.764 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224629.812 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224629.816 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224629.816 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224629.816 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224629.820 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224629.822 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224629.823 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224629.823 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224629.823 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224629.916 [ECU text pull2] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224630.059 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 236ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224630.226 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 224630.226 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224630.226 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224630.265 [AWT-EventQueue-0] StatusWindow - Windows 11 10.0
+I 260304 224630.266 [class com.rusefi.maintenance.DriverInstall$1 thread] DriverInstall - IsWindows=true
+I 260304 224630.280 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 224630.281 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 224630.285 [AWT-EventQueue-0] StatusWindow - Console version 20260214
+I 260304 224630.286 [AWT-EventQueue-0] StatusWindow - Bundle BundleInfo{branchName='master', target='uaefi'}
+I 260304 224630.286 [AWT-EventQueue-0] StatusWindow - Executing command=../drivers\silent_st_drivers2.exe -y
+I 260304 224630.300 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224630.932 [AWT-EventQueue-0] StatusWindow - 
+I 260304 224630.932 [AWT-EventQueue-0] StatusWindow - 7-Zip SFX 19.00 (x86) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+I 260304 224630.934 [AWT-EventQueue-0] StatusWindow - 
+I 260304 224630.934 [AWT-EventQueue-0] StatusWindow - Extracting archive: D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260304 224630.935 [AWT-EventQueue-0] StatusWindow - --
+I 260304 224630.935 [AWT-EventQueue-0] StatusWindow - Path = D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\drivers\silent_st_drivers2.exe
+I 260304 224630.935 [AWT-EventQueue-0] StatusWindow - Type = 7z
+I 260304 224630.935 [AWT-EventQueue-0] StatusWindow - 
+I 260304 224631.123 [AWT-EventQueue-0] StatusWindow -   0%
+I 260304 224631.125 [AWT-EventQueue-0] StatusWindow -     
+I 260304 224631.155 [AWT-EventQueue-0] StatusWindow - 100% 99 - silent_st_drivers\ST-LINK_USB_V . er\amd64\WdfCoInstaller01009.dll
+I 260304 224631.157 [AWT-EventQueue-0] StatusWindow -                                                                             
+I 260304 224631.157 [AWT-EventQueue-0] StatusWindow - Everything is Ok
+I 260304 224631.160 [AWT-EventQueue-0] StatusWindow - Executing command=cmd /c start silent_install_windows8.bat
+I 260304 224631.180 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 880ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224631.487 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224631.488 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224631.727 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224631.955 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 228ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224632.198 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224632.513 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224632.513 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 224632.514 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224632.515 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224632.771 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224632.771 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224632.775 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224632.775 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224632.775 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224632.776 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224632.776 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224632.780 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224632.781 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224632.781 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224632.791 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224632.792 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224632.806 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224632.809 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224632.810 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224632.810 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224632.810 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224632.811 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224632.819 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224632.819 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224632.820 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224632.820 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224632.820 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224632.820 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224632.821 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224632.822 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224632.822 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224632.823 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224632.823 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224632.824 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224632.828 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224632.828 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224632.828 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224632.828 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224632.829 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224632.829 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224632.829 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224632.840 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224632.854 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224632.856 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224632.856 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224632.856 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224632.857 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224632.858 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224632.875 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224632.875 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224632.875 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224632.875 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224632.876 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224632.876 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224632.876 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224632.878 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224632.878 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224632.878 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224632.878 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224632.878 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224632.878 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224632.926 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224632.930 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224632.930 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224632.930 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224632.933 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224632.938 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224632.938 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224632.938 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224632.938 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224632.941 [ECU text pull3] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224633.176 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 238ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224633.447 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 270ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224633.687 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224634.000 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224634.000 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224634.246 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224634.523 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 276ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224634.756 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 233ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224635.067 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224635.067 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 224635.068 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224635.068 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224635.329 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224635.329 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224635.332 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224635.332 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224635.333 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224635.333 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224635.333 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224635.337 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224635.337 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224635.337 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224635.344 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224635.344 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224635.345 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224635.345 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224635.345 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224635.345 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224635.345 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224635.356 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224635.357 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224635.358 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224635.358 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224635.358 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224635.358 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224635.363 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224635.363 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224635.363 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224635.363 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224635.364 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224635.364 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224635.364 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224635.365 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224635.365 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224635.366 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224635.366 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224635.367 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224635.370 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224635.370 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224635.370 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224635.370 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224635.371 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224635.372 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224635.372 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224635.382 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224635.394 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224635.396 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224635.396 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224635.396 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224635.396 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224635.396 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224635.401 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224635.401 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224635.401 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224635.401 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224635.401 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224635.402 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224635.402 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224635.402 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224635.403 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224635.403 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224635.403 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224635.403 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224635.403 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224635.452 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224635.456 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224635.456 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224635.456 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224635.459 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224635.463 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224635.463 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224635.463 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224635.464 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 224635.485 [ECU text pull4] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224635.705 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224635.932 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 227ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224636.167 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 234ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224636.501 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224636.502 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 224636.747 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 245ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224636.987 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 240ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224637.230 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 243ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224637.541 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224637.541 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 224637.542 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224637.542 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224637.798 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224637.798 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224637.801 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224637.801 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224637.801 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224637.802 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224637.802 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224637.802 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224637.802 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224637.802 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224637.802 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224637.802 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224637.802 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224637.807 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224637.807 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224637.807 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224637.815 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224637.829 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224637.830 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224637.830 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224637.830 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224637.830 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224637.830 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224637.832 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224637.832 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224637.832 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224637.833 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224637.833 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224637.840 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224637.842 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224637.842 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224637.843 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224637.843 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224637.845 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224637.849 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224637.849 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224637.849 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224637.849 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224637.849 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224637.850 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224637.850 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224637.858 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224637.879 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224637.881 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224637.881 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224637.881 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224637.881 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224637.881 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224637.885 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224637.886 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224637.886 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224637.887 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224637.887 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224637.887 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224637.887 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224637.935 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224637.939 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224637.939 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224637.939 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224637.943 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224637.946 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224637.946 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224637.946 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224637.947 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 224637.953 [ECU text pull5] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224638.191 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 244ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224638.417 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224638.644 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224638.961 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224638.962 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224639.212 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 250ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224639.451 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 239ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224639.683 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 232ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224639.824 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 224639.824 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224639.997 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224639.997 [Ports Scanner] SerialPortCache - Expired port is removed: COM3
+I 260304 224639.997 [SerialPortScanner inspectPort COM3] SerialPortScanner - Determining type of serial port: COM3
+I 260304 224639.997 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224640.257 [SerialPortScanner inspectPort COM3] IncomingDataBuffer - BufferedSerialIoStreamreadByte: timeout 250ms. Got only 0 byte(s) while expecting 1
+I 260304 224640.257 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 does not look like an OpenBLT bootloader
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] SerialPortScanner - getEcuCalibrations COM3
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM3`...
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] LinkManager - LinkManager: Starting COM3
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] StreamConnector - StreamConnector: connecting
+I 260304 224640.260 [SerialPortScanner inspectPort COM3] StreamConnector - scheduleOpening
+I 260304 224640.260 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224640.260 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224640.260 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224640.260 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224640.265 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224640.265 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224640.265 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224640.272 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224640.272 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224640.272 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224640.272 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224640.272 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224640.273 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224640.273 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224640.284 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224640.284 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224640.284 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224640.284 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224640.284 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224640.285 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224640.285 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224640.286 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224640.286 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224640.286 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224640.286 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224640.290 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224640.291 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224640.291 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224640.292 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224640.292 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224640.293 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224640.297 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224640.297 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224640.297 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224640.297 [SerialPortScanner inspectPort COM3] UpdateOperationCallbacks - readCalibrationsInfo: Performing action on port COM3...
+I 260304 224640.298 [ECU Communication Executor1] UpdateOperationCallbacks - Received a signature rusEFI master.2026.01.15.uaefi.301744302 
+I 260304 224640.298 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224640.298 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224640.305 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224640.317 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224640.317 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224640.317 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224640.318 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224640.318 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224640.318 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224640.320 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224640.320 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224640.320 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224640.320 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224640.320 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224640.324 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224640.325 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224640.326 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224640.326 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224640.326 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224640.326 [ECU Communication Executor1] UpdateOperationCallbacks - Page size is 23876
+I 260304 224640.326 [ECU Communication Executor1] UpdateOperationCallbacks - Reading current calibrations...
+I 260304 224640.326 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224640.374 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224640.378 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224640.378 [SerialPortScanner inspectPort COM3] SerialPortScanner - Port COM3 looks like an ECU
+I 260304 224640.378 [SerialPortScanner inspectPort COM3] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224640.383 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closing port...
+I 260304 224640.386 [SerialPortScanner inspectPort COM3] SerialIoStream - COM3: Closed port.
+I 260304 224640.386 [SerialPortScanner inspectPort COM3] SerialPortScanner - ECU at COM3 has an OpenBLT bootloader
+I 260304 224640.386 [Ports Scanner] SerialPortScanner - Port COM3 detected as: ECU w/ BL
+I 260304 224640.386 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260304 224640.411 [ECU text pull6] BinaryProtocol - Port shutdown: Stopping text pull
+I 260304 224640.632 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 246ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224640.863 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 231ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224641.092 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 229ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224641.401 [Ports Scanner] SerialPortScanner - getCommPorts: [COM3]
+I 260304 224641.402 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260304 224641.643 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 241ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224641.870 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 226ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224642.095 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 225ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260304 224642.285 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260304 224642.312 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260304 224642.312 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.
+I 260304 224642.313 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260304 224642.313 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi.master.uaefi\console\..
+I 260304 224642.313 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260304 224642.313 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224642.327 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224642.340 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260304 224642.341 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260304 224642.341 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260304 224642.341 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260304 224642.341 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260304 224642.341 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260304 224642.344 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260304 224642.344 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260304 224642.344 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260304 224642.345 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260304 224642.345 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260304 224642.352 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260304 224642.352 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260304 224642.352 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260304 224642.352 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260304 224642.352 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260304 224642.353 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260304 224642.353 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260304 224642.355 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260304 224642.355 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260304 224642.390 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224642.390 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224642.390 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260304 224642.390 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260304 224642.391 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260304 224642.391 [AWT-EventQueue-0] LinkManager - LinkManager: Starting COM3
+I 260304 224642.468 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260304 224642.486 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260304 224642.494 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260304 224642.494 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260304 224642.495 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260304 224642.495 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260304 224642.929 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 224642.929 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224643.196 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260304 224643.198 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260304 224643.199 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260304 224643.200 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260304 224643.201 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260304 224643.203 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260304 224643.205 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260304 224643.209 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260304 224643.210 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260304 224643.210 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260304 224643.210 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260304 224643.719 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.724 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.727 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.731 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.733 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.737 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.742 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.744 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.747 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.749 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.751 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.754 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.757 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.759 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.763 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.765 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.766 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.767 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.769 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.771 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.773 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.777 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.779 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.780 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260304 224643.794 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260304 224643.794 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260304 224643.794 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260304 224643.795 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260304 224643.795 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM3
+I 260304 224643.795 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM3
+I 260304 224643.798 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got [rusEFI master.2026.01.15.uaefi.301744302 ] signature
+I 260304 224643.799 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260304 224643.800 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\301744302.ini
+I 260304 224643.808 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260304 224643.808 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260304 224643.808 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260304 224643.808 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260304 224643.809 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260304 224643.809 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224643.809 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260304 224643.824 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260304 224643.832 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260304 224643.833 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260304 224643.833 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260304 224643.833 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260304 224643.833 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260304 224643.842 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260304 224643.845 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260304 224643.845 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+W 260304 224643.846 [ECU Communication Executor1] PrimeTunerStudioCache - Not found C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260304 224643.846 [ECU Communication Executor1] BinaryProtocol - pageSize=23876
+I 260304 224643.846 [ECU Communication Executor1] BinaryProtocol - state/current_configuration.zip Local cache CRC 8aea9764
+
+I 260304 224643.850 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC32 0x8aea9764 -1964337308
+
+I 260304 224643.851 [ECU Communication Executor1] BinaryProtocol - rusEFI says tune CRC16 0x9764 -26780
+
+I 260304 224643.851 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got configuration from controller 23876 byte(s)
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Starting watchdog with timeout 500 ms...
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Reset Cause: Reset from NRST pin
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WD resets: 0
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Power cycle count: 3
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: SP 0x00000000
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initHardware()
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initRtc()
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 01 Jan 1980 00:25:30
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Storage INT_FLASH registered
+I 260304 224643.880 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI LLC (c) 2012-2024. All rights reserved.
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI v20260115@301744302 now=12
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Chibios Kernel:       7.0.5
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Compiled:     Jan 15 2026 - 20:47:56
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** COMPILER=14.2.1 20241119
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** with OPENBLT
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** detected HSE clock 20.12 MHz PLLM = 20
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: hellenBoardId=-1
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ********************** UID=35005C:33335116:31363333 crc=249 ******************************
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: isStm32F42x No
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: MCU rev=413 flashSize=1024
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_CFG_ST_FREQUENCY=1000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ENABLE_PERF_TRACE=0
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_ADCCLK=21000000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_TIMCLK1=84000000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_TIMCLK2=168000000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_PCLK1=42000000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_PCLK2=84000000
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_RTCSEL=1 LSE actual=2 LSI
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: RUSEFI_STM32_LSE_WAIT_MAX_RTCSEL=2 LSI
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: PORT_IDLE_THREAD_STACK_SIZE=32
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_ASSERTS=1
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_SYSTEM_STATE_CHECK=1
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_STACK_CHECK=1
+I 260304 224643.881 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading storage ID 1 @0x80E0000 ... 23888 bytes
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading done
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: applyNonPersistentConfiguration()
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initializeTriggerWaveform(TT_12_TOOTH_CRANK/38)
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initializeTriggerWaveform(TT_HALF_MOON/18)
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Read valid configuration from flash!
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Turning board ON [start-up]
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initAdcInputs()
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WARNING: C6899: Invalid MAP at 4.574065685
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: extiTriggerTurnOnInputPin Trigger #1 C17 VR2-/HALL max9924 best for normal 12+ tooth wheels
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: extiTriggerTurnOnInputPin cam1 C18 VR1+ Discrete for low count wheel
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initHardware() OK!
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: setTpsAccelLen: Length should be positive [0]
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initMapAveraging...
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LTFT: failed to load calibrations
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WARNING: C6121: event too early
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Running main loop
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA loading script length: 614...
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA script loaded successfully!
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua total heap(s) usage: 14871 / 29944 bytes = 49.6%
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua optional heap usage: 0 / 0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua CCM heap usage: 6008 / 6008
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Common ChibiOS heap: 144 bytes free
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ChibiOS memcore usage: 12128 / 23936
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Card is not preset/failed to init
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: SD logger has died!
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: TS: ERROR: no second byte
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio size=884 / total=18 / errors=0 / H=0 / O=0 / P=0 / B=0 / 9=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio C=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got T (Test)
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: TS: ERROR: no second byte
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio size=884 / total=109 / errors=1 / H=0 / O=0 / P=0 / B=0 / 9=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio C=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got T (Test)
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: TS: ERROR: no second byte
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio size=884 / total=1250 / errors=2 / H=0 / O=0 / P=0 / B=0 / 9=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio C=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got T (Test)
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got Query command
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Query signature: rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 0 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 1024 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 2048 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 3072 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 4096 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 5120 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 6144 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 7168 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 8192 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 9216 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 10240 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 11264 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 12288 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 13312 count 1024
+I 260304 224643.882 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 14336 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 15360 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 16384 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 17408 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 18432 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 19456 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 20480 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 21504 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 22528 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 23552 count 324
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got Query command
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Query signature: rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 0 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 1024 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 2048 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 3072 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 4096 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 5120 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 6144 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 7168 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 8192 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 9216 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 10240 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 11264 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 12288 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 13312 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 14336 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 15360 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 16384 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 17408 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 18432 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 19456 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 20480 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 21504 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 22528 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 23552 count 324
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got Query command
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Query signature: rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Get CRC page 0 offset 0 count 23876 result 6497EA8A
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: USB: got Query command
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Query signature: rusEFI master.2026.01.15.uaefi.301744302
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 0 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 1024 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 2048 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 3072 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 4096 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 5120 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 6144 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 7168 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 8192 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 9216 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 10240 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 11264 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 read chunk offset 12288 count 1024
+I 260304 224643.883 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: TS <- Page 0 
+I 260304 224643.884 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.001 [AWT-EventQueue-0] BinaryProtocolServer - BinaryProtocolServer on 2390
+I 260304 224644.002 [AWT-EventQueue-0] StatusConsumer - ServerSocket 2390 created. Feel free to point TS at IP Address 'localhost' port 2390
+I 260304 224644.063 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.064 [ECU Commands Queue] BinaryProtocol - Sending [set date 2026-03-04T22:46:43.9990897]
+I 260304 224644.171 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 01 Jan 1980 00:33:30
+I 260304 224644.171 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Time is changed to
+I 260304 224644.171 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 04 Mar 2026 22:46:43
+I 260304 224644.171 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: confirmation_set date 2026-03-04T22:46:43.9990897:36
+I 260304 224644.171 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.386 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.510 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.633 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.758 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.881 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224644.892 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.035 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.144 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.268 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.391 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.453 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 224645.453 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.515 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.640 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.762 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.886 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224645.895 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.117 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.240 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.364 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.488 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.596 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.721 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.844 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.952 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224646.960 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.092 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.202 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.324 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.447 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.572 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.696 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.819 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.943 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 224647.943 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224647.943 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.066 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.077 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.281 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.389 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.513 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.636 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.760 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.883 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224648.991 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.102 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.112 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.255 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.379 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.490 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.611 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.722 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.844 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224649.966 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.091 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.202 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.211 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.339 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.386 [ECU Communication Executor1] IncomingDataBuffer - output channels header: timeout 10000ms. Got only 0 byte(s) while expecting 2
+I 260304 224650.386 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.463 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.587 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.710 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.833 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224650.957 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.066 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.189 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.313 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.321 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.515 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.637 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.745 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.855 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224651.977 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.086 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.209 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.319 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.327 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.474 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.583 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.691 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.799 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224652.921 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.045 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.154 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.261 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.370 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.379 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.556 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.664 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.774 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.883 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224653.992 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.100 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.209 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.317 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.427 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.435 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.643 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.751 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.860 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224654.970 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.078 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.186 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.294 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.402 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.511 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.519 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.713 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.820 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224655.930 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.052 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.161 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.270 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.378 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.485 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.594 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.601 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.781 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224656.890 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.013 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.121 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.231 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.339 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.446 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.555 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.678 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.685 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.863 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224657.985 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.094 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.203 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.325 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.448 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.572 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.682 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.691 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.839 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224658.962 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224659.072 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224659.197 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224659.320 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224659.444 [ECU Communication Executor1] BinaryProtocol - serial=COM3: Got livedata
+I 260304 224659.502 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260304 224659.503 [AWT-EventQueue-0] SerialIoStream - COM3: Closing port...
+I 260304 224659.506 [AWT-EventQueue-0] SerialIoStream - COM3: Closed port.
+E 260304 224659.506 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.Window.processWindowEvent(Unknown Source)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(Unknown Source)
+	at java.desktop/java.awt.Window.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)

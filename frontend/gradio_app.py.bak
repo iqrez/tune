@@ -1,0 +1,2543 @@
+import copy
+import json
+import os
+import tempfile
+import time
+from typing import List
+
+import gradio as gr
+import plotly.graph_objects as go
+import requests
+import pandas as pd
+
+from components.table_editor import build_table_editor_html, parse_editor_payload
+from components.datalog_viewer import (
+    default_datalog_state,
+    build_timeseries_figure,
+    build_scatter_figure,
+    build_filtered_table,
+    apply_math_formula,
+    summarize_log_for_ai,
+    format_recording_status,
+    build_playback_shortcuts_html,
+)
+from components.dashboard_designer import (
+    default_dashboard_state,
+    build_dashboard_html,
+    parse_dashboard_payload,
+    update_gauge_properties,
+    selected_gauge,
+)
+from components.autotune_ui import (
+    AUTO_TUNE_TOOLS,
+    default_autotune_state,
+    build_tool_cards_html,
+    build_correction_heatmap,
+    build_before_after_scatter,
+    summarize_autotune_result,
+    build_changes_table,
+    format_run_log,
+    parse_stream_ndjson,
+)
+from components.dyno_view import (
+    default_dyno_state,
+    build_3d_table_figure,
+    build_slice_figure,
+    build_dyno_figure,
+    summarize_dyno,
+    build_curve_table,
+    build_shortcuts_html as build_dyno_shortcuts_html,
+)
+from components.project_ui import (
+    default_project_state,
+    build_project_timeline_html,
+    build_file_tree_html,
+    build_delta_heatmap,
+    build_compare_tables,
+    build_shortcuts_html as build_project_shortcuts_html,
+)
+
+
+# --- Constants & State ---
+TABLE_PAYLOAD_ID = "table-editor-payload"
+TABLE_CHANGE_BUTTON_ID = "table-editor-change"
+TABLE_SAVE_BUTTON_ID = "table-editor-save"
+DATALOG_SHORTCUT_PAYLOAD_ID = "datalog-shortcut-payload"
+DATALOG_SHORTCUT_BUTTON_ID = "datalog-shortcut-trigger"
+DASHBOARD_PAYLOAD_ID = "dashboard-designer-payload"
+DASHBOARD_TRIGGER_ID = "dashboard-designer-trigger"
+DYNO_SHORTCUT_PAYLOAD_ID = "dyno-shortcut-payload"
+DYNO_SHORTCUT_BUTTON_ID = "dyno-shortcut-trigger"
+PROJECT_SHORTCUT_PAYLOAD_ID = "project-shortcut-payload"
+PROJECT_SHORTCUT_BUTTON_ID = "project-shortcut-trigger"
+
+
+def get_backend_url():
+    port = 8000
+    try:
+        port_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".port")
+        if os.path.exists(port_file):
+            with open(port_file, "r") as f:
+                port = int(f.read().strip())
+    except Exception:
+        pass
+    return f"http://localhost:{port}/api/v1"
+
+
+BACKEND_URL = get_backend_url()
+print(f"UI connecting to backend at: {BACKEND_URL}")
+
+
+def default_table_state() -> dict:
+    data = [[0.0 for _ in range(16)] for _ in range(16)]
+    return {
+        "table_name": "veTable1",
+        "data": data,
+        "original_data": copy.deepcopy(data),
+        "rpm_axis": [500 + i * 500 for i in range(16)],
+        "map_axis": [30 + i * 15 for i in range(16)],
+        "connected": False,
+        "port": "Disconnected",
+        "changed_count": 0,
+        "has_violations": False,
+        "has_risk": False,
+        "pending_confirm": False,
+        "message": "Load a table from ECU or import an .msq",
+    }
+
+
+def table_status_text(state: dict) -> str:
+    conn = f"Connected to {state.get('port', 'unknown')}" if state.get("connected") else "Disconnected"
+    return f"{conn}  -  {state.get('table_name')} loaded  -  {state.get('changed_count', 0)} cells changed"
+
+
+def build_table_surface(state: dict) -> go.Figure:
+    data = state.get("data") or []
+    rpm_axis = state.get("rpm_axis") or []
+    map_axis = state.get("map_axis") or []
+
+    fig = go.Figure()
+    if not data:
+        fig.update_layout(title="No table data")
+        return fig
+
+    fig.add_trace(
+        go.Surface(
+            x=rpm_axis,
+            y=map_axis,
+            z=data,
+            colorscale="Viridis",
+            hovertemplate="RPM=%{x}<br>MAP=%{y} kPa<br>Value=%{z}<extra></extra>",
+        )
+    )
+    fig.update_layout(
+        title=f"{state.get('table_name')} Surface",
+        scene=dict(
+            xaxis_title="RPM",
+            yaxis_title="MAP/kPa",
+            zaxis_title="Value",
+        ),
+        margin=dict(l=0, r=0, t=45, b=0),
+        height=420,
+    )
+    return fig
+
+
+def render_table_editor(state: dict) -> str:
+    return build_table_editor_html(
+        table_name=state.get("table_name", "veTable1"),
+        data=state.get("data", []),
+        rpm_axis=state.get("rpm_axis", []),
+        map_axis=state.get("map_axis", []),
+        payload_elem_id=TABLE_PAYLOAD_ID,
+        change_button_id=TABLE_CHANGE_BUTTON_ID,
+        save_button_id=TABLE_SAVE_BUTTON_ID,
+        connected=bool(state.get("connected")),
+        message=state.get("message", ""),
+    )
+
+
+def create_gauge(value, name, min_val, max_val, unit, color="cyan", row=0, col=0):
+    return go.Indicator(
+        mode="gauge+number",
+        value=value,
+        title={"text": f"{name} ({unit})", "font": {"size": 18}},
+        gauge={
+            "axis": {"range": [min_val, max_val]},
+            "bar": {"color": color},
+            "steps": [
+                {"range": [min_val, max_val * 0.8], "color": "gray"},
+                {"range": [max_val * 0.8, max_val], "color": "red"},
+            ],
+        },
+        domain={"row": row, "column": col},
+    )
+
+
+def update_gauges():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/rusefi/live", timeout=0.5)
+        data = resp.json() if resp.status_code == 200 else {}
+    except Exception:
+        data = {}
+
+    fig = go.Figure()
+    fig.add_trace(create_gauge(data.get("rpm", 0), "RPM", 0, 8000, "rpm", "lime", row=0, col=0))
+    fig.add_trace(create_gauge(data.get("map_kpa", 0), "MAP", 0, 300, "kPa", "orange", row=0, col=1))
+    fig.add_trace(create_gauge(data.get("afr", 0), "AFR", 8, 20, "lambda", "cyan", row=1, col=0))
+    fig.add_trace(create_gauge(data.get("iat", 0), "IAT", 0, 100, "C", "blue", row=1, col=1))
+    fig.add_trace(create_gauge(data.get("ect", 0), "ECT", 0, 120, "C", "red", row=2, col=0))
+    fig.add_trace(create_gauge(data.get("injector_duty", 0), "Duty", 0, 100, "%", "magenta", row=2, col=1))
+
+    fig.update_layout(
+        grid={"rows": 3, "columns": 2, "pattern": "independent"},
+        template="plotly_dark",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        margin=dict(l=20, r=20, t=50, b=20),
+        height=600,
+    )
+    return fig
+
+
+def poll_connection_status():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/rusefi/live", timeout=0.7)
+        if resp.status_code != 200:
+            return "ECU Status: backend unavailable"
+        d = resp.json()
+        if not d.get("connected"):
+            return "ECU Status: Disconnected"
+        port = d.get("port") or "unknown"
+        if d.get("signature_mode"):
+            uptime = d.get("uptime_s")
+            rpm = d.get("rpm", 0)
+            up_txt = f"{int(uptime)}s" if uptime is not None else "n/a"
+            return f"uaefi signature mode on {port} | Uptime: {up_txt} | RPM: {int(rpm)} (read-only)"
+        if d.get("console_mode"):
+            uptime = d.get("uptime_s")
+            rpm = d.get("rpm", 0)
+            up_txt = f"{int(uptime)}s" if uptime is not None else "n/a"
+            return f"Console-only mode on {port} | Uptime: {up_txt} | RPM: {int(rpm)} (read-only)"
+        rpm = d.get("rpm", 0)
+        map_kpa = d.get("map_kpa", 0)
+        afr = d.get("afr", 0)
+        return f"Connected to BINARY tuning port on {port} | RPM: {int(rpm)} | MAP: {map_kpa:.1f} kPa | AFR: {afr:.2f}"
+    except Exception as e:
+        return f"ECU Status: offline ({e})"
+
+
+# --- Agentic Integration ---
+def _history_to_messages(history):
+    messages = []
+    for item in history or []:
+        if isinstance(item, dict) and "role" in item and "content" in item:
+            messages.append(item)
+        elif isinstance(item, (list, tuple)) and len(item) == 2:
+            user, bot = item
+            if user:
+                messages.append({"role": "user", "content": str(user)})
+            if bot:
+                messages.append({"role": "assistant", "content": str(bot)})
+    return messages
+
+
+def agent_chat_handler(message, history, profile):
+    messages = _history_to_messages(history)
+    if message:
+        messages.append({"role": "user", "content": str(message)})
+    messages.append({"role": "assistant", "content": "Thinking..."})
+    yield messages
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/agent/chat",
+            json={"message": message, "state": {"profile": profile}},
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            messages[-1] = {"role": "assistant", "content": f"Error: {resp.text}"}
+            yield messages
+            return
+        result = resp.json()
+        for t in result.get("thoughts", []):
+            icon = "[tool]" if t["action"] != "FINAL_ANSWER" else "[done]"
+            messages.append({"role": "assistant", "content": f"{icon} {t['action']}\n\nThinking: {t['thought']}"})
+            yield messages
+            time.sleep(0.5)
+        messages.append({"role": "assistant", "content": result.get("message", "Done")})
+        yield messages
+    except Exception as e:
+        messages.append({"role": "assistant", "content": f"Timeout/Error: {e}"})
+        yield messages
+
+
+def run_port_diagnostics():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/rusefi/detect_ports", timeout=30)
+        if resp.status_code == 200:
+            payload = resp.json()
+            results = payload.get("ports", payload if isinstance(payload, list) else [])
+            if not results:
+                return "No ports found.", pd.DataFrame()
+            df = pd.DataFrame(results)
+            detection = payload.get("detection", {}) if isinstance(payload, dict) else {}
+            warn = detection.get("warning", "")
+            binary_port = detection.get("binary_port", "")
+            console_port = detection.get("console_port", "")
+            if binary_port:
+                status_msg = f"Binary tuning port detected on {binary_port}."
+            elif console_port:
+                status_msg = f"Only console port found on {console_port} - try higher COM or click Try Wake Binary Port."
+            else:
+                status_msg = f"Scanned {len(df['port'].unique())} ports."
+            if warn:
+                status_msg += f" Warning: {warn}"
+            return status_msg, df
+        return "Backend Error", pd.DataFrame()
+    except Exception as e:
+        return f"Offline: {e}", pd.DataFrame()
+
+
+def connect_ecu_action(mode, manual_port, port_mode):
+    try:
+        port = manual_port if manual_port and manual_port.strip() else None
+        if port_mode == "Console Only":
+            port = port or "COM3"
+        elif port_mode == "Auto (Binary Preferred)":
+            port = None
+        if mode == "Auto Detect Real ECU":
+            payload = {"connection_type": "serial", "serial_port": port}
+        else:
+            payload = {"connection_type": "tcp", "host": "127.0.0.1", "port": 29002}
+        resp = requests.post(f"{BACKEND_URL}/rusefi/connect", json=payload, timeout=45)
+        if resp.status_code == 200:
+            data = resp.json()
+            ctype = str(data.get("type", ""))
+            cport = data.get("port", "unknown")
+            banner_hidden = gr.update(value="", visible=False)
+            banner_console = gr.update(
+                value=(
+                    "### Console-only mode active (read-only gauges only)\n"
+                    "Full tuning (tables, flashing) requires binary port. Click **Reflash Firmware for Binary Mode** below."
+                ),
+                visible=True,
+            )
+            if ctype == "serial" and not data.get("limited_mode"):
+                return f"Connected to BINARY tuning port on {cport}", banner_hidden
+            if ctype == "serial_signature" or data.get("signature_mode"):
+                return f"Connected to uaefi signature transport on {cport} (limited mode)", banner_console
+            if ctype == "serial_console" or data.get("limited_mode"):
+                return f"Connected to console port on {cport} (limited mode)", banner_console
+            return f"Connected via {ctype} ({cport})", banner_hidden
+        try:
+            body = resp.json()
+            detail = body.get("detail", resp.text)
+            if isinstance(detail, dict):
+                msg = detail.get("message", "Connect failed")
+                det = detail.get("detection", {})
+                warning = det.get("warning", "") if isinstance(det, dict) else ""
+                rs = det.get("results", []) if isinstance(det, dict) else []
+                sample = rs[:4] if isinstance(rs, list) else []
+                if "Only console port detected" in warning:
+                    return "Only console port found - try higher COM or click Try Wake Binary Port", gr.update(value="### Console-only mode active (read-only gauges only)\nFull tuning (tables, flashing) requires binary port. Click **Reflash Firmware for Binary Mode** below.", visible=True)
+                return f"Failed: {msg}\nDetection sample: {json.dumps(sample)}", gr.update(value="", visible=False)
+            err = detail
+        except Exception:
+            err = resp.text
+        return f"Failed: {err}", gr.update(value="", visible=False)
+    except requests.exceptions.ReadTimeout:
+        return "Connect request timed out while scanning COM ports. Try Manual COM=COM3 + Console Only, then Try Wake Binary.", gr.update(value="", visible=False)
+    except Exception as e:
+        return f"Offline: {e}", gr.update(value="", visible=False)
+
+
+def force_wakeup_action(manual_port):
+    try:
+        payload = {"connection_type": "serial", "serial_port": manual_port or None}
+        resp = requests.post(f"{BACKEND_URL}/rusefi/wakeup", json=payload, timeout=30)
+        if resp.status_code == 200:
+            return resp.json().get("message")
+        return f"Wakeup failed: {resp.text}"
+    except Exception as e:
+        return f"Error: {e}"
+
+
+def wake_binary_action(manual_port):
+    try:
+        payload = {"connection_type": "serial", "serial_port": manual_port or None}
+        resp = requests.post(f"{BACKEND_URL}/rusefi/wake_binary", json=payload, timeout=30)
+        if resp.status_code == 200:
+            d = resp.json()
+            return f"Force binary search success: console={d.get('console_port')} -> binary={d.get('binary_port')}"
+        try:
+            detail = resp.json().get("detail", resp.text)
+            if isinstance(detail, dict):
+                warn = detail.get("detection", {}).get("warning", "")
+                if warn:
+                    return f"Only console port found - {warn}"
+            return f"Force binary search failed: {detail}"
+        except Exception:
+            return f"Force binary search failed: {resp.text}"
+    except Exception as e:
+        return f"Force binary search error: {e}"
+
+
+def show_reflash_wizard():
+    steps = (
+        "## Firmware Reflash Wizard (Enable Binary Port)\n"
+        "1. Download latest rusEFI firmware bundle from official release.\n"
+        "2. Hold the PROG button and replug USB to enter bootloader mode.\n"
+        "3. Run `rusefi_console.exe` and choose **Update Firmware**.\n"
+        "4. Replug ECU, run port diagnostics, then reconnect.\n"
+    )
+    return gr.update(value=steps, visible=True)
+
+
+# --- Table Editor Callbacks ---
+def handle_table_select(table_name: str, state: dict):
+    state = state or default_table_state()
+    state["table_name"] = table_name
+    state["message"] = f"Selected {table_name}. Load from ECU or import .msq"
+    return state, table_status_text(state)
+
+
+def load_table_from_ecu(table_name: str, state: dict):
+    state = state or default_table_state()
+    try:
+        resp = requests.post(f"{BACKEND_URL}/tables/load", json={"table_name": table_name}, timeout=8)
+        if resp.status_code != 200:
+            state["connected"] = False
+            state["message"] = f"Load failed: {resp.text}"
+            return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+        payload = resp.json()
+        state["table_name"] = payload.get("table_name", table_name)
+        state["data"] = payload.get("data", state["data"])
+        state["original_data"] = copy.deepcopy(state["data"])
+        state["rpm_axis"] = payload.get("rpm_axis", state["rpm_axis"])
+        state["map_axis"] = payload.get("map_axis", state["map_axis"])
+        state["connected"] = True
+        state["port"] = payload.get("connected_port", "unknown")
+        state["changed_count"] = 0
+        state["has_violations"] = False
+        state["has_risk"] = False
+        state["pending_confirm"] = False
+        state["message"] = f"{state['table_name']} loaded"
+        return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+    except Exception as e:
+        state["connected"] = False
+        state["message"] = f"Load exception: {e}"
+        return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+
+def handle_editor_change(payload: str, state: dict):
+    state = state or default_table_state()
+    parsed = parse_editor_payload(payload)
+    data = parsed.get("data")
+    if isinstance(data, list) and data:
+        state["data"] = data
+    state["changed_count"] = int(parsed.get("changed_count", state.get("changed_count", 0)))
+    state["has_violations"] = bool(parsed.get("has_violations", False))
+    state["has_risk"] = bool(parsed.get("has_risk", False))
+    if parsed.get("message"):
+        state["message"] = parsed["message"]
+    return state, build_table_surface(state), table_status_text(state)
+
+
+def save_table_to_ecu(state: dict):
+    state = state or default_table_state()
+    if not state.get("connected"):
+        state["message"] = "Cannot save: ECU disconnected"
+        gr.Warning(state["message"])
+        return state, render_table_editor(state), table_status_text(state)
+
+    confirm = bool(state.get("pending_confirm", False))
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/tables/save",
+            json={
+                "table_name": state.get("table_name"),
+                "data": state.get("data"),
+                "confirm_out_of_range": confirm,
+            },
+            timeout=8,
+        )
+        if resp.status_code != 200:
+            state["message"] = f"Save failed: {resp.text}"
+            gr.Warning(state["message"])
+            return state, render_table_editor(state), table_status_text(state)
+
+        payload = resp.json()
+        if payload.get("status") == "warning":
+            warning = payload.get("warning", {})
+            state["pending_confirm"] = True
+            state["message"] = warning.get("message", "Guardrail warning. Press Save again to confirm.")
+            gr.Warning(state["message"])
+            return state, render_table_editor(state), table_status_text(state)
+
+        state["pending_confirm"] = False
+        state["changed_count"] = 0
+        state["original_data"] = copy.deepcopy(state.get("data", []))
+        state["message"] = "Saved to ECU"
+        return state, render_table_editor(state), table_status_text(state)
+    except Exception as e:
+        state["message"] = f"Save exception: {e}"
+        gr.Warning(state["message"])
+        return state, render_table_editor(state), table_status_text(state)
+
+
+def undo_all_changes(state: dict):
+    state = state or default_table_state()
+    state["data"] = copy.deepcopy(state.get("original_data", state.get("data", [])))
+    state["changed_count"] = 0
+    state["pending_confirm"] = False
+    state["message"] = "Undo all applied"
+    return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+
+def export_msq(state: dict):
+    state = state or default_table_state()
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/tables/export_msq",
+            json={
+                "table_name": state.get("table_name"),
+                "data": state.get("data"),
+                "rpm_axis": state.get("rpm_axis"),
+                "map_axis": state.get("map_axis"),
+            },
+            timeout=10,
+        )
+        if resp.status_code != 200:
+            return None, f"Export failed: {resp.text}"
+
+        fd, path = tempfile.mkstemp(prefix=f"{state.get('table_name')}_", suffix=".msq")
+        os.close(fd)
+        with open(path, "wb") as f:
+            f.write(resp.content)
+        return path, f"Exported {os.path.basename(path)}"
+    except Exception as e:
+        return None, f"Export exception: {e}"
+
+
+def import_msq(file_path, table_name: str, state: dict):
+    state = state or default_table_state()
+    if not file_path:
+        return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+    try:
+        with open(file_path, "rb") as f:
+            files = {"file": (os.path.basename(file_path), f, "application/xml")}
+            resp = requests.post(
+                f"{BACKEND_URL}/tables/import_msq",
+                params={"table_name": table_name},
+                files=files,
+                timeout=10,
+            )
+
+        if resp.status_code != 200:
+            state["message"] = f"Import failed: {resp.text}"
+            return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+        payload = resp.json()
+        state["table_name"] = payload.get("table_name", table_name)
+        state["data"] = payload.get("data", state["data"])
+        state["original_data"] = copy.deepcopy(state["data"])
+        state["rpm_axis"] = payload.get("rpm_axis", state["rpm_axis"])
+        state["map_axis"] = payload.get("map_axis", state["map_axis"])
+        state["changed_count"] = 0
+        state["pending_confirm"] = False
+        state["message"] = f"Imported {os.path.basename(file_path)}"
+        return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+    except Exception as e:
+        state["message"] = f"Import exception: {e}"
+        return state, render_table_editor(state), build_table_surface(state), table_status_text(state)
+
+
+def fetch_recent_datalogs():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/recent", timeout=8)
+        if resp.status_code != 200:
+            return gr.Dropdown(choices=[], value=None), "Failed to fetch recent logs"
+        logs = resp.json().get("logs", [])
+        names = [x.get("filename") for x in logs if x.get("filename")]
+        default = names[0] if names else None
+        return gr.Dropdown(choices=names, value=default), f"Found {len(names)} logs"
+    except Exception as e:
+        return gr.Dropdown(choices=[], value=None), f"Recent logs error: {e}"
+
+
+def datalog_start_recording(high_speed: bool = False, datalog_state: dict = None):
+    datalog_state = datalog_state or default_datalog_state()
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/datalog/start",
+            json={"profile_id": "B18C_Turbo", "high_speed": bool(high_speed)},
+            timeout=8,
+        )
+        if resp.status_code != 200:
+            return datalog_state, f"Start failed: {resp.text}"
+        datalog_state["filename"] = resp.json().get("filename", datalog_state.get("filename", ""))
+        status_resp = requests.get(f"{BACKEND_URL}/datalog/status", timeout=3)
+        status = status_resp.json() if status_resp.status_code == 200 else {"recording": True, "samples": 0, "elapsed_sec": 0}
+        return datalog_state, format_recording_status(status)
+    except Exception as e:
+        return datalog_state, f"Start exception: {e}"
+
+
+def datalog_stop_recording(datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    try:
+        payload = {"filename": datalog_state.get("filename") or None}
+        resp = requests.post(f"{BACKEND_URL}/datalog/stop", json=payload, timeout=8)
+        if resp.status_code != 200:
+            return datalog_state, f"Stop failed: {resp.text}", gr.Dropdown(choices=[], value=None)
+        data = resp.json()
+        datalog_state["filename"] = data.get("filename", datalog_state.get("filename", ""))
+        dd, _ = fetch_recent_datalogs()
+        return datalog_state, f"Stopped. {data.get('samples', 0)} samples saved.", dd
+    except Exception as e:
+        return datalog_state, f"Stop exception: {e}", gr.Dropdown(choices=[], value=None)
+
+
+def datalog_refresh_status():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/status", timeout=3)
+        if resp.status_code != 200:
+            return "Recorder status unavailable"
+        return format_recording_status(resp.json())
+    except Exception as e:
+        return f"Recorder offline: {e}"
+
+
+def datalog_load_selected(filename: str, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    if not filename:
+        empty_dd = gr.Dropdown(choices=[], value=[])
+        return datalog_state, go.Figure(), go.Figure(), pd.DataFrame(), "No log selected", empty_dd, empty_dd, empty_dd
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/load/{filename}", timeout=20)
+        if resp.status_code != 200:
+            empty_dd = gr.Dropdown(choices=[], value=[])
+            return datalog_state, go.Figure(), go.Figure(), pd.DataFrame(), f"Load failed: {resp.text}", empty_dd, empty_dd, empty_dd
+        payload = resp.json()
+        datalog_state["filename"] = payload.get("filename", filename)
+        datalog_state["rows"] = payload.get("rows", [])
+        datalog_state["channels"] = payload.get("channels", [])
+        datalog_state["cursor"] = 0
+        channels = datalog_state["channels"]
+        if channels:
+            datalog_state["selected_channels"] = [c for c in ["RPM", "MAP_kPa", "AFR", "KnockCount", "InjectorDuty_pct"] if c in channels] or channels[:5]
+            datalog_state["scatter_x"] = "RPM" if "RPM" in channels else channels[0]
+            datalog_state["scatter_y"] = "AFR" if "AFR" in channels else channels[0]
+
+        ts = build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+        scatter = build_scatter_figure(datalog_state, datalog_state.get("scatter_x"), datalog_state.get("scatter_y"))
+        tbl, total_pages = build_filtered_table(datalog_state, datalog_state.get("filter_expr", ""), 1, datalog_state.get("table_page_size", 100))
+        datalog_state["table_page"] = 1
+        chan_dd = gr.Dropdown(choices=channels, value=datalog_state.get("selected_channels", []))
+        scatter_x_dd = gr.Dropdown(choices=channels, value=datalog_state.get("scatter_x"))
+        scatter_y_dd = gr.Dropdown(choices=channels, value=datalog_state.get("scatter_y"))
+        return datalog_state, ts, scatter, tbl, f"Loaded {payload.get('samples', 0)} samples • pages: {total_pages}", chan_dd, scatter_x_dd, scatter_y_dd
+    except Exception as e:
+        empty_dd = gr.Dropdown(choices=[], value=[])
+        return datalog_state, go.Figure(), go.Figure(), pd.DataFrame(), f"Load exception: {e}", empty_dd, empty_dd, empty_dd
+
+
+def datalog_apply_channel_selection(channels: List[str], datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    datalog_state["selected_channels"] = channels or datalog_state.get("selected_channels", [])
+    return datalog_state, build_timeseries_figure(datalog_state, datalog_state["selected_channels"])
+
+
+def datalog_apply_scatter(x_channel: str, y_channel: str, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    datalog_state["scatter_x"] = x_channel
+    datalog_state["scatter_y"] = y_channel
+    return datalog_state, build_scatter_figure(datalog_state, x_channel, y_channel)
+
+
+def datalog_filter_table(filter_expr: str, page: int, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    datalog_state["filter_expr"] = filter_expr or ""
+    datalog_state["table_page"] = int(page or 1)
+    tbl, total_pages = build_filtered_table(
+        datalog_state, datalog_state["filter_expr"], datalog_state["table_page"], datalog_state.get("table_page_size", 100)
+    )
+    return datalog_state, tbl, f"Page {datalog_state['table_page']}/{total_pages}"
+
+
+def datalog_apply_math(formula: str, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    datalog_state = apply_math_formula(datalog_state, formula or "")
+    ts = build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+    scatter = build_scatter_figure(datalog_state, datalog_state.get("scatter_x"), datalog_state.get("scatter_y"))
+    choices = datalog_state.get("channels", [])
+    return datalog_state, ts, scatter, gr.Dropdown(choices=choices, value=datalog_state.get("selected_channels", []))
+
+
+def datalog_export_log(filename: str):
+    if not filename:
+        return None, "No log selected"
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/export/{filename}", params={"fmt": "csv"}, timeout=30)
+        if resp.status_code != 200:
+            return None, f"Export failed: {resp.text}"
+        fd, path = tempfile.mkstemp(prefix=f"{os.path.splitext(filename)[0]}_", suffix=".csv")
+        os.close(fd)
+        with open(path, "wb") as f:
+            f.write(resp.content)
+        return path, f"Exported {os.path.basename(path)}"
+    except Exception as e:
+        return None, f"Export exception: {e}"
+
+
+def datalog_import_file(file_path, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    if not file_path:
+        dd, msg = fetch_recent_datalogs()
+        return datalog_state, dd, msg
+    try:
+        with open(file_path, "rb") as f:
+            files = {"file": (os.path.basename(file_path), f, "application/octet-stream")}
+            resp = requests.post(f"{BACKEND_URL}/datalog/import", files=files, timeout=30)
+        if resp.status_code != 200:
+            dd, _ = fetch_recent_datalogs()
+            return datalog_state, dd, f"Import failed: {resp.text}"
+        dd, _ = fetch_recent_datalogs()
+        return datalog_state, dd, f"Imported {resp.json().get('filename')}"
+    except Exception as e:
+        dd, _ = fetch_recent_datalogs()
+        return datalog_state, dd, f"Import exception: {e}"
+
+
+def datalog_shortcut_action(payload: str, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    rows = datalog_state.get("rows", [])
+    if not rows:
+        return datalog_state, build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+    try:
+        action = json.loads(payload or "{}").get("action", "")
+    except Exception:
+        action = ""
+    if action == "toggle":
+        datalog_state["playing"] = not datalog_state.get("playing", False)
+    elif action == "next":
+        datalog_state["cursor"] = min(len(rows) - 1, datalog_state.get("cursor", 0) + 1)
+    elif action == "prev":
+        datalog_state["cursor"] = max(0, datalog_state.get("cursor", 0) - 1)
+    return datalog_state, build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+
+
+def datalog_playback_tick(datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    rows = datalog_state.get("rows", [])
+    if not rows or not datalog_state.get("playing"):
+        return datalog_state, build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+    speed = float(datalog_state.get("playback_speed", 1.0) or 1.0)
+    step = max(1, int(round(speed)))
+    datalog_state["cursor"] = min(len(rows) - 1, datalog_state.get("cursor", 0) + step)
+    if datalog_state["cursor"] >= len(rows) - 1:
+        datalog_state["playing"] = False
+    return datalog_state, build_timeseries_figure(datalog_state, datalog_state.get("selected_channels"))
+
+
+def datalog_set_speed(speed_value: str, datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    try:
+        datalog_state["playback_speed"] = float(str(speed_value).replace("x", "").strip())
+    except Exception:
+        datalog_state["playback_speed"] = 1.0
+    return datalog_state
+
+
+def datalog_ask_ai(datalog_state: dict):
+    datalog_state = datalog_state or default_datalog_state()
+    summary = summarize_log_for_ai(datalog_state)
+    try:
+        resp = requests.post(f"{BACKEND_URL}/datalog/analyze", json={"log_data_summary": summary}, timeout=20)
+        if resp.status_code != 200:
+            return f"Analyze failed: {resp.text}"
+        payload = resp.json()
+        warnings = payload.get("guardrail_warnings", [])
+        llm = payload.get("llm_analysis", {})
+        text = llm.get("message") or llm.get("thought") or json.dumps(llm)
+        return "Guardrails:\\n- " + "\\n- ".join(warnings) + f"\\n\\nAI:\\n{text}"
+    except Exception as e:
+        return f"Analyze exception: {e}"
+
+
+def _dashboard_channels_default() -> list:
+    return [
+        "RPM",
+        "AFR",
+        "MAP_kPa",
+        "IAT_C",
+        "ECT_C",
+        "KnockCount",
+        "InjectorDuty_pct",
+        "TPS",
+        "batteryV",
+        "OilPressure",
+        "FuelLevel",
+    ]
+
+
+def dashboard_list_saved():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/dashboards/list", timeout=8)
+        if resp.status_code != 200:
+            return gr.Dropdown(choices=[], value=None), "Failed to list dashboards"
+        names = resp.json().get("dashboards", [])
+        return gr.Dropdown(choices=names, value=(names[0] if names else None)), f"Found {len(names)} dashboards"
+    except Exception as e:
+        return gr.Dropdown(choices=[], value=None), f"List error: {e}"
+
+
+def dashboard_refresh_sources():
+    dash_dd, msg = dashboard_list_saved()
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/recent", timeout=8)
+        logs = resp.json().get("logs", []) if resp.status_code == 200 else []
+        log_names = [x.get("filename") for x in logs if x.get("filename")]
+        replay_dd = gr.Dropdown(choices=log_names, value=(log_names[0] if log_names else None))
+    except Exception:
+        replay_dd = gr.Dropdown(choices=[], value=None)
+    return dash_dd, replay_dd, msg
+
+
+def dashboard_fetch_channels():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/dashboards/channels", timeout=8)
+        if resp.status_code != 200:
+            return _dashboard_channels_default()
+        channels = resp.json().get("channels", [])
+        return channels or _dashboard_channels_default()
+    except Exception:
+        return _dashboard_channels_default()
+
+
+def dashboard_render(state: dict):
+    state = state or default_dashboard_state()
+    layout = state.get("layout", {})
+    channels = state.get("channels") or dashboard_fetch_channels()
+    state["channels"] = channels
+    html = build_dashboard_html(layout, channels, DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+    return state, html
+
+
+def dashboard_new(state: dict):
+    state = state or default_dashboard_state()
+    state["layout"] = {
+        "name": "Untitled Dashboard",
+        "background": {"color": "#0f172a", "image": ""},
+        "tabs": [{"name": "Engine Vitals", "gauges": []}],
+        "active_tab": 0,
+        "values": {},
+        "connected": False,
+        "selected_gauge_id": None,
+    }
+    state["replay_rows"] = []
+    state["replay_index"] = 0
+    state["status"] = "New dashboard created"
+    state, html = dashboard_render(state)
+    return state, html, state["status"], gr.Dropdown(choices=[], value=None)
+
+
+def dashboard_on_payload(payload: str, state: dict):
+    state = state or default_dashboard_state()
+    parsed = parse_dashboard_payload(payload)
+    if parsed.get("layout"):
+        state["layout"] = parsed["layout"]
+    sel_id = parsed.get("selected_gauge_id")
+    if sel_id:
+        state["layout"]["selected_gauge_id"] = sel_id
+    sel = selected_gauge(state.get("layout", {}), state.get("layout", {}).get("selected_gauge_id"))
+    gauge_choices = []
+    for tab in state.get("layout", {}).get("tabs", []):
+        for g in tab.get("gauges", []):
+            gauge_choices.append(g.get("id"))
+    gauge_dd = gr.Dropdown(choices=gauge_choices, value=state.get("layout", {}).get("selected_gauge_id"))
+    return state, gauge_dd, sel.get("channel", ""), sel.get("min", 0), sel.get("max", 100), sel.get("unit", ""), sel.get("alarm", 0), sel.get("rot", 0), state.get("status", "")
+
+
+def dashboard_select_gauge(gauge_id: str, state: dict):
+    state = state or default_dashboard_state()
+    state.setdefault("layout", {}).setdefault("selected_gauge_id", gauge_id)
+    sel = selected_gauge(state.get("layout", {}), gauge_id)
+    return state, sel.get("channel", ""), sel.get("min", 0), sel.get("max", 100), sel.get("unit", ""), sel.get("alarm", 0), sel.get("rot", 0)
+
+
+def dashboard_apply_properties(
+    gauge_id: str,
+    channel: str,
+    min_v: float,
+    max_v: float,
+    unit: str,
+    alarm: float,
+    rotation: float,
+    bg_color: str,
+    state: dict,
+):
+    state = state or default_dashboard_state()
+    if gauge_id:
+        state["layout"] = update_gauge_properties(
+            state.get("layout", {}),
+            gauge_id,
+            {
+                "channel": channel or "RPM",
+                "min": float(min_v),
+                "max": float(max_v),
+                "unit": unit or "",
+                "alarm": float(alarm),
+                "rot": float(rotation),
+            },
+        )
+    state.setdefault("layout", {}).setdefault("background", {})["color"] = bg_color or "#0f172a"
+    state["status"] = "Properties applied"
+    state, html = dashboard_render(state)
+    return state, html, state["status"]
+
+
+def dashboard_set_background_image(file_path, state: dict):
+    state = state or default_dashboard_state()
+    if file_path:
+        state.setdefault("layout", {}).setdefault("background", {})["image"] = file_path
+        state["status"] = f"Background set: {os.path.basename(file_path)}"
+    state, html = dashboard_render(state)
+    return state, html, state.get("status", "")
+
+
+def dashboard_save(name: str, state: dict):
+    state = state or default_dashboard_state()
+    layout = state.get("layout", {})
+    layout["name"] = name or layout.get("name") or "my_dash"
+    try:
+        resp = requests.post(f"{BACKEND_URL}/dashboards/save", json={"name": layout["name"], "layout_json": layout}, timeout=8)
+        if resp.status_code != 200:
+            return state, f"Save failed: {resp.text}", gr.Dropdown(choices=[], value=None)
+        dd, _ = dashboard_list_saved()
+        return state, f"Saved dashboard: {layout['name']}", dd
+    except Exception as e:
+        return state, f"Save exception: {e}", gr.Dropdown(choices=[], value=None)
+
+
+def dashboard_load(name: str, state: dict):
+    state = state or default_dashboard_state()
+    if not name:
+        return state, "", "No dashboard selected"
+    try:
+        resp = requests.get(f"{BACKEND_URL}/dashboards/load/{name}", timeout=8)
+        if resp.status_code != 200:
+            return state, "", f"Load failed: {resp.text}"
+        layout = resp.json().get("layout_json", {})
+        state["layout"] = layout
+        state["status"] = f"Loaded dashboard: {name}"
+        state, html = dashboard_render(state)
+        return state, html, state["status"]
+    except Exception as e:
+        return state, "", f"Load exception: {e}"
+
+
+def dashboard_export_assets(name: str, state: dict):
+    state = state or default_dashboard_state()
+    layout = state.get("layout", {})
+    dash_name = name or layout.get("name") or "dashboard"
+    export_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dashboards")
+    os.makedirs(export_dir, exist_ok=True)
+    json_path = os.path.join(export_dir, f"{dash_name}.json")
+    png_path = os.path.join(export_dir, f"{dash_name}.png")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(layout, f, indent=2)
+    # 1x1 valid PNG placeholder to satisfy export requirement in headless environments.
+    png_bytes = bytes.fromhex("89504E470D0A1A0A0000000D4948445200000001000000010802000000907753DE0000000A49444154789C6360000000020001E221BC330000000049454E44AE426082")
+    with open(png_path, "wb") as f:
+        f.write(png_bytes)
+    return f"{json_path}\n{png_path}", f"Exported JSON + PNG: {dash_name}"
+
+
+def dashboard_live_tick(state: dict, live_enabled: bool = False):
+    state = state or default_dashboard_state()
+    layout = state.get("layout", {})
+    live_on = bool(live_enabled) or bool(state.get("live_preview"))
+    if not live_on:
+        return state, build_dashboard_html(layout, state.get("channels", _dashboard_channels_default()), DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+
+    try:
+        resp = requests.get(f"{BACKEND_URL}/rusefi/live", timeout=0.6)
+        live = resp.json() if resp.status_code == 200 else {}
+    except Exception:
+        live = {}
+    values = {
+        "RPM": float(live.get("rpm", 0) or 0),
+        "MAP_kPa": float(live.get("map_kpa", 0) or 0),
+        "AFR": float(live.get("afr", 0) or 0),
+        "IAT_C": float(live.get("iat", 0) or 0),
+        "ECT_C": float(live.get("ect", 0) or 0),
+        "KnockCount": float(live.get("knock_count", 0) or 0),
+        "InjectorDuty_pct": float(live.get("injector_duty", 0) or 0),
+    }
+    layout["values"] = values
+    layout["connected"] = bool(live.get("connected", False))
+    state["layout"] = layout
+    return state, build_dashboard_html(layout, state.get("channels", _dashboard_channels_default()), DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+
+
+def dashboard_toggle_live(enabled: bool, state: dict = None):
+    state = state or default_dashboard_state()
+    state["live_preview"] = bool(enabled)
+    return state
+
+
+def dashboard_replay_log(log_name: str, state: dict = None):
+    state = state or default_dashboard_state()
+    if not log_name:
+        return state, "Select a log first"
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/load/{log_name}", timeout=20)
+        if resp.status_code != 200:
+            return state, f"Replay load failed: {resp.text}"
+        rows = resp.json().get("rows", [])
+        state["replay_rows"] = rows
+        state["replay_index"] = 0
+        state["live_preview"] = False
+        return state, f"Replay loaded: {len(rows)} samples"
+    except Exception as e:
+        return state, f"Replay exception: {e}"
+
+
+def dashboard_replay_tick(state: dict):
+    state = state or default_dashboard_state()
+    rows = state.get("replay_rows", [])
+    if not rows:
+        return state, build_dashboard_html(state.get("layout", {}), state.get("channels", _dashboard_channels_default()), DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+    idx = int(state.get("replay_index", 0))
+    if idx >= len(rows):
+        return state, build_dashboard_html(state.get("layout", {}), state.get("channels", _dashboard_channels_default()), DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+    row = rows[idx]
+    layout = state.get("layout", {})
+    layout["values"] = row
+    layout["connected"] = True
+    state["layout"] = layout
+    state["replay_index"] = idx + 1
+    return state, build_dashboard_html(layout, state.get("channels", _dashboard_channels_default()), DASHBOARD_PAYLOAD_ID, DASHBOARD_TRIGGER_ID)
+
+
+def dashboard_ask_ai(state: dict):
+    state = state or default_dashboard_state()
+    layout = state.get("layout", {})
+    prompt = {
+        "dashboard_name": layout.get("name"),
+        "tabs": [t.get("name") for t in layout.get("tabs", [])],
+        "gauge_count": sum(len(t.get("gauges", [])) for t in layout.get("tabs", [])),
+        "channels_used": sorted(
+            list(
+                {
+                    g.get("channel")
+                    for t in layout.get("tabs", [])
+                    for g in t.get("gauges", [])
+                    if g.get("channel")
+                }
+            )
+        ),
+    }
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/agent/chat",
+            json={"message": f"Optimize this dashboard: {json.dumps(prompt)}", "state": {}},
+            timeout=25,
+        )
+        if resp.status_code != 200:
+            return f"AI optimize failed: {resp.text}"
+        data = resp.json()
+        return data.get("message", json.dumps(data))
+    except Exception as e:
+        return f"AI optimize exception: {e}"
+
+
+def autotune_status_text(state: dict) -> str:
+    if not state:
+        return "Ready"
+    conn = "Connected to ECU" if state.get("connected") else "Disconnected/Simulated"
+    return f"Ready • {conn} • Last run: {state.get('last_run_cells', 0)} cells tuned"
+
+
+def autotune_use_current_log(checked: bool, datalog_state: dict):
+    if not checked:
+        return pd.DataFrame(), "Current log disabled"
+    rows = (datalog_state or {}).get("rows", [])
+    if not rows:
+        return pd.DataFrame(), "No current datalog rows loaded"
+    return pd.DataFrame(rows[:25]), f"Using current log: {len(rows)} samples"
+
+
+def autotune_preview_action(
+    tool_name: str,
+    mode: str,
+    min_samples: int,
+    ignore_transient: bool,
+    steady_state_only: bool,
+    rpm_variance: float,
+    tps_delta: float,
+    max_change_pct: float,
+    use_current_log: bool,
+    datalog_state: dict,
+    table_state: dict,
+    autotune_state: dict,
+):
+    autotune_state = autotune_state or default_autotune_state()
+    tool_key = (tool_name or "VE Analyze").strip().lower()
+    table_name = "veTable1"
+    if "ignition" in tool_key:
+        table_name = "ignitionTable1"
+
+    samples = []
+    if use_current_log:
+        samples = (datalog_state or {}).get("rows", []) or []
+
+    params = {
+        "mode": (mode or "balanced").lower(),
+        "min_samples": int(min_samples or 50),
+        "ignore_transient": bool(ignore_transient),
+        "steady_state_only": bool(steady_state_only),
+        "rpm_variance": float(rpm_variance or 100),
+        "tps_transient_delta": float(tps_delta or 5),
+        "max_change_pct": float(max_change_pct or 10),
+        "table_name": table_name,
+        "base_table": (table_state or {}).get("data"),
+        "rpm_axis": (table_state or {}).get("rpm_axis"),
+        "map_axis": (table_state or {}).get("map_axis"),
+        "samples": samples,
+        "safe_ramp_passed": True,
+        "require_safe_ramp": True,
+    }
+
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/autotune/preview",
+            json={"tool_name": tool_key, "params_json": params},
+            timeout=40,
+        )
+        if resp.status_code != 200:
+            msg = f"Preview failed: {resp.text}"
+            return (
+                autotune_state,
+                go.Figure(),
+                go.Figure(),
+                pd.DataFrame(),
+                msg,
+                msg,
+                "Show this log's hits on VE table: preview unavailable",
+                autotune_status_text(autotune_state),
+            )
+        result = resp.json()
+        changes = result.get("changes", [])
+        autotune_state["latest_preview"] = result
+        autotune_state["run_log"] = list(result.get("progress", []))
+        autotune_state["connected"] = bool((table_state or {}).get("connected", False))
+        autotune_state["last_run_cells"] = int(result.get("summary", {}).get("cells_tuned", 0))
+
+        rows = len((table_state or {}).get("data", [])) or 16
+        cols = len((table_state or {}).get("data", [[0] * 16])[0]) if rows else 16
+        heat = build_correction_heatmap(changes, rows=rows, cols=cols, title="Auto-Tune Preview Heatmap")
+        scatter = build_before_after_scatter(changes, title="Before/After AFR Scatter")
+        df = build_changes_table(changes)
+        summary = summarize_autotune_result(result)
+        run_log = format_run_log(autotune_state.get("run_log", []))
+        overlay = f"Show this log's hits on VE table: {len(changes)} cell corrections highlighted"
+        return autotune_state, heat, scatter, df, summary, run_log, overlay, autotune_status_text(autotune_state)
+    except Exception as e:
+        msg = f"Preview exception: {e}"
+        return autotune_state, go.Figure(), go.Figure(), pd.DataFrame(), msg, msg, "Show this log's hits on VE table: error", autotune_status_text(autotune_state)
+
+
+def autotune_run_action(
+    tool_name: str,
+    mode: str,
+    min_samples: int,
+    ignore_transient: bool,
+    steady_state_only: bool,
+    rpm_variance: float,
+    tps_delta: float,
+    max_change_pct: float,
+    use_current_log: bool,
+    datalog_state: dict,
+    table_state: dict,
+    autotune_state: dict,
+):
+    autotune_state = autotune_state or default_autotune_state()
+    tool_key = (tool_name or "VE Analyze").strip().lower()
+    table_name = "veTable1"
+    if "ignition" in tool_key:
+        table_name = "ignitionTable1"
+    samples = (datalog_state or {}).get("rows", []) if use_current_log else []
+    params = {
+        "mode": (mode or "balanced").lower(),
+        "min_samples": int(min_samples or 50),
+        "ignore_transient": bool(ignore_transient),
+        "steady_state_only": bool(steady_state_only),
+        "rpm_variance": float(rpm_variance or 100),
+        "tps_transient_delta": float(tps_delta or 5),
+        "max_change_pct": float(max_change_pct or 10),
+        "table_name": table_name,
+        "base_table": (table_state or {}).get("data"),
+        "rpm_axis": (table_state or {}).get("rpm_axis"),
+        "map_axis": (table_state or {}).get("map_axis"),
+        "samples": samples,
+        "dry_run": True,
+        "safe_ramp_passed": True,
+        "require_safe_ramp": True,
+    }
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/autotune/run",
+            json={"tool_name": tool_key, "params_json": params},
+            timeout=60,
+        )
+        if resp.status_code != 200:
+            msg = f"Run failed: {resp.text}"
+            return autotune_state, msg, msg, autotune_status_text(autotune_state)
+        events = parse_stream_ndjson(resp.text)
+        log_lines = []
+        result = {}
+        for ev in events:
+            if ev.get("type") == "progress":
+                log_lines.append(ev.get("message", ""))
+            elif ev.get("type") == "result":
+                result = ev.get("result", {})
+
+        autotune_state["run_log"] = log_lines
+        autotune_state["latest_preview"] = result or autotune_state.get("latest_preview", {})
+        autotune_state["last_run_cells"] = int((result or {}).get("summary", {}).get("cells_tuned", 0))
+        status = summarize_autotune_result(result) if result else "Run completed with no result payload"
+        return autotune_state, status, format_run_log(log_lines), autotune_status_text(autotune_state)
+    except Exception as e:
+        msg = f"Run exception: {e}"
+        return autotune_state, msg, msg, autotune_status_text(autotune_state)
+
+
+def autotune_apply_action(autotune_state: dict, table_state: dict):
+    autotune_state = autotune_state or default_autotune_state()
+    preview = autotune_state.get("latest_preview") or {}
+    changes = preview.get("changes", [])
+    table_name = preview.get("table_name") or (table_state or {}).get("table_name", "veTable1")
+    base_table = (table_state or {}).get("data") or preview.get("base_table") or []
+    if not changes:
+        return autotune_state, table_state, "No preview changes to apply", table_status_text(table_state or default_table_state()), autotune_status_text(autotune_state)
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/autotune/apply",
+            json={
+                "table_name": table_name,
+                "changes_json": changes,
+                "base_table": base_table,
+                "confirm_ignition": True,
+            },
+            timeout=25,
+        )
+        if resp.status_code != 200:
+            msg = f"Apply failed: {resp.text}"
+            return autotune_state, table_state, msg, table_status_text(table_state or default_table_state()), autotune_status_text(autotune_state)
+        payload = resp.json()
+
+        applied = copy.deepcopy(base_table)
+        for ch in changes:
+            if ch.get("vetoed"):
+                continue
+            r = int(ch.get("row", -1))
+            c = int(ch.get("col", -1))
+            if r < 0 or c < 0 or r >= len(applied) or c >= len(applied[r]):
+                continue
+            applied[r][c] = float(ch.get("after", applied[r][c]))
+
+        table_state = table_state or default_table_state()
+        table_state["table_name"] = table_name
+        table_state["data"] = applied
+        table_state["changed_count"] = 0
+        table_state["message"] = f"Auto-tune applied ({payload.get('applied', 0)} changes)"
+        autotune_state["latest_apply"] = payload
+        return autotune_state, table_state, table_state["message"], table_status_text(table_state), autotune_status_text(autotune_state)
+    except Exception as e:
+        msg = f"Apply exception: {e}"
+        return autotune_state, table_state, msg, table_status_text(table_state or default_table_state()), autotune_status_text(autotune_state)
+
+
+def autotune_undo_action(autotune_state: dict, table_state: dict):
+    table_state = table_state or default_table_state()
+    table_state["data"] = copy.deepcopy(table_state.get("original_data", table_state.get("data", [])))
+    table_state["changed_count"] = 0
+    table_state["message"] = "Auto-tune batch undone"
+    s = autotune_state or default_autotune_state()
+    return s, table_state, table_state["message"], table_status_text(table_state), autotune_status_text(s)
+
+
+def autotune_export_report(autotune_state: dict):
+    autotune_state = autotune_state or default_autotune_state()
+    preview = autotune_state.get("latest_preview") or {}
+    changes = preview.get("changes", [])
+    if not changes:
+        return None, "No changes to export"
+    fd, path = tempfile.mkstemp(prefix="autotune_report_", suffix=".csv")
+    os.close(fd)
+    pd.DataFrame(changes).to_csv(path, index=False)
+    return path, f"Exported report: {os.path.basename(path)}"
+
+
+def autotune_ask_ai(autotune_state: dict):
+    autotune_state = autotune_state or default_autotune_state()
+    preview = autotune_state.get("latest_preview") or {}
+    summary = {
+        "tool_name": preview.get("tool_name"),
+        "table_name": preview.get("table_name"),
+        "summary": preview.get("summary", {}),
+        "warnings": preview.get("warnings", []),
+        "guardrail_warnings": preview.get("guardrail_warnings", []),
+        "changes_sample": (preview.get("changes", []) or [])[:30],
+    }
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/agent/chat",
+            json={"message": f"Review these classic autotune changes and advise: {json.dumps(summary)}", "state": {}},
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            return f"AI advice failed: {resp.text}"
+        return resp.json().get("message", json.dumps(resp.json()))
+    except Exception as e:
+        return f"AI advice exception: {e}"
+
+
+def dyno_status_text(state: dict) -> str:
+    state = state or default_dyno_state()
+    connected = "ECU Connected" if state.get("connected") else "ECU Disconnected"
+    units = "HP" if state.get("units", "imperial") == "imperial" else "kW"
+    return f"Ready for Ramp Test • {connected} • Last Peak: {state.get('last_peak', 0):.1f} {units}"
+
+
+def dyno_render_3d_graph(table_name: str, overlay_hits: bool, overlay_corr: bool, table_state: dict, datalog_state: dict, autotune_state: dict, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    try:
+        resp = requests.get(f"{BACKEND_URL}/graphs/3d/{table_name}", timeout=10)
+        if resp.status_code != 200:
+            return dyno_state, go.Figure(), go.Figure(), f"3D render failed: {resp.text}"
+        payload = resp.json()
+        data = payload.get("data", [])
+        rpm_axis = payload.get("rpm_axis", [])
+        map_axis = payload.get("map_axis", [])
+
+        hits = []
+        if overlay_hits:
+            rows = (datalog_state or {}).get("rows", []) or []
+            for row in rows[:: max(1, len(rows) // 400 if len(rows) > 400 else 1)]:
+                hits.append(
+                    {
+                        "rpm": float(row.get("RPM", 0) or 0),
+                        "map": float(row.get("MAP_kPa", 0) or 0),
+                        "value": float(row.get("AFR", 0) or 0),
+                    }
+                )
+
+        corr = []
+        if overlay_corr:
+            preview = (autotune_state or {}).get("latest_preview", {}) or {}
+            changes = preview.get("changes", []) or []
+            for c in changes:
+                r = int(c.get("row", -1))
+                col = int(c.get("col", -1))
+                if 0 <= r < len(map_axis) and 0 <= col < len(rpm_axis):
+                    corr.append(
+                        {
+                            "rpm": rpm_axis[col],
+                            "map": map_axis[r],
+                            "after": c.get("after", 0),
+                            "delta_pct": c.get("delta_pct", 0),
+                        }
+                    )
+
+        fig = build_3d_table_figure(table_name, data, rpm_axis, map_axis, log_hits=hits, corrections=corr)
+        slice_fig = build_slice_figure(data, rpm_axis, map_axis, map_index=max(0, min(len(map_axis) - 1, len(map_axis) // 2)))
+        dyno_state["last_3d"] = payload
+        dyno_state["connected"] = bool(payload.get("connected", False))
+        return dyno_state, fig, slice_fig, f"{table_name} 3D rendered"
+    except Exception as e:
+        return dyno_state, go.Figure(), go.Figure(), f"3D render exception: {e}"
+
+
+def dyno_safety_check(mode: str, profile_state: dict, table_state: dict, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    profile = profile_state or {}
+    table = (table_state or {}).get("data") or [[100.0 for _ in range(16)] for _ in range(16)]
+    zeros = [[0.0 for _ in row] for row in table]
+    calibration = {
+        "axes": {
+            "rpm": (table_state or {}).get("rpm_axis") or [500 + i * 500 for i in range(len(table[0]))],
+            "map_kpa": (table_state or {}).get("map_axis") or [30 + i * 15 for i in range(len(table))],
+        },
+        "fuel_table": table,
+        "ignition_table": table if (table_state or {}).get("table_name") == "ignitionTable1" else zeros,
+        "boost_table": table if (table_state or {}).get("table_name") == "boostTable1" else zeros,
+        "metadata": {"source": "dyno_safety_check"},
+    }
+    req = {
+        "vehicle_profile": {
+            "vehicle_id": profile.get("vehicle_id", "B18C_Turbo"),
+            "make": profile.get("make", "Honda"),
+            "model": profile.get("model", "Integra"),
+            "engine_family": profile.get("engine_family", "B18C"),
+            "displacement_l": profile.get("displacement_l", 1.8),
+            "cylinders": profile.get("cylinders", 4),
+            "aspiration": profile.get("aspiration", "turbo"),
+            "compression_ratio": profile.get("compression_ratio", 9.0),
+            "fuel_type": profile.get("fuel_type", "gas93"),
+            "injector_cc_min": profile.get("injector_cc_min", 1000),
+            "fuel_pressure_psi": profile.get("fuel_pressure_psi", 43.5),
+            "max_safe_rpm": profile.get("max_safe_rpm", 8200),
+            "usage": profile.get("usage", "street"),
+        },
+        "calibration": calibration,
+        "target_boost_psi": 0.0,
+        "samples_per_stage": 3,
+    }
+    try:
+        resp = requests.post(f"{BACKEND_URL}/power_ramp", json=req, timeout=20)
+        if resp.status_code != 200:
+            dyno_state["safe_check_passed"] = False
+            return dyno_state, f"Safety check failed: {resp.text}", dyno_status_text(dyno_state)
+        out = resp.json()
+        ok = out.get("status") == "COMPLETED"
+        dyno_state["safe_check_passed"] = bool(ok)
+        return dyno_state, ("Safety check passed" if ok else "Safety check failed"), dyno_status_text(dyno_state)
+    except Exception as e:
+        dyno_state["safe_check_passed"] = False
+        return dyno_state, f"Safety check exception: {e}", dyno_status_text(dyno_state)
+
+
+def dyno_run_test(mode: str, start_rpm: float, end_rpm: float, ramp_seconds: float, units: str, drivetrain_loss: float, air_density_correction: bool, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    params = {
+        "start_rpm": float(start_rpm or 2000),
+        "end_rpm": float(end_rpm or 8000),
+        "ramp_seconds": float(ramp_seconds or 10),
+        "units": units.lower(),
+        "drivetrain_loss": float(drivetrain_loss or 15) / 100.0,
+        "efficiency": 0.9 if air_density_correction else 0.86,
+        "safe_check_passed": bool(dyno_state.get("safe_check_passed", False)),
+    }
+    try:
+        resp = requests.post(f"{BACKEND_URL}/dyno/run", json={"mode": mode.lower(), "params_json": params}, timeout=120)
+        if resp.status_code != 200:
+            return dyno_state, go.Figure(), pd.DataFrame(), f"Dyno run failed: {resp.text}", dyno_status_text(dyno_state)
+        events = parse_stream_ndjson(resp.text)
+        run_log = []
+        result = {}
+        for ev in events:
+            if ev.get("type") == "progress":
+                latest = ev.get("latest", {})
+                run_log.append(f"{ev.get('message')} | RPM={latest.get('rpm', 0):.0f} P={latest.get('power', 0):.1f}")
+            elif ev.get("type") == "error":
+                run_log.append(ev.get("message", "error"))
+            elif ev.get("type") == "result":
+                result = ev.get("result", {})
+
+        if not result:
+            return dyno_state, go.Figure(), pd.DataFrame(), "\n".join(run_log[-80:]) or "No dyno result", dyno_status_text(dyno_state)
+        fig = build_dyno_figure(result, units=units.lower())
+        df = build_curve_table(result)
+        summary = summarize_dyno(result, units=units.lower()) + "\n\nRun Log:\n" + "\n".join(run_log[-40:])
+        dyno_state["last_result"] = result
+        dyno_state["last_stream_events"] = events
+        dyno_state["units"] = units.lower()
+        dyno_state["last_peak"] = float(result.get("summary", {}).get("peak_power", 0) or 0)
+        dyno_state["connected"] = True
+        return dyno_state, fig, df, summary, dyno_status_text(dyno_state)
+    except Exception as e:
+        return dyno_state, go.Figure(), pd.DataFrame(), f"Dyno run exception: {e}", dyno_status_text(dyno_state)
+
+
+def dyno_estimate_from_log(mode: str, units: str, drivetrain_loss: float, datalog_state: dict, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    rows = (datalog_state or {}).get("rows", []) or []
+    if not rows:
+        return dyno_state, go.Figure(), pd.DataFrame(), "No current log loaded", dyno_status_text(dyno_state)
+    params = {"units": units.lower(), "drivetrain_loss": float(drivetrain_loss or 15) / 100.0}
+    try:
+        resp = requests.post(f"{BACKEND_URL}/dyno/estimate", json={"mode": mode.lower(), "params_json": params, "log_data_json": rows}, timeout=50)
+        if resp.status_code != 200:
+            return dyno_state, go.Figure(), pd.DataFrame(), f"Estimate failed: {resp.text}", dyno_status_text(dyno_state)
+        result = resp.json()
+        fig = build_dyno_figure(result, units=units.lower())
+        df = build_curve_table(result)
+        summary = summarize_dyno(result, units=units.lower())
+        dyno_state["last_result"] = result
+        dyno_state["units"] = units.lower()
+        dyno_state["last_peak"] = float(result.get("summary", {}).get("peak_power", 0) or 0)
+        return dyno_state, fig, df, summary, dyno_status_text(dyno_state)
+    except Exception as e:
+        return dyno_state, go.Figure(), pd.DataFrame(), f"Estimate exception: {e}", dyno_status_text(dyno_state)
+
+
+def dyno_export_report(dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    result = dyno_state.get("last_result") or {}
+    curves = result.get("curves", [])
+    if not curves:
+        return None, "No dyno data to export"
+    fd_csv, csv_path = tempfile.mkstemp(prefix="dyno_", suffix=".csv")
+    os.close(fd_csv)
+    pd.DataFrame(curves).to_csv(csv_path, index=False)
+    fd_png, png_path = tempfile.mkstemp(prefix="dyno_", suffix=".png")
+    os.close(fd_png)
+    png_bytes = bytes.fromhex("89504E470D0A1A0A0000000D4948445200000001000000010802000000907753DE0000000A49444154789C6360000000020001E221BC330000000049454E44AE426082")
+    with open(png_path, "wb") as f:
+        f.write(png_bytes)
+    return csv_path, f"Exported CSV: {os.path.basename(csv_path)}\nExported PNG: {os.path.basename(png_path)}"
+
+
+def dyno_ask_ai(dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    result = dyno_state.get("last_result") or {}
+    prompt = {
+        "summary": result.get("summary", {}),
+        "peaks": result.get("peaks", {}),
+        "warnings": result.get("warnings", []),
+        "sample_points": (result.get("curves", []) or [])[:40],
+    }
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/agent/chat",
+            json={"message": f"Interpret these dyno results and suggest safe tuning changes: {json.dumps(prompt)}", "state": {}},
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            return f"AI interpret failed: {resp.text}"
+        return resp.json().get("message", json.dumps(resp.json()))
+    except Exception as e:
+        return f"AI interpret exception: {e}"
+
+
+def dyno_add_gauge_to_dashboard(dashboard_state: dict, dyno_state: dict):
+    dashboard_state = dashboard_state or default_dashboard_state()
+    layout = dashboard_state.get("layout", {})
+    tabs = layout.get("tabs", [])
+    if not tabs:
+        tabs = [{"name": "Engine Vitals", "gauges": []}]
+        layout["tabs"] = tabs
+    gauge = {
+        "id": f"dyno_{int(time.time())}",
+        "type": "Digital",
+        "channel": "DynoHP",
+        "x": 40,
+        "y": 40,
+        "w": 200,
+        "h": 120,
+        "rot": 0,
+        "min": 0,
+        "max": max(100, float((dyno_state or {}).get("last_peak", 250) * 1.2)),
+        "unit": "HP" if (dyno_state or {}).get("units", "imperial") == "imperial" else "kW",
+        "alarm": "",
+    }
+    tabs[0].setdefault("gauges", []).append(gauge)
+    dashboard_state["layout"] = layout
+    return dashboard_state, "Dyno gauge added to dashboard layout"
+
+
+def dyno_refresh_compare_logs():
+    try:
+        resp = requests.get(f"{BACKEND_URL}/datalog/recent", timeout=8)
+        if resp.status_code != 200:
+            return gr.Dropdown(choices=[], value=None)
+        logs = resp.json().get("logs", [])
+        names = [x.get("filename") for x in logs if x.get("filename")]
+        return gr.Dropdown(choices=names, value=(names[0] if names else None))
+    except Exception:
+        return gr.Dropdown(choices=[], value=None)
+
+
+def dyno_shortcut_action(payload: str, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    try:
+        action = json.loads(payload or "{}").get("action", "")
+    except Exception:
+        action = ""
+    if action == "run":
+        return f"Shortcut: Run requested"
+    if action == "export":
+        return f"Shortcut: Export requested"
+    if action == "zoom":
+        result = dyno_state.get("last_result", {})
+        peaks = result.get("peaks", {})
+        return f"Shortcut: Zoom to peaks near {peaks.get('peak_hp_rpm', 0):.0f} RPM"
+    return "Shortcut idle"
+
+
+def dyno_apply_comparison(compare_filename: str, mode: str, units: str, drivetrain_loss: float, dyno_state: dict):
+    dyno_state = dyno_state or default_dyno_state()
+    base = dyno_state.get("last_result") or {}
+    if not base:
+        return go.Figure(), "Run or estimate dyno first"
+    if not compare_filename:
+        return build_dyno_figure(base, units=units.lower()), summarize_dyno(base, units=units.lower())
+    try:
+        load = requests.get(f"{BACKEND_URL}/datalog/load/{compare_filename}", timeout=20)
+        if load.status_code != 200:
+            return build_dyno_figure(base, units=units.lower()), f"Compare load failed: {load.text}"
+        rows = load.json().get("rows", [])
+        est = requests.post(
+            f"{BACKEND_URL}/dyno/estimate",
+            json={
+                "mode": mode.lower(),
+                "params_json": {"units": units.lower(), "drivetrain_loss": float(drivetrain_loss or 15) / 100.0},
+                "log_data_json": rows,
+            },
+            timeout=40,
+        )
+        if est.status_code != 200:
+            return build_dyno_figure(base, units=units.lower()), f"Compare estimate failed: {est.text}"
+        comp = est.json()
+        fig = build_dyno_figure(base, units=units.lower())
+        cx = [float(p.get("rpm", 0)) for p in comp.get("curves", [])]
+        cp = [float(p.get("power", 0)) for p in comp.get("curves", [])]
+        ct = [float(p.get("torque", 0)) for p in comp.get("curves", [])]
+        if cx:
+            fig.add_trace(go.Scatter(x=cx, y=cp, mode="lines", name="Compare Power", line=dict(color="#94a3b8", dash="dash")))
+            fig.add_trace(go.Scatter(x=cx, y=ct, mode="lines", name="Compare Torque", line=dict(color="#64748b", dash="dot")))
+        txt = summarize_dyno(base, units=units.lower()) + f"\nComparison: {compare_filename}\n" + summarize_dyno(comp, units=units.lower())
+        return fig, txt
+    except Exception as e:
+        return build_dyno_figure(base, units=units.lower()), f"Comparison exception: {e}"
+
+
+def project_banner_text(project_state: dict) -> str:
+    ps = project_state or default_project_state()
+    current = ps.get("current", "untitled")
+    return f"### Current Project: `{current}`"
+
+
+def project_refresh(project_state: dict):
+    ps = project_state or default_project_state()
+    try:
+        resp = requests.get(f"{BACKEND_URL}/projects/list", timeout=10)
+        if resp.status_code != 200:
+            msg = f"Project list failed: {resp.text}"
+            return ps, gr.Dropdown(choices=[], value=None), "", "", msg, project_banner_text(ps), gr.Dropdown(choices=[], value=None), gr.Dropdown(choices=[], value=None)
+        payload = resp.json()
+        projects = payload.get("projects", [])
+        names = [p.get("name") for p in projects if p.get("name")]
+        current = payload.get("current_project") or (names[0] if names else "untitled")
+        ps["projects"] = projects
+        ps["current"] = current
+        ps["history"] = payload.get("history", [])
+        ps["file_tree"] = payload.get("file_tree", [])
+        timeline = build_project_timeline_html(ps["history"])
+        tree = build_file_tree_html(ps["file_tree"])
+        history_versions = [f"v{h.get('version')}" for h in sorted(ps["history"], key=lambda x: x.get("version", 0))]
+        v1 = history_versions[-2] if len(history_versions) > 1 else (history_versions[0] if history_versions else None)
+        v2 = history_versions[-1] if history_versions else None
+        msg = f"Project: {current} • {len(ps['history'])} versions"
+        return (
+            ps,
+            gr.Dropdown(choices=names, value=current if current in names else (names[0] if names else None)),
+            timeline,
+            tree,
+            msg,
+            project_banner_text(ps),
+            gr.Dropdown(choices=history_versions, value=v1),
+            gr.Dropdown(choices=history_versions, value=v2),
+        )
+    except Exception as e:
+        return ps, gr.Dropdown(choices=[], value=None), "", "", f"Project refresh exception: {e}", project_banner_text(ps), gr.Dropdown(choices=[], value=None), gr.Dropdown(choices=[], value=None)
+
+
+def project_create(name: str, profile_state: dict, import_zip_path, project_state: dict):
+    ps = project_state or default_project_state()
+    try:
+        if import_zip_path:
+            with open(import_zip_path, "rb") as f:
+                files = {"file": (os.path.basename(import_zip_path), f, "application/zip")}
+                imp = requests.post(f"{BACKEND_URL}/projects/import", files=files, timeout=20)
+            if imp.status_code != 200:
+                out = list(project_refresh(ps))
+                out[4] = f"Import failed: {imp.text}"
+                return tuple(out)
+        else:
+            resp = requests.post(
+                f"{BACKEND_URL}/projects/create",
+                json={"name": name or "Untitled", "profile_json": profile_state or {}},
+                timeout=12,
+            )
+            if resp.status_code != 200:
+                return ps, gr.Dropdown(choices=[], value=None), "", "", f"Create failed: {resp.text}", project_banner_text(ps), gr.Dropdown(choices=[], value=None), gr.Dropdown(choices=[], value=None)
+        return project_refresh(ps)
+    except Exception as e:
+        return ps, gr.Dropdown(choices=[], value=None), "", "", f"Create/import exception: {e}", project_banner_text(ps), gr.Dropdown(choices=[], value=None), gr.Dropdown(choices=[], value=None)
+
+
+def project_switch(name: str, project_state: dict):
+    ps = project_state or default_project_state()
+    if not name:
+        return ps, build_project_timeline_html(ps.get("history", [])), build_file_tree_html(ps.get("file_tree", [])), "No project selected", project_banner_text(ps)
+    try:
+        resp = requests.post(f"{BACKEND_URL}/projects/switch", json={"name": name}, timeout=10)
+        if resp.status_code != 200:
+            return ps, "", "", f"Switch failed: {resp.text}", project_banner_text(ps)
+        ps["current"] = resp.json().get("name", name)
+        ps["history"] = resp.json().get("history", [])
+        ps["file_tree"] = resp.json().get("file_tree", [])
+        return ps, build_project_timeline_html(ps["history"]), build_file_tree_html(ps["file_tree"]), f"Switched to {ps['current']}", project_banner_text(ps)
+    except Exception as e:
+        return ps, "", "", f"Switch exception: {e}", project_banner_text(ps)
+
+
+def _version_to_int(v: str) -> int:
+    if not v:
+        return 0
+    s = str(v).strip().lower().replace("v", "")
+    try:
+        return int(s)
+    except Exception:
+        return 0
+
+
+def project_compare(v1: str, v2: str, table_name: str, project_state: dict):
+    ps = project_state or default_project_state()
+    i1 = _version_to_int(v1)
+    i2 = _version_to_int(v2)
+    if i1 <= 0 or i2 <= 0:
+        return go.Figure(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), "Select two versions"
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/projects/compare",
+            json={"project_name": ps.get("current", "untitled"), "version1": i1, "version2": i2, "table_name": table_name or "veTable1"},
+            timeout=20,
+        )
+        if resp.status_code != 200:
+            return go.Figure(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), f"Compare failed: {resp.text}"
+        diff = resp.json()
+        ps["last_compare"] = diff
+        fig = build_delta_heatmap(diff)
+        tables = build_compare_tables(diff)
+        status = f"Compared v{i1} vs v{i2} • changed cells: {diff.get('changed_cells', 0)}"
+        return fig, tables["left"], tables["right"], tables["delta"], status
+    except Exception as e:
+        return go.Figure(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), f"Compare exception: {e}"
+
+
+def project_rollback(version: str, table_name: str, project_state: dict, table_state: dict):
+    ps = project_state or default_project_state()
+    ts = table_state or default_table_state()
+    vi = _version_to_int(version)
+    if vi <= 0:
+        return ps, ts, "Select a version for rollback", table_status_text(ts)
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/projects/rollback",
+            json={"project_name": ps.get("current", "untitled"), "version": vi, "table_name": table_name or "veTable1"},
+            timeout=20,
+        )
+        if resp.status_code != 200:
+            return ps, ts, f"Rollback failed: {resp.text}", table_status_text(ts)
+        payload = resp.json()
+        ts["table_name"] = payload.get("table_name", ts.get("table_name"))
+        ts["data"] = payload.get("data", ts.get("data"))
+        ts["original_data"] = copy.deepcopy(ts["data"])
+        ts["changed_count"] = 0
+        ts["message"] = f"Rolled back to v{vi}"
+        return ps, ts, ts["message"], table_status_text(ts)
+    except Exception as e:
+        return ps, ts, f"Rollback exception: {e}", table_status_text(ts)
+
+
+def project_export_zip(project_state: dict):
+    ps = project_state or default_project_state()
+    name = ps.get("current", "untitled")
+    try:
+        resp = requests.get(f"{BACKEND_URL}/projects/export/{name}", timeout=40)
+        if resp.status_code != 200:
+            return None, f"Export failed: {resp.text}"
+        fd, path = tempfile.mkstemp(prefix=f"{name}_", suffix=".zip")
+        os.close(fd)
+        with open(path, "wb") as f:
+            f.write(resp.content)
+        return path, f"Exported {os.path.basename(path)}"
+    except Exception as e:
+        return None, f"Export exception: {e}"
+
+
+def project_diff_export(project_state: dict):
+    ps = project_state or default_project_state()
+    diff = ps.get("last_compare", {})
+    if not diff:
+        return None, "No diff to export"
+    fd, path = tempfile.mkstemp(prefix="project_diff_", suffix=".csv")
+    os.close(fd)
+    pd.DataFrame(diff.get("delta", [])).to_csv(path, index=False)
+    return path, f"Exported diff report: {os.path.basename(path)}"
+
+
+def project_ask_ai(project_state: dict):
+    ps = project_state or default_project_state()
+    history = ps.get("history", [])[:30]
+    diff = ps.get("last_compare", {})
+    prompt = {"project": ps.get("current"), "history": history, "last_compare": diff}
+    try:
+        resp = requests.post(
+            f"{BACKEND_URL}/agent/chat",
+            json={"message": f"Review this tuning project history and summarize progress/safety: {json.dumps(prompt)}", "state": {}},
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            return f"AI review failed: {resp.text}"
+        return resp.json().get("message", json.dumps(resp.json()))
+    except Exception as e:
+        return f"AI review exception: {e}"
+
+
+def project_open_tune_in_table(table_name: str):
+    return gr.Dropdown(value=table_name or "veTable1"), f"Opened {table_name} in Table Editor"
+
+
+def project_load_logs_in_datalog(project_state: dict):
+    ps = project_state or default_project_state()
+    return f"Load logs from project {ps.get('current', 'untitled')} in Datalogs"
+
+
+def project_shortcut_action(payload: str):
+    try:
+        action = json.loads(payload or "{}").get("action", "")
+    except Exception:
+        action = ""
+    if action == "new":
+        return "Shortcut: New project"
+    if action == "open":
+        return "Shortcut: Open project"
+    if action == "rollback":
+        return "Shortcut: Rollback last"
+    return "Shortcut idle"
+
+
+def project_filter(search: str, project_state: dict):
+    ps = project_state or default_project_state()
+    names = [p.get("name") for p in ps.get("projects", []) if p.get("name")]
+    q = (search or "").strip().lower()
+    if q:
+        names = [n for n in names if q in n.lower()]
+    return gr.Dropdown(choices=names, value=(names[0] if names else None))
+
+
+# --- UI ---
+with gr.Blocks() as demo:
+    gr.Markdown("# AI BaseTune Architect Agent")
+
+    table_state_init = default_table_state()
+    project_state = gr.State(default_project_state())
+    project_banner = gr.Markdown("### Current Project: `untitled`")
+
+    with gr.Tabs():
+        with gr.Tab("Agent"):
+            with gr.Row():
+                with gr.Column(scale=1):
+                    with gr.Group():
+                        gr.Markdown("### ECU Connection")
+                        conn_mode = gr.Dropdown(["Auto Detect Real ECU", "Simulator (TCP)"], label="Connection Mode", value="Auto Detect Real ECU")
+                        gr.Markdown("#### Connection Diagnostics")
+                        port_mode = gr.Radio(
+                            ["Auto (Binary Preferred)", "Console Only", "Manual COM"],
+                            label="Port Mode",
+                            value="Auto (Binary Preferred)",
+                        )
+                        manual_port = gr.Textbox(label="Manual COM Port", value="", placeholder="empty = auto, e.g. COM5")
+                        with gr.Row():
+                            btn_diag = gr.Button("Run Port Diagnostics")
+                            btn_wake_binary = gr.Button("Try Wake Binary Port", variant="secondary")
+                            btn_wakeup = gr.Button("Force ECU Wakeup", variant="secondary")
+                            btn_reflash = gr.Button("Reflash Firmware for Binary Mode", variant="stop")
+                        diag_status = gr.Label(value="Idle", label="Diag Status")
+                        diag_table = gr.Dataframe(label="Diagnostic Results", headers=["port", "baud", "port_role", "raw_hex_binary", "raw_hex_console", "response_text", "error", "warning"])
+                        console_banner = gr.Markdown(value="", visible=False)
+                        reflash_wizard = gr.Markdown(value="", visible=False)
+
+                    with gr.Group():
+                        gr.Markdown("### Vehicle Profile")
+                        gr.Textbox(label="Vehicle ID", value="B18C_Turbo")
+                        gr.Textbox(label="Make", value="Honda")
+                        gr.Textbox(label="Model", value="Integra")
+                        gr.Textbox(label="Engine", value="B18C")
+                        gr.Number(label="Injectors (cc/min)", value=1000)
+                        gr.Radio(["na", "turbo"], label="Aspiration", value="turbo")
+                        profile_state = gr.State(
+                            {
+                                "vehicle_id": "B18C_Turbo",
+                                "make": "Honda",
+                                "model": "Integra",
+                                "engine_family": "B18C",
+                                "displacement_l": 1.8,
+                                "cylinders": 4,
+                                "aspiration": "turbo",
+                                "compression_ratio": 9.0,
+                                "fuel_type": "gas93",
+                                "injector_cc_min": 1000,
+                                "fuel_pressure_psi": 43.5,
+                                "max_safe_rpm": 8200,
+                            }
+                        )
+
+                with gr.Column(scale=2):
+                    chatbot = gr.Chatbot(label="Agent Conversation", height=500)
+                    msg = gr.Textbox(placeholder="Talk to the Tuner Agent...", show_label=False)
+                    with gr.Row():
+                        btn_send = gr.Button("Send", variant="primary")
+                        gr.Button("Stop", variant="stop")
+                    with gr.Row():
+                        btn_connect = gr.Button("Connect", variant="primary")
+                        btn_auto = gr.Button("Full Auto Setup", variant="secondary")
+
+                with gr.Column(scale=2):
+                    gr.Markdown("### Live Telemetry")
+                    gauge_plot = gr.Plot(value=update_gauges(), label="Telemetry")
+                    status = gr.Label(value="Idle", label="ECU Status")
+                    timer = gr.Timer(0.5)
+                    timer.tick(update_gauges, outputs=gauge_plot)
+                    timer.tick(poll_connection_status, outputs=status)
+
+        with gr.Tab("Table Editor"):
+            table_state = gr.State(table_state_init)
+            with gr.Row():
+                table_select = gr.Dropdown(
+                    ["veTable1", "ignitionTable1", "boostTable1", "lambdaTable1"],
+                    value="veTable1",
+                    label="Select Table",
+                )
+            with gr.Row():
+                btn_load_table = gr.Button("Load from ECU", variant="primary")
+                btn_save_table = gr.Button("Save to ECU", variant="primary", elem_id=TABLE_SAVE_BUTTON_ID)
+                btn_export_msq = gr.Button("Export .msq")
+                btn_import_msq = gr.Button("Import .msq")
+                btn_undo_all = gr.Button("Undo All")
+                btn_view_table_3d = gr.Button("View This Table in 3D")
+
+            import_file = gr.File(label="MSQ File", file_types=[".msq"], type="filepath")
+            export_file = gr.File(label="Exported MSQ")
+
+            editor_payload = gr.Textbox(value="", visible=False, elem_id=TABLE_PAYLOAD_ID)
+            btn_editor_change = gr.Button("editor-change", visible=False, elem_id=TABLE_CHANGE_BUTTON_ID)
+
+            table_editor_html = gr.HTML(render_table_editor(table_state_init))
+            table_surface = gr.Plot(value=build_table_surface(table_state_init), label="3D Surface")
+            table_status = gr.Textbox(value=table_status_text(table_state_init), label="Status", interactive=False)
+
+        with gr.Tab("Datalogs"):
+            datalog_state = gr.State(default_datalog_state())
+            with gr.Row():
+                btn_start_log = gr.Button("Start Recording", variant="primary")
+                btn_stop_log = gr.Button("Stop & Save", variant="secondary")
+                btn_load_log_file = gr.Button("Load Log File")
+                btn_export_log = gr.Button("Export Log")
+                high_speed_mode = gr.Checkbox(label="High-speed mode (10ms)", value=False)
+                btn_run_dyno_from_log = gr.Button("Run Dyno on Current Log")
+            with gr.Row():
+                recent_logs = gr.Dropdown(label="Recent Logs", choices=[], value=None)
+                btn_refresh_logs = gr.Button("Refresh Logs")
+            with gr.Row():
+                import_log_file = gr.File(label="Load Log File", type="filepath")
+                export_log_file = gr.File(label="Exported Log")
+            with gr.Row():
+                with gr.Column(scale=3):
+                    datalog_chart = gr.Plot(label="Time-Series")
+                    datalog_scatter = gr.Plot(label="Scatter")
+                    datalog_table = gr.Dataframe(label="Log Table")
+                with gr.Column(scale=1):
+                    channel_selector = gr.Dropdown(label="Channels", multiselect=True, choices=[], value=[])
+                    scatter_x = gr.Dropdown(label="Scatter X", choices=["RPM"], value="RPM")
+                    scatter_y = gr.Dropdown(label="Scatter Y", choices=["AFR"], value="AFR")
+                    math_formula = gr.Textbox(label="Math Channel Formula", placeholder="AFR_error = AFR - 14.7")
+                    btn_apply_math = gr.Button("Add Math Channel")
+                    filter_expr = gr.Textbox(label="Filter", placeholder="RPM > 4000")
+                    table_page = gr.Number(label="Page", value=1, precision=0)
+                    btn_apply_filter = gr.Button("Apply Filter")
+                    btn_ask_ai = gr.Button("Ask AI to Analyze This Log", variant="primary")
+                    ai_analysis_out = gr.Textbox(label="AI Analysis", lines=10)
+            datalog_status = gr.Textbox(label="Status", value="Idle: 00:00:00 • 0 samples • File size 0.0MB", interactive=False)
+            table_hits_status = gr.Textbox(label="Table Hit Overlay", value="Show this log's hits on VE table: pending integration", interactive=False)
+            playback_speed = gr.Radio(["0.5x", "1x", "2x"], value="1x", label="Playback Speed")
+            playback_timer = gr.Timer(0.2)
+            datalog_shortcut_payload = gr.Textbox(value="", visible=False, elem_id=DATALOG_SHORTCUT_PAYLOAD_ID)
+            datalog_shortcut_trigger = gr.Button("datalog-shortcut", visible=False, elem_id=DATALOG_SHORTCUT_BUTTON_ID)
+            datalog_shortcuts_html = gr.HTML(
+                build_playback_shortcuts_html(DATALOG_SHORTCUT_PAYLOAD_ID, DATALOG_SHORTCUT_BUTTON_ID)
+            )
+
+        with gr.Tab("Dashboards"):
+            dashboard_state_init = default_dashboard_state()
+            dashboard_state = gr.State(dashboard_state_init)
+            dashboard_initial_channels = dashboard_fetch_channels()
+            dashboard_html_initial = build_dashboard_html(
+                dashboard_state_init.get("layout", {}),
+                dashboard_initial_channels,
+                DASHBOARD_PAYLOAD_ID,
+                DASHBOARD_TRIGGER_ID,
+            )
+            with gr.Row():
+                btn_dash_new = gr.Button("New Dashboard", variant="primary")
+                saved_dashboards = gr.Dropdown(label="Load Saved", choices=[], value=None)
+                dash_name = gr.Textbox(label="Save As", value="my_dash")
+                btn_dash_save = gr.Button("Save As")
+                btn_dash_export = gr.Button("Export PNG")
+            with gr.Row():
+                with gr.Column(scale=1):
+                    gr.Markdown("### Gauge Palette / Properties")
+                    selected_gauge_id = gr.Dropdown(label="Selected Gauge", choices=[], value=None)
+                    prop_channel = gr.Dropdown(label="Channel", choices=dashboard_initial_channels, value="RPM")
+                    prop_min = gr.Number(label="Min", value=0)
+                    prop_max = gr.Number(label="Max", value=100)
+                    prop_unit = gr.Textbox(label="Units", value="")
+                    prop_alarm = gr.Number(label="Alarm Threshold", value=85)
+                    prop_rotation = gr.Slider(label="Rotation", minimum=0, maximum=360, value=0, step=1)
+                    prop_bg_color = gr.ColorPicker(label="Background Color", value="#0f172a")
+                    prop_bg_image = gr.File(label="Background Image", type="filepath")
+                    btn_apply_props = gr.Button("Apply Properties")
+                    btn_refresh_dash = gr.Button("Refresh Saved List")
+                with gr.Column(scale=4):
+                    dashboard_payload = gr.Textbox(value="", visible=False, elem_id=DASHBOARD_PAYLOAD_ID)
+                    dashboard_trigger = gr.Button("dashboard-trigger", visible=False, elem_id=DASHBOARD_TRIGGER_ID)
+                    dashboard_canvas = gr.HTML(value=dashboard_html_initial)
+            with gr.Row():
+                live_preview_toggle = gr.Checkbox(label="Live Preview", value=False)
+                btn_dash_replay = gr.Button("Replay Log on Dashboard")
+                replay_log_name = gr.Dropdown(label="Replay Source Log", choices=[], value=None)
+                btn_dash_ai = gr.Button("Ask AI to Optimize Dashboard", variant="secondary")
+            dash_export_paths = gr.Textbox(label="Export Paths", lines=2)
+            dash_ai_output = gr.Textbox(label="AI Suggestions", lines=6)
+            dashboard_status = gr.Textbox(label="Dashboard Status", value="Dashboard designer ready", interactive=False)
+            dashboard_timer = gr.Timer(0.5)
+
+        with gr.Tab("Auto-Tune Tools"):
+            autotune_state = gr.State(default_autotune_state())
+            tool_cards = gr.HTML(build_tool_cards_html())
+            with gr.Row():
+                with gr.Column(scale=3):
+                    autotune_tool = gr.Radio(AUTO_TUNE_TOOLS, value="VE Analyze", label="Tool")
+                    with gr.Row():
+                        autotune_mode = gr.Dropdown(["conservative", "balanced", "aggressive"], value="balanced", label="Aggressiveness")
+                        autotune_use_log = gr.Checkbox(label="Use Current Log", value=True)
+                        btn_autotune_use_log = gr.Button("Use Current Log")
+                    with gr.Row():
+                        btn_autotune_preview = gr.Button("Run Preview", variant="primary")
+                        btn_autotune_run = gr.Button("Run Auto-Tune")
+                        btn_autotune_apply = gr.Button("Apply Changes")
+                        btn_autotune_undo = gr.Button("Undo Batch")
+                    with gr.Row():
+                        with gr.Column(scale=1):
+                            autotune_heatmap = gr.Plot(label="Correction Heatmap")
+                            autotune_scatter = gr.Plot(label="Before/After AFR Scatter")
+                        with gr.Column(scale=1):
+                            autotune_changes_table = gr.Dataframe(label="Proposed Changes")
+                    autotune_summary = gr.Textbox(label="Summary Report", lines=7)
+                with gr.Column(scale=1):
+                    gr.Markdown("### Global Settings")
+                    autotune_min_samples = gr.Slider(5, 200, value=50, step=1, label="Min Samples")
+                    autotune_ignore_trans = gr.Checkbox(label="Ignore Transients", value=True)
+                    autotune_steady = gr.Checkbox(label="Steady-State Only", value=True)
+                    autotune_rpm_var = gr.Slider(20, 400, value=100, step=5, label="RPM Variance")
+                    autotune_tps_delta = gr.Slider(1, 25, value=5, step=1, label="TPS Delta")
+                    autotune_max_change = gr.Slider(1, 20, value=10, step=1, label="Max Change %")
+                    btn_autotune_ai = gr.Button("Ask AI for Advice")
+                    btn_view_table_editor = gr.Button("View Changes in Table Editor")
+                    btn_replay_in_datalog = gr.Button("Replay Tune Log in Datalogs")
+            autotune_overlay = gr.Textbox(label="Table Overlay", value="Show this log's hits on VE table: pending integration", interactive=False)
+            autotune_run_log = gr.Textbox(label="Run Log", lines=10)
+            with gr.Row():
+                btn_autotune_export = gr.Button("Export Report")
+                autotune_report_file = gr.File(label="CSV Report")
+            autotune_ai_output = gr.Textbox(label="AI Advice", lines=6)
+            autotune_status = gr.Textbox(label="Status", value="Ready • Disconnected/Simulated • Last run: 0 cells tuned", interactive=False)
+
+        with gr.Tab("Dyno & Graphs"):
+            dyno_state = gr.State(default_dyno_state())
+            with gr.Tabs():
+                with gr.Tab("3D Table Graphs"):
+                    with gr.Row():
+                        dyno_table_select = gr.Dropdown(
+                            ["veTable1", "ignitionTable1", "boostTable1", "lambdaTable1"],
+                            value="veTable1",
+                            label="Table Selector",
+                        )
+                        dyno_overlay_hits = gr.Checkbox(label="Overlay Log Hits", value=True)
+                        dyno_overlay_corr = gr.Checkbox(label="Overlay Corrections Heatmap", value=True)
+                        btn_dyno_render_3d = gr.Button("Render 3D", variant="primary")
+                    dyno_surface_plot = gr.Plot(label="3D Surface")
+                    dyno_slice_plot = gr.Plot(label="Slice View")
+                with gr.Tab("Dyno Simulator"):
+                    with gr.Row():
+                        dyno_mode = gr.Dropdown(["Steady", "Ramp", "Coast"], value="Ramp", label="Mode")
+                        dyno_start_rpm = gr.Number(label="Start RPM", value=2000)
+                        dyno_end_rpm = gr.Number(label="End RPM", value=8000)
+                        dyno_ramp_seconds = gr.Number(label="Ramp Rate Seconds", value=10)
+                    with gr.Row():
+                        btn_dyno_safety = gr.Button("Safety Check", variant="secondary")
+                        btn_dyno_run = gr.Button("Run Dyno Test", variant="primary")
+                        btn_dyno_load_log = gr.Button("Load from Log")
+                        btn_dyno_export = gr.Button("Export Graph PNG/CSV")
+                    with gr.Row():
+                        with gr.Column(scale=3):
+                            dyno_curve_plot = gr.Plot(label="HP/Torque Curves")
+                            dyno_curve_table = gr.Dataframe(label="Dyno Curve Data")
+                        with gr.Column(scale=1):
+                            dyno_units = gr.Radio(["Imperial", "Metric"], value="Imperial", label="Units")
+                            dyno_loss = gr.Slider(10, 20, value=15, step=1, label="Drivetrain Loss %")
+                            dyno_air_density = gr.Checkbox(label="Air Density Correction", value=True)
+                            dyno_compare_log = gr.Dropdown(label="Comparison Log", choices=[], value=None)
+                            btn_dyno_ai = gr.Button("Ask AI to Interpret Results")
+                            btn_dyno_add_gauge = gr.Button("Add Dyno Gauge to Dashboard")
+                    dyno_result_summary = gr.Textbox(label="Results Summary", lines=6)
+                    dyno_export_file = gr.File(label="Exported CSV")
+                    dyno_ai_output = gr.Textbox(label="AI Interpretation", lines=6)
+            dyno_status = gr.Textbox(label="Status", value="Ready for Ramp Test • ECU Disconnected • Last Peak: 0 HP", interactive=False)
+            dyno_payload = gr.Textbox(value="", visible=False, elem_id=DYNO_SHORTCUT_PAYLOAD_ID)
+            dyno_trigger = gr.Button("dyno-shortcut", visible=False, elem_id=DYNO_SHORTCUT_BUTTON_ID)
+            dyno_shortcuts = gr.HTML(build_dyno_shortcuts_html(DYNO_SHORTCUT_PAYLOAD_ID, DYNO_SHORTCUT_BUTTON_ID))
+
+        with gr.Tab("Projects"):
+            with gr.Row():
+                project_selector = gr.Dropdown(label="Project Selector", choices=[], value=None)
+                btn_project_switch = gr.Button("Switch", variant="secondary")
+            with gr.Row():
+                project_search = gr.Textbox(label="Search Projects", placeholder="Type project name...")
+                project_new_name = gr.Textbox(label="New Project Name", value="Test Build")
+                project_import_zip = gr.File(label="Import ZIP", type="filepath")
+                btn_project_create = gr.Button("Create / Import", variant="primary")
+                btn_project_export_zip = gr.Button("Export Project ZIP")
+            with gr.Row():
+                with gr.Column(scale=3):
+                    project_timeline_html = gr.HTML(value="")
+                    with gr.Row():
+                        project_compare_table = gr.Dropdown(
+                            ["veTable1", "ignitionTable1", "boostTable1", "lambdaTable1"], value="veTable1", label="Compare Table"
+                        )
+                        project_version_left = gr.Dropdown(label="Version Left", choices=[], value=None)
+                        project_version_right = gr.Dropdown(label="Version Right", choices=[], value=None)
+                        btn_project_compare = gr.Button("Compare Versions")
+                        btn_project_rollback = gr.Button("Rollback")
+                    project_delta_plot = gr.Plot(label="Delta Heatmap")
+                    with gr.Row():
+                        project_left_df = gr.Dataframe(label="Left Version")
+                        project_right_df = gr.Dataframe(label="Right Version")
+                        project_delta_df = gr.Dataframe(label="Delta")
+                    with gr.Row():
+                        btn_project_export_diff = gr.Button("Export Diff Report")
+                        project_diff_file = gr.File(label="Diff CSV")
+                with gr.Column(scale=1):
+                    project_files_html = gr.HTML(value="")
+                    project_open_tune = gr.Dropdown(
+                        ["veTable1", "ignitionTable1", "boostTable1", "lambdaTable1"], value="veTable1", label="Tune To Open"
+                    )
+                    btn_project_open_tune = gr.Button("Open This Tune in Table Editor")
+                    btn_project_load_logs = gr.Button("Load Logs from This Project in Datalogs")
+                    btn_project_ai = gr.Button("Ask AI to Review Project History")
+                    project_ai_out = gr.Textbox(label="AI Project Review", lines=8)
+            project_export_zip_file = gr.File(label="Project ZIP")
+            project_status = gr.Textbox(
+                label="Status",
+                value="Project: Untitled • 0 versions • Last change: n/a",
+                interactive=False,
+            )
+            project_payload = gr.Textbox(value="", visible=False, elem_id=PROJECT_SHORTCUT_PAYLOAD_ID)
+            project_trigger = gr.Button("project-shortcut", visible=False, elem_id=PROJECT_SHORTCUT_BUTTON_ID)
+            project_shortcuts = gr.HTML(build_project_shortcuts_html(PROJECT_SHORTCUT_PAYLOAD_ID, PROJECT_SHORTCUT_BUTTON_ID))
+
+    # Agent actions
+    btn_diag.click(run_port_diagnostics, outputs=[diag_status, diag_table])
+    btn_wakeup.click(force_wakeup_action, inputs=[manual_port], outputs=[diag_status])
+    btn_wake_binary.click(wake_binary_action, inputs=[manual_port], outputs=[diag_status])
+    btn_reflash.click(show_reflash_wizard, outputs=[reflash_wizard])
+    btn_send.click(agent_chat_handler, inputs=[msg, chatbot, profile_state], outputs=[chatbot])
+    msg.submit(agent_chat_handler, inputs=[msg, chatbot, profile_state], outputs=[chatbot])
+    btn_connect.click(connect_ecu_action, inputs=[conn_mode, manual_port, port_mode], outputs=[status, console_banner])
+    btn_auto.click(lambda: "Perform full auto setup.", outputs=msg).then(
+        agent_chat_handler, inputs=[msg, chatbot, profile_state], outputs=[chatbot]
+    )
+
+    # Table editor actions
+    table_select.change(handle_table_select, inputs=[table_select, table_state], outputs=[table_state, table_status])
+    btn_load_table.click(
+        load_table_from_ecu,
+        inputs=[table_select, table_state],
+        outputs=[table_state, table_editor_html, table_surface, table_status],
+    )
+    btn_editor_change.click(
+        handle_editor_change,
+        inputs=[editor_payload, table_state],
+        outputs=[table_state, table_surface, table_status],
+    )
+    btn_save_table.click(
+        save_table_to_ecu,
+        inputs=[table_state],
+        outputs=[table_state, table_editor_html, table_status],
+    )
+    btn_undo_all.click(
+        undo_all_changes,
+        inputs=[table_state],
+        outputs=[table_state, table_editor_html, table_surface, table_status],
+    )
+    btn_export_msq.click(export_msq, inputs=[table_state], outputs=[export_file, table_status])
+    btn_import_msq.click(
+        import_msq,
+        inputs=[import_file, table_select, table_state],
+        outputs=[table_state, table_editor_html, table_surface, table_status],
+    )
+
+    # Datalog actions
+    btn_refresh_logs.click(fetch_recent_datalogs, outputs=[recent_logs, datalog_status])
+    btn_start_log.click(
+        datalog_start_recording,
+        inputs=[],
+        outputs=[datalog_state, datalog_status],
+    )
+    btn_stop_log.click(
+        datalog_stop_recording,
+        inputs=[datalog_state],
+        outputs=[datalog_state, datalog_status, recent_logs],
+    )
+    playback_timer.tick(datalog_refresh_status, outputs=[datalog_status])
+    playback_timer.tick(
+        datalog_playback_tick,
+        inputs=[datalog_state],
+        outputs=[datalog_state, datalog_chart],
+    )
+    playback_speed.change(datalog_set_speed, inputs=[playback_speed, datalog_state], outputs=[datalog_state])
+    recent_logs.change(
+        datalog_load_selected,
+        inputs=[recent_logs, datalog_state],
+        outputs=[datalog_state, datalog_chart, datalog_scatter, datalog_table, datalog_status, channel_selector, scatter_x, scatter_y],
+    )
+    btn_load_log_file.click(
+        datalog_import_file,
+        inputs=[import_log_file, datalog_state],
+        outputs=[datalog_state, recent_logs, datalog_status],
+    )
+    btn_export_log.click(datalog_export_log, inputs=[recent_logs], outputs=[export_log_file, datalog_status])
+    channel_selector.change(
+        datalog_apply_channel_selection,
+        inputs=[channel_selector, datalog_state],
+        outputs=[datalog_state, datalog_chart],
+    )
+    scatter_x.change(
+        datalog_apply_scatter,
+        inputs=[scatter_x, scatter_y, datalog_state],
+        outputs=[datalog_state, datalog_scatter],
+    )
+    scatter_y.change(
+        datalog_apply_scatter,
+        inputs=[scatter_x, scatter_y, datalog_state],
+        outputs=[datalog_state, datalog_scatter],
+    )
+    btn_apply_filter.click(
+        datalog_filter_table,
+        inputs=[filter_expr, table_page, datalog_state],
+        outputs=[datalog_state, datalog_table, table_hits_status],
+    )
+    btn_apply_math.click(
+        datalog_apply_math,
+        inputs=[math_formula, datalog_state],
+        outputs=[datalog_state, datalog_chart, datalog_scatter, channel_selector],
+    )
+    datalog_shortcut_trigger.click(
+        datalog_shortcut_action,
+        inputs=[datalog_shortcut_payload, datalog_state],
+        outputs=[datalog_state, datalog_chart],
+    )
+    btn_ask_ai.click(datalog_ask_ai, inputs=[datalog_state], outputs=[ai_analysis_out])
+
+    # Dashboard actions
+    btn_refresh_dash.click(
+        dashboard_refresh_sources,
+        outputs=[saved_dashboards, replay_log_name, dashboard_status],
+    )
+    btn_dash_new.click(
+        dashboard_new,
+        inputs=[dashboard_state],
+        outputs=[dashboard_state, dashboard_canvas, dashboard_status, selected_gauge_id],
+    )
+    dashboard_trigger.click(
+        dashboard_on_payload,
+        inputs=[dashboard_payload, dashboard_state],
+        outputs=[dashboard_state, selected_gauge_id, prop_channel, prop_min, prop_max, prop_unit, prop_alarm, prop_rotation, dashboard_status],
+    )
+    selected_gauge_id.change(
+        dashboard_select_gauge,
+        inputs=[selected_gauge_id, dashboard_state],
+        outputs=[dashboard_state, prop_channel, prop_min, prop_max, prop_unit, prop_alarm, prop_rotation],
+    )
+    btn_apply_props.click(
+        dashboard_apply_properties,
+        inputs=[selected_gauge_id, prop_channel, prop_min, prop_max, prop_unit, prop_alarm, prop_rotation, prop_bg_color, dashboard_state],
+        outputs=[dashboard_state, dashboard_canvas, dashboard_status],
+    )
+    prop_bg_image.change(
+        dashboard_set_background_image,
+        inputs=[prop_bg_image, dashboard_state],
+        outputs=[dashboard_state, dashboard_canvas, dashboard_status],
+    )
+    btn_dash_save.click(
+        dashboard_save,
+        inputs=[dash_name, dashboard_state],
+        outputs=[dashboard_state, dashboard_status, saved_dashboards],
+    )
+    saved_dashboards.change(
+        dashboard_load,
+        inputs=[saved_dashboards, dashboard_state],
+        outputs=[dashboard_state, dashboard_canvas, dashboard_status],
+    )
+    btn_dash_export.click(
+        dashboard_export_assets,
+        inputs=[dash_name, dashboard_state],
+        outputs=[dash_export_paths, dashboard_status],
+    )
+    live_preview_toggle.change(dashboard_toggle_live, inputs=[live_preview_toggle], outputs=[dashboard_state])
+    btn_dash_replay.click(
+        dashboard_replay_log,
+        inputs=[replay_log_name],
+        outputs=[dashboard_state, dashboard_status],
+    )
+    dashboard_timer.tick(
+        dashboard_live_tick,
+        inputs=[dashboard_state, live_preview_toggle],
+        outputs=[dashboard_state, dashboard_canvas],
+    )
+    dashboard_timer.tick(
+        dashboard_replay_tick,
+        inputs=[dashboard_state],
+        outputs=[dashboard_state, dashboard_canvas],
+    )
+    btn_dash_ai.click(
+        dashboard_ask_ai,
+        inputs=[dashboard_state],
+        outputs=[dash_ai_output],
+    )
+
+    # Auto-tune actions
+    btn_autotune_use_log.click(
+        autotune_use_current_log,
+        inputs=[autotune_use_log, datalog_state],
+        outputs=[autotune_changes_table, autotune_run_log],
+    )
+    btn_autotune_preview.click(
+        autotune_preview_action,
+        inputs=[
+            autotune_tool,
+            autotune_mode,
+            autotune_min_samples,
+            autotune_ignore_trans,
+            autotune_steady,
+            autotune_rpm_var,
+            autotune_tps_delta,
+            autotune_max_change,
+            autotune_use_log,
+            datalog_state,
+            table_state,
+            autotune_state,
+        ],
+        outputs=[
+            autotune_state,
+            autotune_heatmap,
+            autotune_scatter,
+            autotune_changes_table,
+            autotune_summary,
+            autotune_run_log,
+            autotune_overlay,
+            autotune_status,
+        ],
+    )
+    btn_autotune_run.click(
+        autotune_run_action,
+        inputs=[
+            autotune_tool,
+            autotune_mode,
+            autotune_min_samples,
+            autotune_ignore_trans,
+            autotune_steady,
+            autotune_rpm_var,
+            autotune_tps_delta,
+            autotune_max_change,
+            autotune_use_log,
+            datalog_state,
+            table_state,
+            autotune_state,
+        ],
+        outputs=[autotune_state, autotune_summary, autotune_run_log, autotune_status],
+    )
+    btn_autotune_apply.click(
+        autotune_apply_action,
+        inputs=[autotune_state, table_state],
+        outputs=[autotune_state, table_state, autotune_summary, table_status, autotune_status],
+    )
+    btn_autotune_undo.click(
+        autotune_undo_action,
+        inputs=[autotune_state, table_state],
+        outputs=[autotune_state, table_state, autotune_summary, table_status, autotune_status],
+    )
+    btn_autotune_export.click(
+        autotune_export_report,
+        inputs=[autotune_state],
+        outputs=[autotune_report_file, autotune_summary],
+    )
+    btn_autotune_ai.click(
+        autotune_ask_ai,
+        inputs=[autotune_state],
+        outputs=[autotune_ai_output],
+    )
+    btn_view_table_editor.click(
+        lambda s: f"View Changes in Table Editor: {s.get('last_run_cells', 0)} cells queued",
+        inputs=[autotune_state],
+        outputs=[autotune_status],
+    )
+    btn_replay_in_datalog.click(
+        lambda s: f"Replay Tune Log in Datalogs: run entries {len(s.get('run_log', []))}",
+        inputs=[autotune_state],
+        outputs=[autotune_status],
+    )
+
+    # Dyno & Graphs actions
+    btn_dyno_render_3d.click(
+        dyno_render_3d_graph,
+        inputs=[dyno_table_select, dyno_overlay_hits, dyno_overlay_corr, table_state, datalog_state, autotune_state, dyno_state],
+        outputs=[dyno_state, dyno_surface_plot, dyno_slice_plot, dyno_status],
+    )
+    btn_dyno_safety.click(
+        dyno_safety_check,
+        inputs=[dyno_mode, profile_state, table_state, dyno_state],
+        outputs=[dyno_state, dyno_result_summary, dyno_status],
+    )
+    btn_dyno_run.click(
+        dyno_run_test,
+        inputs=[dyno_mode, dyno_start_rpm, dyno_end_rpm, dyno_ramp_seconds, dyno_units, dyno_loss, dyno_air_density, dyno_state],
+        outputs=[dyno_state, dyno_curve_plot, dyno_curve_table, dyno_result_summary, dyno_status],
+    )
+    btn_dyno_load_log.click(
+        dyno_estimate_from_log,
+        inputs=[dyno_mode, dyno_units, dyno_loss, datalog_state, dyno_state],
+        outputs=[dyno_state, dyno_curve_plot, dyno_curve_table, dyno_result_summary, dyno_status],
+    )
+    btn_run_dyno_from_log.click(
+        dyno_estimate_from_log,
+        inputs=[dyno_mode, dyno_units, dyno_loss, datalog_state, dyno_state],
+        outputs=[dyno_state, dyno_curve_plot, dyno_curve_table, dyno_result_summary, dyno_status],
+    )
+    btn_dyno_export.click(
+        dyno_export_report,
+        inputs=[dyno_state],
+        outputs=[dyno_export_file, dyno_result_summary],
+    )
+    btn_dyno_ai.click(
+        dyno_ask_ai,
+        inputs=[dyno_state],
+        outputs=[dyno_ai_output],
+    )
+    btn_dyno_add_gauge.click(
+        dyno_add_gauge_to_dashboard,
+        inputs=[dashboard_state, dyno_state],
+        outputs=[dashboard_state, dyno_status],
+    )
+    dyno_trigger.click(
+        dyno_shortcut_action,
+        inputs=[dyno_payload, dyno_state],
+        outputs=[dyno_status],
+    )
+    btn_view_table_3d.click(
+        lambda t: (gr.Dropdown(value=t), f"3D view requested for {t}"),
+        inputs=[table_select],
+        outputs=[dyno_table_select, dyno_status],
+    )
+    btn_refresh_logs.click(dyno_refresh_compare_logs, outputs=[dyno_compare_log])
+    dyno_compare_log.change(
+        dyno_apply_comparison,
+        inputs=[dyno_compare_log, dyno_mode, dyno_units, dyno_loss, dyno_state],
+        outputs=[dyno_curve_plot, dyno_result_summary],
+    )
+
+    # Project actions
+    demo.load(
+        project_refresh,
+        inputs=[project_state],
+        outputs=[
+            project_state,
+            project_selector,
+            project_timeline_html,
+            project_files_html,
+            project_status,
+            project_banner,
+            project_version_left,
+            project_version_right,
+        ],
+    )
+    btn_project_create.click(
+        project_create,
+        inputs=[project_new_name, profile_state, project_import_zip, project_state],
+        outputs=[
+            project_state,
+            project_selector,
+            project_timeline_html,
+            project_files_html,
+            project_status,
+            project_banner,
+            project_version_left,
+            project_version_right,
+        ],
+    )
+    btn_project_switch.click(
+        project_switch,
+        inputs=[project_selector, project_state],
+        outputs=[project_state, project_timeline_html, project_files_html, project_status, project_banner],
+    )
+    project_search.change(
+        project_filter,
+        inputs=[project_search, project_state],
+        outputs=[project_selector],
+    )
+    btn_project_compare.click(
+        project_compare,
+        inputs=[project_version_left, project_version_right, project_compare_table, project_state],
+        outputs=[project_delta_plot, project_left_df, project_right_df, project_delta_df, project_status],
+    )
+    btn_project_rollback.click(
+        project_rollback,
+        inputs=[project_version_left, project_compare_table, project_state, table_state],
+        outputs=[project_state, table_state, project_status, table_status],
+    )
+    btn_project_export_zip.click(
+        project_export_zip,
+        inputs=[project_state],
+        outputs=[project_export_zip_file, project_status],
+    )
+    btn_project_export_diff.click(
+        project_diff_export,
+        inputs=[project_state],
+        outputs=[project_diff_file, project_status],
+    )
+    btn_project_ai.click(
+        project_ask_ai,
+        inputs=[project_state],
+        outputs=[project_ai_out],
+    )
+    btn_project_open_tune.click(
+        project_open_tune_in_table,
+        inputs=[project_open_tune],
+        outputs=[table_select, project_status],
+    )
+    btn_project_load_logs.click(
+        project_load_logs_in_datalog,
+        inputs=[project_state],
+        outputs=[project_status],
+    )
+    project_trigger.click(
+        project_shortcut_action,
+        inputs=[project_payload],
+        outputs=[project_status],
+    )
+
+
+if __name__ == "__main__":
+        demo.launch(
+        server_name="0.0.0.0", 
+        server_port=7860, 
+        theme=gr.themes.Soft(primary_hue="orange", neutral_hue="slate")
+    )

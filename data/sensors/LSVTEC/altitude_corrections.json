@@ -1,0 +1,31 @@
+{
+  "description": "Altitude-based barometric VE/AFR correction",
+  "altitude_ft": [
+    0,
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000
+  ],
+  "baro_kpa": [
+    101.3,
+    97.7,
+    94.2,
+    90.8,
+    87.5,
+    84.3,
+    81.2
+  ],
+  "ve_correction_pct": [
+    0.0,
+    -1.5,
+    -3.0,
+    -4.5,
+    -6.0,
+    -7.5,
+    -9.0
+  ],
+  "notes": "Higher altitude = less air density = reduce VE and richen slightly for safety"
+}

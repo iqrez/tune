@@ -1,0 +1,384 @@
+ChibiOS/RT simulator (Win32)
+Shell service started on SD1, SD2
+  - Listening for connections on SD1
+  - Listening for connections on SD2
+Running rusEFI simulator version: [20260220]Running rusEFI simulator version:
+20260220
+[0us]efiPrintfInternal:msg`*** rusEFI LLC (c) 2012-2026. All rights reserved.`
+[0us]efiPrintfInternal:msg`*** rusEFI v20260220@4211171972 now=0`
+[0us]efiPrintfInternal:msg`*** Chibios Kernel:       7.0.5`
+[0us]efiPrintfInternal:msg`*** Compiled:     Feb 20 2026 - 01:24:03`
+[0us]efiPrintfInternal:msg`*** COMPILER=13-win32`
+[0us]efiPrintfInternal:msg`custom board hello from simulator`
+[0us]efiPrintfInternal:msg`hellenBoardId=0`
+[0us]efiPrintfInternal:msg`CH_CFG_ST_FREQUENCY=100000`
+[0us]efiPrintfInternal:msg`ENABLE_PERF_TRACE=0`
+[0us]efiPrintfInternal:msg`PORT_IDLE_THREAD_STACK_SIZE=256`
+[0us]efiPrintfInternal:msg`CH_DBG_ENABLE_ASSERTS=1`
+[0us]efiPrintfInternal:msg`CH_DBG_SYSTEM_STATE_CHECK=0`
+[0us]efiPrintfInternal:msg`CH_DBG_ENABLE_STACK_CHECK=0`
+[5000us]efiPrintfInternal:msg`Storage INT_FLASH registered`
+[CannedTunes]: 105 
+[CannedTunes]: testing engineConfig: 0 
+[CannedTunes]: testing engineConfig: 1 
+[CannedTunes]: testing engineConfig: 2 
+[CannedTunes]: testing engineConfig: 3 
+[CannedTunes]: testing engineConfig: 4 
+[CannedTunes]: testing engineConfig: 5 
+[CannedTunes]: testing engineConfig: 6 
+[CannedTunes]: testing engineConfig: 7 
+[CannedTunes]: testing engineConfig: 8 
+[CannedTunes]: testing engineConfig: 9 
+[CannedTunes]: testing engineConfig: 10 
+[CannedTunes]: testing engineConfig: 11 
+[CannedTunes]: testing engineConfig: 12 
+[CannedTunes]: testing engineConfig: 13 
+[CannedTunes]: testing engineConfig: 14 
+[CannedTunes]: testing engineConfig: 15 
+[CannedTunes]: testing engineConfig: 16 
+[CannedTunes]: testing engineConfig: 17 
+[CannedTunes]: testing engineConfig: 18 
+[CannedTunes]: testing engineConfig: 19 
+[CannedTunes]: testing engineConfig: 20 
+[CannedTunes]: testing engineConfig: 21 
+[CannedTunes]: testing engineConfig: 22 
+[CannedTunes]: testing engineConfig: 23 
+[CannedTunes]: testing engineConfig: 24 
+[CannedTunes]: testing engineConfig: 25 
+[CannedTunes]: testing engineConfig: 26 
+[CannedTunes]: testing engineConfig: 27 
+[CannedTunes]: testing engineConfig: 28 
+[CannedTunes]: testing engineConfig: 29 
+[CannedTunes]: testing engineConfig: 30 
+[CannedTunes]: testing engineConfig: 31 
+[CannedTunes]: testing engineConfig: 32 
+[CannedTunes]: testing engineConfig: 33 
+[CannedTunes]: testing engineConfig: 34 
+[CannedTunes]: testing engineConfig: 35 
+[CannedTunes]: testing engineConfig: 36 
+[CannedTunes]: testing engineConfig: 37 
+[CannedTunes]: testing engineConfig: 38 
+[CannedTunes]: testing engineConfig: 39 
+[CannedTunes]: testing engineConfig: 40 
+[CannedTunes]: testing engineConfig: 41 
+[CannedTunes]: testing engineConfig: 42 
+[CannedTunes]: testing engineConfig: 43 
+[CannedTunes]: testing engineConfig: 44 
+[CannedTunes]: testing engineConfig: 45 
+[CannedTunes]: testing engineConfig: 46 
+[CannedTunes]: testing engineConfig: 47 
+[CannedTunes]: testing engineConfig: 48 
+[CannedTunes]: testing engineConfig: 49 
+[CannedTunes]: testing engineConfig: 50 
+[CannedTunes]: testing engineConfig: 51 
+[CannedTunes]: testing engineConfig: 52 
+[CannedTunes]: testing engineConfig: 53 
+[CannedTunes]: testing engineConfig: 54 
+[CannedTunes]: testing engineConfig: 55 
+[CannedTunes]: testing engineConfig: 56 
+[CannedTunes]: testing engineConfig: 57 
+[CannedTunes]: testing engineConfig: 58 
+[CannedTunes]: testing engineConfig: 59 
+[CannedTunes]: testing engineConfig: 60 
+[CannedTunes]: testing engineConfig: 61 
+[CannedTunes]: testing engineConfig: 62 
+[CannedTunes]: testing engineConfig: 63 
+[CannedTunes]: testing engineConfig: 64 
+[CannedTunes]: testing engineConfig: 65 
+[CannedTunes]: testing engineConfig: 66 
+[CannedTunes]: testing engineConfig: 67 
+[CannedTunes]: testing engineConfig: 68 
+[CannedTunes]: testing engineConfig: 69 
+[CannedTunes]: testing engineConfig: 70 
+[CannedTunes]: testing engineConfig: 71 
+[CannedTunes]: testing engineConfig: 72 
+[CannedTunes]: testing engineConfig: 73 
+[CannedTunes]: testing engineConfig: 74 
+[CannedTunes]: testing engineConfig: 75 
+[CannedTunes]: testing engineConfig: 76 
+[CannedTunes]: testing engineConfig: 77 
+[CannedTunes]: testing engineConfig: 78 
+[CannedTunes]: testing engineConfig: 79 
+[CannedTunes]: testing engineConfig: 80 
+[CannedTunes]: testing engineConfig: 81 
+[CannedTunes]: testing engineConfig: 82 
+[CannedTunes]: testing engineConfig: 83 
+[CannedTunes]: testing engineConfig: 84 
+[CannedTunes]: testing engineConfig: 85 
+[CannedTunes]: testing engineConfig: 86 
+[CannedTunes]: testing engineConfig: 87 
+[CannedTunes]: testing engineConfig: 88 
+[CannedTunes]: testing engineConfig: 89 
+[CannedTunes]: testing engineConfig: 90 
+[CannedTunes]: testing engineConfig: 91 
+[CannedTunes]: testing engineConfig: 92 
+[CannedTunes]: testing engineConfig: 93 
+[CannedTunes]: testing engineConfig: 94 
+[CannedTunes]: testing engineConfig: 95 
+[CannedTunes]: testing engineConfig: 96 
+[CannedTunes]: testing engineConfig: 97 
+[CannedTunes]: testing engineConfig: 98 
+[CannedTunes]: testing engineConfig: 99 
+[CannedTunes]: testing engineConfig: 100 
+[CannedTunes]: testing engineConfig: 101 
+[CannedTunes]: testing engineConfig: 102 
+[CannedTunes]: testing engineConfig: 103 
+[CannedTunes]: testing engineConfig: 104 
+[5000us]efiPrintfInternal:msg`Flash: Reading storage ID 1 @0x1 ... 23948 bytes`
+Simulator: reading config from flash1.bin
+[5000us]efiPrintfInternal:msg`Flash: Reading done`
+[5000us]efiPrintfInternal:msg`Read valid configuration from flash!`
+commonInitEngineController
+initSettings
+[5000us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[5000us]efiPrintfInternal:msg`initMapAveraging...`
+[5000us]efiPrintfInternal:msg`initHardware() OK!`
+[5000us]efiPrintfInternal:msg`Emulating position sensor(s). RPM=1200`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch0: 106/0 5`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch1: 106/0 5`
+[5000us]efiPrintfInternal:msg`Stimulator: updating trigger shape for ch2: 7/0 5`
+[5000us]efiPrintfInternal:msg`Emulating position sensor(s). RPM=1200`
+Full Duplex Channel SD1 listening on port 29001
+Full Duplex Channel SD2 listening on port 29002
+[5000us]efiPrintfInternal:msg`LUA loading script length: 614...`
+[5000us]efiPrintfInternal:msg`LUA script loaded successfully!`
+[605000us]efiPrintfInternal:msg`Skipped zero-duration priming pulse.`
+[58749900us]efiPrintfInternal:msg`Got naked Query command`
+[63143750us]efiPrintfInternal:msg`Got naked Query command`
+[67546520us]efiPrintfInternal:msg`Got naked Query command`
+[165281740us]efiPrintfInternal:msg`Got naked Query command`
+[165282070us]efiPrintfInternal:msg`TunerStudio: command S actual CRC 2060efc3/expected c3ef6020`
+[165282070us]efiPrintfInternal:msg`TunerStudio size=884 / total=338 / errors=0 / H=5 / O=0 / P=0 / B=0 / 9=0`
+[165282070us]efiPrintfInternal:msg`TunerStudio C=0`
+[165282070us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=0 / unrecognized=0 / outofrange=0 / other=0`
+[185932890us]efiPrintfInternal:msg`Got naked Query command`
+[186033280us]efiPrintfInternal:msg`TS: Version Mismatch? Too much outputs requested offset=0 + count=29699/total=2080`
+[186033530us]efiPrintfInternal:msg`TunerStudio: command O actual CRC cedbd5cd/expected cdd5dbce`
+[186033530us]efiPrintfInternal:msg`TunerStudio size=884 / total=382 / errors=1 / H=6 / O=0 / P=0 / B=0 / 9=0`
+[186033530us]efiPrintfInternal:msg`TunerStudio C=0`
+[186033530us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=1 / unrecognized=0 / outofrange=1 / other=0`
+[237927450us]efiPrintfInternal:msg`Got naked Query command`
+[260037180us]efiPrintfInternal:msg`Got naked Query command`
+[264444250us]efiPrintfInternal:msg`Got naked Query command`
+[268847020us]efiPrintfInternal:msg`Got naked Query command`
+[282260880us]efiPrintfInternal:msg`Got naked Query command`
+[286656080us]efiPrintfInternal:msg`Got naked Query command`
+[291054510us]efiPrintfInternal:msg`Got naked Query command`
+[346624900us]efiPrintfInternal:msg`Got naked Query command`
+[351262360us]efiPrintfInternal:msg`Got naked Query command`
+[355878850us]efiPrintfInternal:msg`Got naked Query command`
+[416100190us]efiPrintfInternal:msg`Got naked Query command`
+[430487850us]efiPrintfInternal:msg`Got naked Query command`
+[432588870us]efiPrintfInternal:msg`TunerStudio: command O actual CRC 125ab0b7/expected b7b05a12`
+[432588870us]efiPrintfInternal:msg`TunerStudio size=884 / total=892 / errors=2 / H=18 / O=1 / P=0 / B=0 / 9=0`
+[432588870us]efiPrintfInternal:msg`TunerStudio C=0`
+[432588870us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=2 / unrecognized=0 / outofrange=1 / other=0`
+[461130750us]efiPrintfInternal:msg`Got naked Query command`
+[465758120us]efiPrintfInternal:msg`Got naked Query command`
+[470373310us]efiPrintfInternal:msg`Got naked Query command`
+[488368010us]efiPrintfInternal:msg`Got naked Query command`
+[510403220us]efiPrintfInternal:msg`Got naked Query command`
+[528497810us]efiPrintfInternal:msg`Got naked Query command`
+[617888850us]efiPrintfInternal:msg`Got naked Query command`
+[917719330us]efiPrintfInternal:msg`Got naked Query command`
+[960332470us]efiPrintfInternal:msg`Got naked Query command`
+[972337420us]efiPrintfInternal:msg`Got naked Query command`
+[985087530us]efiPrintfInternal:msg`Got naked Query command`
+[1030663550us]efiPrintfInternal:msg`Got naked Query command`
+[1032372660us]efiPrintfInternal:msg`unexpected command 50`
+[1254393860us]efiPrintfInternal:msg`Got naked Query command`
+[1256097240us]efiPrintfInternal:msg`unexpected command 50`
+[2133906452us]efiPrintfInternal:msg`Got naked Query command`
+[-2068094354us]efiPrintfInternal:msg`Got naked Query command`
+[-2066390444us]efiPrintfInternal:msg`unexpected command 50`
+[-1996395534us]efiPrintfInternal:msg`Got naked Query command`
+[-1994692454us]efiPrintfInternal:msg`unexpected command 50`
+[-1801060074us]efiPrintfInternal:msg`Got naked Query command`
+[-1799454964us]efiPrintfInternal:msg`unexpected command 48`
+[-1798908184us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 27713+2>23936`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio size=884 / total=30829 / errors=3 / H=36 / O=28 / P=6 / B=0 / 9=0`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio C=0`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=1 / other=0`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio size=884 / total=30829 / errors=4 / H=36 / O=28 / P=6 / B=0 / 9=0`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio C=0`
+[-1798908184us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=2 / other=0`
+[-1798750614us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 1536 count 512 (output_count=28)`
+[-1798658184us]efiPrintfInternal:msg`TS -> Burn`
+[-1798658184us]efiPrintfInternal:msg`TS -> Burn, we are allowed to burn`
+[-1798658184us]efiPrintfInternal:msg`unregistering N/A`
+[-1798658184us]efiPrintfInternal:msg`unregistering N/A`
+[-1798658184us]efiPrintfInternal:msg`unregistering N/A`
+[-1798658184us]efiPrintfInternal:msg`unregistering N/A`
+[-1798658184us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[-1798658184us]efiPrintfInternal:msg`Scheduling write`
+[-1798658184us]efiPrintfInternal:msg`Burned in 0.0ms`
+[-1798658184us]efiPrintfInternal:msg`Flash: Writing storage ID 1  @0x1... 23948 bytes`
+Simulator: writing config to flash1.bin
+[-1798658184us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1798658184us]efiPrintfInternal:msg`Flash: Writing storage ID 2  @0x2... 23948 bytes`
+Simulator: writing config to flash2.bin
+[-1798658184us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1798501904us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 1536+512>256`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio size=884 / total=30837 / errors=5 / H=36 / O=28 / P=11 / B=1 / 9=0`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=3 / other=0`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio size=884 / total=30837 / errors=6 / H=36 / O=28 / P=11 / B=1 / 9=0`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798501904us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=4 / other=0`
+[-1798454484us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 27713+1>256`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio size=884 / total=30838 / errors=7 / H=36 / O=28 / P=12 / B=1 / 9=0`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=5 / other=0`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio size=884 / total=30838 / errors=8 / H=36 / O=28 / P=12 / B=1 / 9=0`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798454484us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=6 / other=0`
+[-1798407654us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 1536+512>256`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio size=884 / total=30839 / errors=9 / H=36 / O=28 / P=13 / B=1 / 9=0`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=7 / other=0`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio size=884 / total=30839 / errors=10 / H=36 / O=28 / P=13 / B=1 / 9=0`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798407654us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=8 / other=0`
+[-1798344844us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 1536+512>256`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio size=884 / total=30840 / errors=11 / H=36 / O=28 / P=14 / B=1 / 9=0`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=9 / other=0`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio size=884 / total=30840 / errors=12 / H=36 / O=28 / P=14 / B=1 / 9=0`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio C=1`
+[-1798344844us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=5 / outofrange=10 / other=0`
+[-1798297154us]efiPrintfInternal:msg`Got naked Query command`
+[-1597789304us]efiPrintfInternal:msg`Got naked Query command`
+[-1596195864us]efiPrintfInternal:msg`unexpected command 48`
+[-1595619194us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=33)`
+[-1595526214us]efiPrintfInternal:msg`TS -> Burn`
+[-1595526214us]efiPrintfInternal:msg`TS -> Burn, we are allowed to burn`
+[-1595526214us]efiPrintfInternal:msg`unregistering N/A`
+[-1595526214us]efiPrintfInternal:msg`unregistering N/A`
+[-1595526214us]efiPrintfInternal:msg`unregistering N/A`
+[-1595526214us]efiPrintfInternal:msg`unregistering N/A`
+[-1595526214us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[-1595526214us]efiPrintfInternal:msg`Scheduling write`
+[-1595526214us]efiPrintfInternal:msg`Burned in 0.0ms`
+[-1595526214us]efiPrintfInternal:msg`Flash: Writing storage ID 1  @0x1... 23948 bytes`
+Simulator: writing config to flash1.bin
+[-1595526214us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1595526214us]efiPrintfInternal:msg`Flash: Writing storage ID 2  @0x2... 23948 bytes`
+Simulator: writing config to flash2.bin
+[-1595526214us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1595367414us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 6+2>0`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio size=884 / total=31262 / errors=13 / H=39 / O=33 / P=21 / B=2 / 9=0`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=11 / other=0`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio size=884 / total=31262 / errors=14 / H=39 / O=33 / P=21 / B=2 / 9=0`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595367414us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=12 / other=0`
+[-1595211064us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 16748+256>0`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio size=884 / total=31263 / errors=15 / H=39 / O=33 / P=22 / B=2 / 9=0`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=13 / other=0`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio size=884 / total=31263 / errors=16 / H=39 / O=33 / P=22 / B=2 / 9=0`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595211064us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=14 / other=0`
+[-1595164764us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 6+2>0`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio size=884 / total=31264 / errors=17 / H=39 / O=33 / P=23 / B=2 / 9=0`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=15 / other=0`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio size=884 / total=31264 / errors=18 / H=39 / O=33 / P=23 / B=2 / 9=0`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595164764us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=16 / other=0`
+[-1595117614us]efiPrintfInternal:msg`TS: Project mismatch? Too much configuration requested 6+2>0`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio size=884 / total=31265 / errors=19 / H=39 / O=33 / P=24 / B=2 / 9=0`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=17 / other=0`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio size=884 / total=31265 / errors=20 / H=39 / O=33 / P=24 / B=2 / 9=0`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio C=2`
+[-1595117614us]efiPrintfInternal:msg`TunerStudio errors: underrun=0 / overrun=0 / crc=3 / unrecognized=6 / outofrange=18 / other=0`
+[-1595055764us]efiPrintfInternal:msg`Got naked Query command`
+[-1502231714us]efiPrintfInternal:msg`Got naked Query command`
+[-1500637414us]efiPrintfInternal:msg`unexpected command 48`
+[-1500091344us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=38)`
+[-1499983554us]efiPrintfInternal:msg`TS -> Burn`
+[-1499983554us]efiPrintfInternal:msg`TS -> Burn, we are allowed to burn`
+[-1499983554us]efiPrintfInternal:msg`unregistering N/A`
+[-1499983554us]efiPrintfInternal:msg`unregistering N/A`
+[-1499983554us]efiPrintfInternal:msg`unregistering N/A`
+[-1499983554us]efiPrintfInternal:msg`unregistering N/A`
+[-1499983554us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[-1499983554us]efiPrintfInternal:msg`Scheduling write`
+[-1499983554us]efiPrintfInternal:msg`Burned in 0.0ms`
+[-1499983554us]efiPrintfInternal:msg`Flash: Writing storage ID 1  @0x1... 23948 bytes`
+Simulator: writing config to flash1.bin
+[-1499983554us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1499983554us]efiPrintfInternal:msg`Flash: Writing storage ID 2  @0x2... 23948 bytes`
+Simulator: writing config to flash2.bin
+[-1499983554us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1499577784us]efiPrintfInternal:msg`unexpected command 50`
+[-1499530144us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=38)`
+[-1499421764us]efiPrintfInternal:msg`unexpected command 50`
+[-1499375314us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=38)`
+[-1499312714us]efiPrintfInternal:msg`Got naked Query command`
+Init: connection on SD1
+Init: disconnection on SD1
+Init: connection on SD2
+Init: disconnection on SD2
+Init: connection on SD1
+Init: connection on SD1
+Init: disconnection on SD1
+[-1363684954us]efiPrintfInternal:msg`Got naked Query command`
+[-1362086274us]efiPrintfInternal:msg`unexpected command 48`
+[-1361542524us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=43)`
+[-1361433164us]efiPrintfInternal:msg`TS -> Burn`
+[-1361433164us]efiPrintfInternal:msg`TS -> Burn, we are allowed to burn`
+[-1361433164us]efiPrintfInternal:msg`unregistering N/A`
+[-1361433164us]efiPrintfInternal:msg`unregistering N/A`
+[-1361433164us]efiPrintfInternal:msg`unregistering N/A`
+[-1361433164us]efiPrintfInternal:msg`unregistering N/A`
+[-1361433164us]efiPrintfInternal:msg`setTpsAccelLen: Length should be positive [0]`
+[-1361433164us]efiPrintfInternal:msg`Scheduling write`
+[-1361433164us]efiPrintfInternal:msg`Burned in 0.0ms`
+[-1361433164us]efiPrintfInternal:msg`Flash: Writing storage ID 1  @0x1... 23948 bytes`
+Simulator: writing config to flash1.bin
+[-1361433164us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1361433164us]efiPrintfInternal:msg`Flash: Writing storage ID 2  @0x2... 23948 bytes`
+Simulator: writing config to flash2.bin
+[-1361433164us]efiPrintfInternal:msg`Flash: Write done after 0 mS`
+[-1361027904us]efiPrintfInternal:msg`unexpected command 50`
+[-1360979984us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=43)`
+[-1360871414us]efiPrintfInternal:msg`unexpected command 50`
+[-1360823994us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 6 count 2 (output_count=43)`
+Init: connection on SD1
+Init: disconnection on SD1
+Init: disconnection on SD1
+Init: connection on SD1
+[-1360778184us]efiPrintfInternal:msg`Got naked Query command`
+Init: disconnection on SD1
+Init: connection on SD1
+Init: disconnection on SD1
+Init: connection on SD2
+Init: disconnection on SD2
+Init: connection on SD1
+[-732014524us]efiPrintfInternal:msg`Got naked Query command`
+Init: disconnection on SD1
+Init: connection on SD1
+[-703300494us]efiPrintfInternal:msg`Got naked Query command`
+Init: connection on SD1
+[-137209034us]efiPrintfInternal:msg`Got naked Query command`
+[-130322724us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 444 count 4 (output_count=53)`
+[-130166754us]efiPrintfInternal:msg`unexpected command 50`
+[-130118994us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 16748 count 256 (output_count=53)`
+[-130071894us]efiPrintfInternal:msg`unexpected command 50`
+[-130007384us]efiPrintfInternal:msg`TS -> Page 0 write chunk offset 17004 count 256 (output_count=53)`
+Init: connection on SD1
+Init: disconnection on SD1
+Init: connection on SD1
+[215492666us]efiPrintfInternal:msg`Got naked Query command`
+[217917106us]efiPrintfInternal:msg`Got naked Query command`
+Init: connection on SD1
+Init: disconnection on SD1
+[325388026us]efiPrintfInternal:msg`Got naked Query command`
+[326732776us]efiPrintfInternal:msg`Got naked Query command`
+Init: connection on SD1
+Init: disconnection on SD1
+Init: connection on SD1
+[760088636us]efiPrintfInternal:msg`Got naked Query command`
+^C

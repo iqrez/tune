@@ -1,0 +1,930 @@
+I 260305 031258.859 [main] Launcher - rusEFI UI console 20260214
+I 260305 031258.866 [main] Launcher - Compiled Thu Mar 05 00:17:07 EST 2026
+I 260305 031258.866 [main] Launcher - 
+
+
+I 260305 031258.890 [Thread-1] LazyFileImpl - LazyFileImpl: Not updating logs/README.html since looks to be the same content, new content size=158
+I 260305 031258.909 [main] PersistentConfiguration - Console configuration from C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 031258.910 [main] UiHelper - OS name: Windows 11
+I 260305 031258.910 [main] UiHelper - OS version: 10.0
+I 260305 031259.086 [AWT-EventQueue-0] JustOneInstance - No other instances seem to be running
+I 260305 031259.087 [JustOneInstance] JustOneInstance - server socket 29213
+I 260305 031259.097 [AWT-EventQueue-0] MessagesCentral - postMessage Launcher: Available port: COM6
+I 260305 031259.153 [AWT-EventQueue-0] Launcher - rusefi console 20260214
+I 260305 031259.397 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 031259.398 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 031259.404 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 031259.406 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 031259.410 [ecuDef primer1] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 031259.411 [ecuDef primer1] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 031259.411 [ecuDef primer1] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 031259.411 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for DeviceManager.png
+I 260305 031259.412 [ecuDef primer1] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 031259.423 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for upload48.png
+I 260305 031259.459 [ecuDef primer1] IniFileReader - Section [SettingGroups]
+I 260305 031259.459 [ecuDef primer1] IniFileReader - Section [MegaTune]
+I 260305 031259.459 [ecuDef primer1] IniFileReader - Section [TunerStudio]
+I 260305 031259.459 [ecuDef primer1] IniFileReader - Section [Constants]
+I 260305 031259.463 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 031259.463 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031259.463 [ecuDef primer1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031259.468 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 031259.468 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 031259.469 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 031259.483 [AWT-EventQueue-0] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 1ms
+I 260305 031259.484 [Ports Scanner] SerialPortScanner - getCommPorts: [COM6]
+I 260305 031259.488 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 031259.488 [SerialPortScanner inspectPort COM6] SerialPortScanner - Determining type of serial port: COM6
+I 260305 031259.490 [SerialPortScanner inspectPort COM6] SerialIoStream - Using com.fazecast.jSerialComm 2.11.2
+I 260305 031259.490 [SerialPortScanner inspectPort COM6] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+E 260305 031259.490 [SerialPortScanner inspectPort COM6] SerialIoStream - Error opening COM6 maybe no permissions?
+I 260305 031259.492 [SerialPortScanner inspectPort COM6] SerialPortScanner - Port COM6 does not look like an OpenBLT bootloader
+I 260305 031259.492 [SerialPortScanner inspectPort COM6] SerialPortScanner - getEcuCalibrations COM6
+I 260305 031259.512 [ecuDef primer1] IniFileReader - Section [SettingContextHelp]
+I 260305 031259.513 [ecuDef primer1] IniFileReader - Section [Tuning]
+I 260305 031259.513 [ecuDef primer1] IniFileReader - Section [LoggerDefinition]
+I 260305 031259.513 [ecuDef primer1] IniFileReader - Section [VeAnalyze]
+I 260305 031259.513 [ecuDef primer1] IniFileReader - Section [BurstMode]
+I 260305 031259.513 [ecuDef primer1] IniFileReader - Section [OutputChannels]
+I 260305 031259.519 [SerialPortScanner inspectPort COM6] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM6`...
+I 260305 031259.520 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 031259.521 [SerialPortScanner inspectPort COM6] LinkManager - LinkManager: Starting COM6
+I 260305 031259.522 [ecuDef primer1] IniFileReader - Section [PcVariables]
+I 260305 031259.523 [ecuDef primer1] IniFileReader - Section [ConstantsExtensions]
+I 260305 031259.523 [ecuDef primer1] IniFileReader - Section [CurveEditor]
+I 260305 031259.528 [SerialPortScanner inspectPort COM6] StreamConnector - StreamConnector: connecting
+I 260305 031259.528 [SerialPortScanner inspectPort COM6] StreamConnector - scheduleOpening
+I 260305 031259.530 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 031259.530 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM6
+I 260305 031259.530 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+E 260305 031259.530 [ECU Communication Executor1] SerialIoStream - Error opening COM6 maybe no permissions?
+I 260305 031259.531 [ecuDef primer1] IniFileReader - Section [TableEditor]
+I 260305 031259.534 [ecuDef primer1] IniFileReader - Section [GaugeConfigurations]
+I 260305 031259.583 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 031259.588 [AWT-EventQueue-0] Launcher - setVisible
+I 260305 031259.589 [ecuDef primer1] IniFileReader - Section [WueAnalyze]
+I 260305 031259.590 [ecuDef primer1] IniFileReader - Section [FrontPage]
+I 260305 031259.591 [ecuDef primer1] IniFileReader - Section [KeyActions]
+I 260305 031259.591 [ecuDef primer1] IniFileReader - Section [Datalog]
+I 260305 031259.592 [ecuDef primer1] IniFileReader - Section [Menu]
+I 260305 031259.594 [ecuDef primer1] IniFileReader - Section [ControllerCommands]
+I 260305 031259.594 [ecuDef primer1] IniFileReader - Section [UserDefined]
+I 260305 031259.603 [ecuDef primer1] IniFileReader - Section [Tools]
+I 260305 031259.603 [ecuDef primer1] IniFileReader - Section [EventTriggers]
+I 260305 031259.608 [ecuDef primer1] PrimeTunerStudioCache - Trying to prime C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 031259.608 [ecuDef primer1] PrimeTunerStudioCache - C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 031304.491 [SerialPortScanner inspectPort COM6] UpdateOperationCallbacks - Connection to port COM6 was interrupted
+I 260305 031304.491 [Ports Scanner] SerialPortScanner - Port COM6 timed out, adding as Unknown.
+I 260305 031304.491 [Ports Scanner] SerialPortScanner - Port COM6 detected as: Unknown
+I 260305 031304.493 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for /srec
+I 260305 031304.493 [AWT-EventQueue-0] FindFileHelper - Searching for *srec in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 031304.493 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_master_2026-02-20_57d88419b22fa338f7024f4172f16bf0ea9ebc33_update.srec
+I 260305 031304.494 [SerialPortScanner inspectPort COM6] SerialPortScanner - Port COM6 does not look like an ECU
+E 260305 031304.495 [Ports Scanner] RecurringStep - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at com.rusefi.RecurringStep.lambda$start$0(RecurringStep.java:36)
+	at java.base/java.lang.Thread.run(Unknown Source)
+I 260305 031304.495 [AWT-EventQueue-0] Launcher - Rendering available ports: [COM6 (Unknown)]
+I 260305 031304.498 [Ports Scanner] SerialPortScanner - getCommPorts: [COM6]
+I 260305 031304.498 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 031304.637 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 138ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031304.761 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 124ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031304.880 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 118ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031305.185 [Ports Scanner] SerialPortScanner - getCommPorts: [COM6]
+I 260305 031305.185 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 031305.316 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 130ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031305.437 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 121ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031305.570 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 133ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031305.877 [Ports Scanner] SerialPortScanner - getCommPorts: [COM6]
+I 260305 031305.877 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 031305.997 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 120ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031306.135 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 138ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031306.262 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 127ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031306.568 [Ports Scanner] SerialPortScanner - getCommPorts: [COM6]
+I 260305 031306.568 [Ports Scanner] SerialPortCache - Expired port is removed: COM6
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] SerialPortScanner - Determining type of serial port: COM6
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+E 260305 031306.568 [SerialPortScanner inspectPort COM6] SerialIoStream - Error opening COM6 maybe no permissions?
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] SerialPortScanner - Port COM6 does not look like an OpenBLT bootloader
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] SerialPortScanner - getEcuCalibrations COM6
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] UpdateOperationCallbacks - readCalibrationsInfo: Connecting to port `COM6`...
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] LinkManager - LinkManager: Starting COM6
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] StreamConnector - StreamConnector: connecting
+I 260305 031306.568 [SerialPortScanner inspectPort COM6] StreamConnector - scheduleOpening
+I 260305 031306.568 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 031306.570 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 031306.570 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM6
+I 260305 031306.570 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+E 260305 031306.570 [ECU Communication Executor1] SerialIoStream - Error opening COM6 maybe no permissions?
+I 260305 031309.822 [ECU Commands Queue] LinkManager - class com.rusefi.io.CommandQueue: SerialIO started
+I 260305 031309.823 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\. for rusefi/.ini
+I 260305 031309.823 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.
+I 260305 031309.823 [AWT-EventQueue-0] FindFileHelper - Scanning D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\.. for rusefi/.ini
+I 260305 031309.824 [AWT-EventQueue-0] FindFileHelper - Searching for rusefi*.ini in D:\Users\Rezi\.gemini\antigravity\scratch\basetune_architect\rusefi_bundle_uaefi\rusefi.master.uaefi\console\..
+I 260305 031309.824 [AWT-EventQueue-0] FindFileHelper - Located ..\rusefi_uaefi.ini
+I 260305 031309.824 [AWT-EventQueue-0] IniFileReaderUtil - Reading ..\rusefi_uaefi.ini
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Section [SettingGroups]
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Section [MegaTune]
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Section [TunerStudio]
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Section [Constants]
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031309.840 [AWT-EventQueue-0] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [SettingContextHelp]
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [Tuning]
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [LoggerDefinition]
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [VeAnalyze]
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [BurstMode]
+I 260305 031309.854 [AWT-EventQueue-0] IniFileReader - Section [OutputChannels]
+I 260305 031309.856 [AWT-EventQueue-0] IniFileReader - Section [PcVariables]
+I 260305 031309.856 [AWT-EventQueue-0] IniFileReader - Section [ConstantsExtensions]
+I 260305 031309.857 [AWT-EventQueue-0] IniFileReader - Section [CurveEditor]
+I 260305 031309.857 [AWT-EventQueue-0] IniFileReader - Section [TableEditor]
+I 260305 031309.859 [AWT-EventQueue-0] IniFileReader - Section [GaugeConfigurations]
+I 260305 031309.872 [AWT-EventQueue-0] IniFileReader - Section [WueAnalyze]
+I 260305 031309.872 [AWT-EventQueue-0] IniFileReader - Section [FrontPage]
+I 260305 031309.872 [AWT-EventQueue-0] IniFileReader - Section [KeyActions]
+I 260305 031309.873 [AWT-EventQueue-0] IniFileReader - Section [Datalog]
+I 260305 031309.873 [AWT-EventQueue-0] IniFileReader - Section [Menu]
+I 260305 031309.873 [AWT-EventQueue-0] IniFileReader - Section [ControllerCommands]
+I 260305 031309.873 [AWT-EventQueue-0] IniFileReader - Section [UserDefined]
+I 260305 031309.877 [AWT-EventQueue-0] IniFileReader - Section [Tools]
+I 260305 031309.877 [AWT-EventQueue-0] IniFileReader - Section [EventTriggers]
+I 260305 031309.899 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 031309.899 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 031309.899 [AWT-EventQueue-0] LogoHelper - jar:file:/D:/Users/Rezi/.gemini/antigravity/scratch/basetune_architect/rusefi_bundle_uaefi/rusefi.master.uaefi/console/rusefi_console.jar!/com/rusefi/logo.png for /com/rusefi/logo.png
+I 260305 031309.899 [AWT-EventQueue-0] ConsoleUI - Console 20260214
+I 260305 031309.900 [AWT-EventQueue-0] ConsoleUI - Hardware: F4
+I 260305 031309.900 [AWT-EventQueue-0] LinkManager - LinkManager: Starting COM6
+I 260305 031309.957 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for stop.jpg
+I 260305 031309.960 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for info.png
+I 260305 031309.962 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for help.jpg
+I 260305 031309.963 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for trigger.jpg
+I 260305 031309.963 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for sdinfo.jpg
+I 260305 031309.964 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for writeconfig.jpg
+I 260305 031310.142 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for setup48.png
+I 260305 031310.144 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for fuel48.png
+I 260305 031310.145 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for ignition48.png
+I 260305 031310.146 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for idle48.png
+I 260305 031310.147 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for cranking48.png
+I 260305 031310.150 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for expand_all16.png
+I 260305 031310.150 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for collapse_all16.png
+I 260305 031310.154 [AWT-EventQueue-0] MessagesCentral - postMessage ConsoleUI: COMPOSITE_OFF_RPM=700
+I 260305 031310.155 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for /appicon.png
+W 260305 031310.155 [AWT-EventQueue-0] AutoupdateUtil - icon resource not found /appicon.png
+I 260305 031310.155 [AWT-EventQueue-0] ConsoleUI - showFrame
+I 260305 031310.392 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.402 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.402 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.402 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.402 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.402 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.414 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.420 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.420 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.426 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.426 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.430 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.444 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.444 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.446 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.446 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.448 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.448 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.448 [AWT-EventQueue-0] AutoupdateUtil - Using secondary resource path for undo.jpg
+I 260305 031310.461 [AWT-EventQueue-0] Launcher - onWindowOpened
+I 260305 031310.461 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260305 031310.461 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260305 031310.461 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 031310.461 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM6
+I 260305 031310.461 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+E 260305 031310.461 [ECU Communication Executor1] SerialIoStream - Error opening COM6 maybe no permissions?
+I 260305 031311.571 [Ports Scanner] SerialPortScanner - Port COM6 timed out, adding as Unknown.
+I 260305 031311.571 [SerialPortScanner inspectPort COM6] UpdateOperationCallbacks - Connection to port COM6 was interrupted
+I 260305 031311.571 [Ports Scanner] SerialPortScanner - Port COM6 detected as: Unknown
+I 260305 031311.571 [SerialPortScanner inspectPort COM6] SerialPortScanner - Port COM6 does not look like an ECU
+I 260305 031311.571 [Ports Scanner] TcpConnector - Connection refused in getAvailablePorts(): simulator not running in 0ms
+I 260305 031311.571 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 0ms; wmic path win32_pnpentity where "Caption like '%STM32%' and Caption like '%Bootloader%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031311.725 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 154ms; wmic path win32_pnpentity where "Caption like '%STLink%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031311.857 [Ports Scanner] MaintenanceUtil - detectDevice lookup cost 131ms; wmic path win32_pnpentity where "Caption like '%PCAN-USB%'" get Caption,ConfigManagerErrorCode /format:list says (empty)
+I 260305 031328.676 [AWT-EventQueue-0] LinkManager - reconnect
+I 260305 031328.679 [AWT-EventQueue-0] LinkManager - restart isPortAvailableAgain=true
+I 260305 031328.679 [AWT-EventQueue-0] LinkManager - LinkManager: Starting COM6
+I 260305 031328.679 [AWT-EventQueue-0] StreamConnector - StreamConnector: connecting
+I 260305 031328.679 [AWT-EventQueue-0] StreamConnector - scheduleOpening
+I 260305 031328.679 [ECU Communication Executor1] StreamConnector - scheduleOpening>openPort
+I 260305 031328.679 [ECU Communication Executor1] LinkManager - class com.rusefi.io.LinkManager$6: Opening port: COM6
+I 260305 031328.679 [ECU Communication Executor1] BufferedSerialIoStream - [BufferedSerialIoStream] openPort COM6
+I 260305 031328.684 [ECU Communication Executor1] BinaryProtocol - BINARY_IO_TIMEOUT=10000
+I 260305 031328.684 [ECU Communication Executor1] BinaryProtocol - CONNECTION_RESTART_DELAY=10000
+I 260305 031328.686 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got [rusEFI master.2026.02.20.uaefi.4211171972 ] signature
+I 260305 031328.687 [ECU Communication Executor1] SignatureHelper - Found cached at C:\Users\IQRez\.rusEFI\ini_database
+I 260305 031328.687 [ECU Communication Executor1] IniFileReaderUtil - Reading C:\Users\IQRez\.rusEFI\ini_database\4211171972.ini
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Section [SettingGroups]
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Section [MegaTune]
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Section [TunerStudio]
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Section [Constants]
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='highSpeedOffsets', offset=0}', unit='', type=UINT16, cols=1, rows=128, multiplier=1.0, min='0.00', max='65535', digits='0'}
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank1', offset=0}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031328.696 [ECU Communication Executor1] IniFileReader - Skipping field from secondary page: ArrayIniField{super='IniField{name='ltft_table_bank2', offset=1024}', unit='%', type=FLOAT, cols=16, rows=16, multiplier=100.0, min='-35.0', max='35.0', digits='1'}
+I 260305 031328.707 [ECU Communication Executor1] IniFileReader - Section [SettingContextHelp]
+I 260305 031328.708 [ECU Communication Executor1] IniFileReader - Section [Tuning]
+I 260305 031328.708 [ECU Communication Executor1] IniFileReader - Section [LoggerDefinition]
+I 260305 031328.708 [ECU Communication Executor1] IniFileReader - Section [VeAnalyze]
+I 260305 031328.708 [ECU Communication Executor1] IniFileReader - Section [BurstMode]
+I 260305 031328.708 [ECU Communication Executor1] IniFileReader - Section [OutputChannels]
+I 260305 031328.709 [ECU Communication Executor1] IniFileReader - Section [PcVariables]
+I 260305 031328.709 [ECU Communication Executor1] IniFileReader - Section [ConstantsExtensions]
+I 260305 031328.709 [ECU Communication Executor1] IniFileReader - Section [CurveEditor]
+I 260305 031328.710 [ECU Communication Executor1] IniFileReader - Section [TableEditor]
+I 260305 031328.710 [ECU Communication Executor1] IniFileReader - Section [GaugeConfigurations]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [WueAnalyze]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [FrontPage]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [KeyActions]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [Datalog]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [Menu]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [ControllerCommands]
+I 260305 031328.715 [ECU Communication Executor1] IniFileReader - Section [UserDefined]
+I 260305 031328.718 [ECU Communication Executor1] IniFileReader - Section [Tools]
+I 260305 031328.718 [ECU Communication Executor1] IniFileReader - Section [EventTriggers]
+I 260305 031328.719 [ECU Communication Executor1] PrimeTunerStudioCache - Trying to prime C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\
+I 260305 031328.719 [ECU Communication Executor1] PrimeTunerStudioCache - C:\Users\IQRez\.efiAnalytics\TunerStudio\config\ecuDef\rusEFImaster.2026.02.20.uaefi.4211171972.ini already present
+I 260305 031328.719 [ECU Communication Executor1] BinaryProtocol - pageSize=23936
+E 260305 031328.721 [ECU Communication Executor1] BinaryProtocol - Error reading state/current_configuration.zip: no worries java.nio.file.NoSuchFileException: state\current_configuration.zip
+I 260305 031328.722 [ECU Communication Executor1] BinaryProtocol - Reading from controller rusEFI master.2026.02.20.uaefi.4211171972 
+I 260305 031328.771 [ECU Communication Executor1] ConfigurationImageFile - Saving 23936 bytes of configuration into state/current_configuration.zip
+I 260305 031328.804 [ECU Communication Executor1] Msq - java=17.0.11
+I 260305 031328.897 [ECU Communication Executor1] XmlUtil - Writing state/current_configuration.msq
+I 260305 031328.903 [ECU Communication Executor1] XmlUtil - Marshalling finished state/current_configuration.msq
+I 260305 031328.903 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got configuration from controller 23936 byte(s)
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Starting watchdog with timeout 500 ms...
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Reset Cause: Reset from NRST pin
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WD resets: 0
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Power cycle count: 1
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: SP 0x00000000
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initHardware()
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initRtc()
+I 260305 031328.924 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 05 Mar 2026 03:10:30
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Storage INT_FLASH registered
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI LLC (c) 2012-2026. All rights reserved.
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** rusEFI v20260220@4211171972 now=11
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Chibios Kernel:       7.0.5
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** Compiled:     Feb 20 2026 - 01:25:23
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** COMPILER=14.2.1 20241119
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** with OPENBLT
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: *** detected HSE clock 20.04 MHz PLLM = 20
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: hellenBoardId=-1
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ********************** UID=35005C:33335116:31363333 crc=249 ******************************
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: isStm32F42x No
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: MCU rev=413 flashSize=1024
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_CFG_ST_FREQUENCY=1000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ENABLE_PERF_TRACE=0
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_ADCCLK=21000000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_TIMCLK1=84000000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_TIMCLK2=168000000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_PCLK1=42000000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_PCLK2=84000000
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: STM32_RTCSEL=1 LSE actual=2 LSI
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: RUSEFI_STM32_LSE_WAIT_MAX_RTCSEL=2 LSI
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: PORT_IDLE_THREAD_STACK_SIZE=32
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_ASSERTS=1
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_SYSTEM_STATE_CHECK=1
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: CH_DBG_ENABLE_STACK_CHECK=1
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading storage ID 1 @0x80E0000 ... 23948 bytes
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Flash: Reading done
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: applyNonPersistentConfiguration()
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initializeTriggerWaveform(TT_12_TOOTH_CRANK/38)
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initializeTriggerWaveform(TT_HALF_MOON/18)
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Read valid configuration from flash!
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Turning board ON [start-up]
+I 260305 031328.925 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initAdcInputs()
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WARNING: C6899: Invalid MAP at 4.329084396
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: extiTriggerTurnOnInputPin Trigger #1 C17 VR2-/HALL max9924 best for normal 12+ tooth wheels
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: extiTriggerTurnOnInputPin cam1 C18 VR1+ Discrete for low count wheel
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initHardware() OK!
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: setTpsAccelLen: Length should be positive [0]
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: initMapAveraging...
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LTFT: failed to load calibrations
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: WARNING: C6121: event too early
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Running main loop
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA loading script length: 614...
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: LUA script loaded successfully!
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua total heap(s) usage: 14871 / 29800 bytes = 49.9%
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua optional heap usage: 0 / 0
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Lua CCM heap usage: 5944 / 5944
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Common ChibiOS heap: 224 bytes free
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: ChibiOS memcore usage: 12200 / 23856
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Card is not preset/failed to init
+I 260305 031328.926 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: SD logger has died!
+I 260305 031328.929 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031328.983 [ECU Commands Queue] BinaryProtocol - Sending [set date 2026-03-05T03:13:28.9813627]
+I 260305 031329.017 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 05 Mar 2026 03:10:33
+I 260305 031329.017 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Time is changed to
+I 260305 031329.017 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: Current RTC time: 05 Mar 2026 03:13:28
+I 260305 031329.017 [ECU Communication Executor1] MessagesCentral - postMessage EngineState: confirmation_set date 2026-03-05T03:13:28.9813627:36
+I 260305 031329.017 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.224 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.344 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.453 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.565 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.682 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.794 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031329.907 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.015 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.031 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.158 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.267 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.378 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.490 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.599 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.712 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.824 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031330.932 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.041 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.050 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.186 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.295 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.407 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.515 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.628 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.736 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.845 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031331.957 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.070 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.078 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.207 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.316 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.428 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.541 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.653 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.762 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.870 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031332.979 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.095 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.108 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.228 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.337 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.449 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.562 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.674 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.783 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031333.895 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.003 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.116 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.123 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.244 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.358 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.466 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.579 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.687 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.795 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031334.908 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.016 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.125 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.133 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.270 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.378 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.487 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.595 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.704 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.812 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031335.925 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.032 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.141 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.147 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.323 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.433 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.541 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.649 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.762 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.875 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031336.983 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.092 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.204 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.212 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.337 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.446 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.554 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.666 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.775 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.883 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031337.991 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.104 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.216 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.224 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.362 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.471 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.579 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.687 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.796 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031338.904 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.013 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.125 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.233 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.244 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.387 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.497 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.604 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.713 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.825 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031339.933 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.046 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.154 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.263 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.270 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.413 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.521 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.634 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.746 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.855 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031340.963 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.071 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.179 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.288 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.296 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.438 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.546 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.654 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.766 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.875 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031341.984 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.092 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.204 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.313 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.320 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.475 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.582 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.692 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.804 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031342.913 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.025 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.134 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.242 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.351 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.357 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.513 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.625 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.734 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.842 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031343.951 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.059 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.172 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.280 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.392 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.399 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.546 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.655 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.763 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.872 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031344.980 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.088 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.196 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.305 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.421 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.429 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.591 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.701 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.809 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031345.917 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.026 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.134 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.247 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.359 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.467 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.476 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.614 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.726 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.834 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031346.944 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.052 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.164 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.272 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.388 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.497 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.508 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.632 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.747 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.855 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031347.964 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.072 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.180 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.289 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.397 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.507 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.516 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.661 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.768 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.876 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031348.984 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.093 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.201 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.311 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.420 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.535 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.545 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.689 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.797 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031349.905 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.014 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.122 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.230 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.343 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.451 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.564 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.573 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.722 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.835 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031350.943 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.052 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.160 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.268 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.376 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.486 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.602 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.611 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.774 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.886 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031351.995 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.102 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.210 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.320 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.442 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.556 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.671 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.671 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.877 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031352.987 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.100 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.207 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.318 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.428 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.545 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.656 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.766 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.773 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031353.971 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.081 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.195 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.302 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.424 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.533 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.644 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.762 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.883 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031354.893 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.029 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.137 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.257 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.378 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.488 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.598 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.707 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.814 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.929 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031355.937 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.107 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.224 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.335 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.456 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.571 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.689 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.797 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031356.905 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.015 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.024 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.182 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.292 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.400 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.518 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.626 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.744 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.861 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031357.979 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.101 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.109 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.248 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.356 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.465 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.574 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.692 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.803 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031358.911 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.020 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.132 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.143 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.315 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.424 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.539 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.649 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.761 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.872 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031359.984 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.095 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.206 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.206 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.443 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.555 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.666 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.778 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031400.888 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.000 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.112 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.223 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.223 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.429 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.540 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.657 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.772 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.883 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031401.995 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.115 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.225 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.233 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.407 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.520 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.637 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.748 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.858 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031402.969 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.079 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.190 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.301 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.301 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.512 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.624 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.738 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.849 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031403.960 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.073 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.186 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.297 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.408 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.418 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.636 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.751 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.863 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031404.974 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.086 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.199 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.310 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.424 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.432 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.639 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.750 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.861 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031405.972 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.081 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.194 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.305 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.418 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.531 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.538 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.733 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.845 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031406.957 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.069 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.182 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.293 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.404 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.516 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.627 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.636 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.849 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031407.960 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.076 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.187 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.298 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.409 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.521 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.634 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.643 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.860 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031408.971 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.085 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.197 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.308 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.418 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.530 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.641 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.641 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.867 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031409.977 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.088 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.196 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.307 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.417 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.525 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.635 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.746 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.748 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031410.951 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.062 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.177 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.289 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.401 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.511 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.622 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.737 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.848 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031411.855 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.054 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.165 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.276 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.387 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.498 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.606 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.717 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.828 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.939 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031412.946 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.156 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.267 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.378 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.489 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.597 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.708 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.819 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031413.931 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.048 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.057 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.243 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.354 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.464 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.574 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.683 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.800 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031414.917 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.028 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.138 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.138 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.328 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.439 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.550 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.661 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.771 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.879 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031415.992 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.101 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.221 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.221 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.427 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.540 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.650 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.766 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.878 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031416.989 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.100 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.210 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.321 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.330 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.542 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.654 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.765 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.880 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031417.991 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.102 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.220 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.332 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.332 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.538 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.648 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.758 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.869 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031418.982 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.109 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.220 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.331 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.331 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.536 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.646 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.757 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.868 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031419.983 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.095 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.206 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.316 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.427 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.436 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.649 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.761 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.872 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031420.988 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.100 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.212 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.323 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.434 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.443 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.656 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.768 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.879 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031421.991 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.105 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.216 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.334 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.444 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.451 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.650 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.760 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.870 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031422.981 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.092 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.204 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.314 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.432 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.544 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.544 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.748 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.858 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031423.968 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.081 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.190 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.302 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.410 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.519 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.627 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.634 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.791 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031424.898 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.006 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.114 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.223 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.335 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.444 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.556 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.665 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.672 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.810 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031425.919 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.027 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.135 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.244 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.352 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.460 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.569 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.681 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.688 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.840 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031426.948 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.056 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.165 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.273 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.381 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.490 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.598 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.706 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.713 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.873 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031427.982 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.090 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.198 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.306 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.415 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.523 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.632 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.740 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.747 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031428.898 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031429.011 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031429.123 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031429.232 [ECU Communication Executor1] BinaryProtocol - serial=COM6: Got livedata
+I 260305 031429.307 [AWT-EventQueue-0] PersistentConfiguration - Saved settings to C:\Users\IQRez\.rusEFI\console_properties.xml
+I 260305 031429.307 [AWT-EventQueue-0] SerialIoStream - COM6: Closing port...
+I 260305 031429.310 [AWT-EventQueue-0] SerialIoStream - COM6: Closed port.
+E 260305 031429.310 [AWT-EventQueue-0] ExitUtil - windowClosedHandler
+java.lang.Exception
+	at com.rusefi.util.ExitUtil.exit(ExitUtil.java:11)
+	at com.rusefi.ui.console.MainFrame.windowClosedHandler(MainFrame.java:150)
+	at com.rusefi.ui.console.MainFrame.access$200(MainFrame.java:26)
+	at com.rusefi.ui.console.MainFrame$1.onWindowClosed(MainFrame.java:48)
+	at com.rusefi.core.ui.FrameHelper$1.windowClosed(FrameHelper.java:75)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosed(Unknown Source)
+	at java.desktop/java.awt.Window.processWindowEvent(Unknown Source)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(Unknown Source)
+	at java.desktop/java.awt.Window.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Garrett GT2860RS",
+    "max_hp": 300,
+    "compressor_inducer_mm": 44,
+    "turbine_exducer_mm": 47.6,
+    "max_flow_lbs_min": 28,
+    "surge_flow_lbs_min": 8,
+    "peak_efficiency": 0.72,
+    "notes": "Good bolt-on for mild B18 turbo builds"
+  },
+  {
+    "name": "Garrett GT3076R",
+    "max_hp": 475,
+    "compressor_inducer_mm": 56,
+    "turbine_exducer_mm": 56.5,
+    "max_flow_lbs_min": 52,
+    "surge_flow_lbs_min": 16,
+    "peak_efficiency": 0.76,
+    "notes": "Popular for 300-450whp B18 turbo builds"
+  },
+  {
+    "name": "Precision 5558 CEA",
+    "max_hp": 550,
+    "compressor_inducer_mm": 55,
+    "turbine_exducer_mm": 58,
+    "max_flow_lbs_min": 55,
+    "surge_flow_lbs_min": 18,
+    "peak_efficiency": 0.78,
+    "notes": "High power B18 turbo builds, 400-500+ whp"
+  }
+]
